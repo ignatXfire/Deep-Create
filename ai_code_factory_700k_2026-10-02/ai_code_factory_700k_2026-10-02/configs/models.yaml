@@ -1,0 +1,53 @@
+# Verified against current vendor docs on 2026-10-02 where stated.
+# Rate limits are provider ceilings, not guaranteed sustained throughput.
+models:
+  gpt-6.1-sol:
+    provider: openai_work_codex_plus
+    reasoning_default: high
+    reasoning_escalation: xhigh
+    use_for: [chief_architecture, critical_integration, release_judgment, hard_root_cause]
+    scarcity: high
+    notes:
+      - Plus Work/Codex usage is quota-limited; do not model it as unlimited API capacity.
+      - Reserve XHigh for highest-blast-radius decisions.
+
+  dash/qwen3.8-max-0902:
+    provider: dashscope_frankfurt_global
+    context_tokens: 1000000
+    max_input_tokens: 991808
+    max_output_tokens: 131072
+    rpm_ceiling: 30000
+    tpm_ceiling: 150000
+    use_for: [repo_mapping, decomposition, contracts, planning, tool_heavy_investigation, review]
+    max_concurrent_initial: 6
+
+  dash/deepseek-v4-pro-0813:
+    provider: dashscope_frankfurt_global
+    context_tokens: 1000000
+    max_output_tokens: 393216
+    rpm_ceiling: 15000
+    tpm_ceiling: 1200000
+    use_for: [implementation, tests, refactor, adapters, reviewer]
+    max_concurrent_initial: 24
+
+  dash/kimi-k3:
+    provider: dashscope_frankfurt_global
+    context_tokens: 1048576
+    max_output_tokens: 1048576
+    rpm_ceiling: 15000
+    tpm_ceiling: 1200000
+    use_for: [long_context_implementation, integration, whole_repo_review, multimodal_ui]
+    max_concurrent_initial: 16
+
+routing:
+  reserve_fraction_for_review_and_repair: 0.20
+  critical_path_priority_multiplier: 3.0
+  max_same_authority_mutators: 1
+  recalibrate_every_minutes: 15
+  demote_model_if:
+    first_pass_acceptance_below: 0.50
+    hallucinated_path_rate_above: 0.03
+  promote_concurrency_if:
+    first_pass_acceptance_above: 0.70
+    conflict_rate_below: 0.05
+    build_wait_fraction_below: 0.30

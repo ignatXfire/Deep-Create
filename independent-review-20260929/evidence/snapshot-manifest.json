@@ -1,0 +1,1147 @@
+[
+  {
+    "Path": "AGENTS.md",
+    "Bytes": 4505,
+    "SHA256": "DB348E0B048485E36C4D98644B2213F36CFAEAC40C86897F3725ACD29AD1AF58"
+  },
+  {
+    "Path": "Cargo.lock",
+    "Bytes": 120002,
+    "SHA256": "778AB97752FD2B1D00B5975A25F54440E12FDC41F5DB4839836066621599D052"
+  },
+  {
+    "Path": "Cargo.toml",
+    "Bytes": 886,
+    "SHA256": "4653B8A92AE19E6DE86BD48A2F4A23473B9B45DEF3C7CA0D20D30AC07363D28A"
+  },
+  {
+    "Path": "crates\\dc-broker\\Cargo.toml",
+    "Bytes": 427,
+    "SHA256": "73C50FFCA21658AC50EAF0ED21D63FC6C20AB929446C0FF2B8B693D3C0EFC5FC"
+  },
+  {
+    "Path": "crates\\dc-broker\\src\\dispatch.rs",
+    "Bytes": 9726,
+    "SHA256": "1D13735A0F659FD97D3BC0E55097B75B5DBD1FCAA2968F4C7AFFD7C672350BEF"
+  },
+  {
+    "Path": "crates\\dc-broker\\src\\endpoint.rs",
+    "Bytes": 1982,
+    "SHA256": "99AC8EBD8D8001242878024AD54AA63650D4D91FB903EBB09518F5B302A7736C"
+  },
+  {
+    "Path": "crates\\dc-broker\\src\\error.rs",
+    "Bytes": 1216,
+    "SHA256": "1A820DED5656E22CD0AFDB517183252891C5CC911846AEF84B281A6A759C1977"
+  },
+  {
+    "Path": "crates\\dc-broker\\src\\lib.rs",
+    "Bytes": 1024,
+    "SHA256": "733AD47497E7CCF152CAD5056A1980C0FF38E94D6B2DED7108932D3BF6679DC0"
+  },
+  {
+    "Path": "crates\\dc-broker\\tests\\dispatch.rs",
+    "Bytes": 3843,
+    "SHA256": "13461D5998D57F18C674A840B4C98BA9D371DAF698475338711C2E30890E45D2"
+  },
+  {
+    "Path": "crates\\dc-core\\Cargo.toml",
+    "Bytes": 544,
+    "SHA256": "2D39AAEABF8C861839DB22E26B4B0EE35B5401F6248F0F512311FC892C86CCC9"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\broker.rs",
+    "Bytes": 5159,
+    "SHA256": "27D44A121CB80856240EF515CBB140E075416AC7B1439E6417F60313BFECEB37"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\command.rs",
+    "Bytes": 26359,
+    "SHA256": "C1508EB959D3C4D4425FE8932EBAE8336A05B0EC594F6CB356ACD59D9E82041F"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\context.rs",
+    "Bytes": 7550,
+    "SHA256": "68D56D3253A6BB4EDA4837053C92D2ABC6CE4A59F4160FD4311FAC5A490A4ECF"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\dispatch.rs",
+    "Bytes": 9219,
+    "SHA256": "8769E9A7857CB7268E9A75A020C9572634B2B6DEE936951ADE3C74D401DF2962"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\error.rs",
+    "Bytes": 1747,
+    "SHA256": "385CB48DF2EC343EC5D7615B2C2D5CDCC470243CCDA8826BAADBCA9980AC5C66"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\lib.rs",
+    "Bytes": 7769,
+    "SHA256": "3E447DBE85EFD91A20BA91C243E6022FF01B8925E1861F485F119E66E56131E3"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\persistence.rs",
+    "Bytes": 16763,
+    "SHA256": "8949EC05AB8E7115D4A85603937313B7AACAC8948EA930DE5C87ECFDF2ED06D6"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\planner.rs",
+    "Bytes": 6526,
+    "SHA256": "0B33BBE600B3F82380631551E0EF6CD5034EFF7CAB82AD2526F3B5A3E7925112"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\protocol.rs",
+    "Bytes": 5729,
+    "SHA256": "6360C66897ED804F2D9705BC1EBC45C7222FCF3284C85FEAEC22BE4B6DEBA883"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\scheduler.rs",
+    "Bytes": 13240,
+    "SHA256": "7C93F3D0A3422C639CD89658248F1C109461766DB3F957F7F106F90533CED224"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\self_development.rs",
+    "Bytes": 9508,
+    "SHA256": "67542884FBF5B265B6567D6687B132AF6CEE60524574808A69FE37F972B09F8E"
+  },
+  {
+    "Path": "crates\\dc-core\\src\\verification.rs",
+    "Bytes": 29756,
+    "SHA256": "D8026FF716BF162296876AD10CCF8EE42C3ADF2A483A242734E366DDAE5946CD"
+  },
+  {
+    "Path": "crates\\dc-core\\tests\\crash_recovery.rs",
+    "Bytes": 4503,
+    "SHA256": "556E01D0E38ABEB1685DE152D5803B06925BD835CF84B268069CA1E5CFB7E000"
+  },
+  {
+    "Path": "crates\\dc-core\\tests\\end_to_end.rs",
+    "Bytes": 11532,
+    "SHA256": "B23D502D9A9B90B26DA4266948DE8F78800C7E2DDA7FBE6E574C66F8F51D20DF"
+  },
+  {
+    "Path": "crates\\dc-core\\tests\\live_self_dev_e2e.rs",
+    "Bytes": 12601,
+    "SHA256": "E56D6A40DE6EA5E057174C830219CA61DFA90449135598C9BC7C1ABA36176F71"
+  },
+  {
+    "Path": "crates\\dc-core\\tests\\multi_store_consistency.rs",
+    "Bytes": 4594,
+    "SHA256": "E043F3CF6CDA3ED04EC97DD10E55C34078BC557F52A1299E5EA5B3F18976DC7D"
+  },
+  {
+    "Path": "crates\\dc-core\\tests\\self_development_e2e.rs",
+    "Bytes": 11609,
+    "SHA256": "C55CC94370AD26FA66D03DAEE38C0F170106B005300D0875E899BB26BF5307E3"
+  },
+  {
+    "Path": "crates\\dc-desktop\\build.rs",
+    "Bytes": 551,
+    "SHA256": "0282DB28B105D1EEF57F6D1C771344FDEF6E6892884F62A1B86CC3CAE0532C06"
+  },
+  {
+    "Path": "crates\\dc-desktop\\capabilities\\version-page.json",
+    "Bytes": 530,
+    "SHA256": "6377D2F3D3B07E1DDE03D7F77013F6023688168BC7396026839FC1F4FB851D29"
+  },
+  {
+    "Path": "crates\\dc-desktop\\Cargo.toml",
+    "Bytes": 994,
+    "SHA256": "7B900D4D3D48D8357E3D8896BA1EFFB4D5349D8C922A81B0849496B3AD1B6D91"
+  },
+  {
+    "Path": "crates\\dc-desktop\\icons\\.gitignore",
+    "Bytes": 155,
+    "SHA256": "21A809E55FC26A25D906DE72E4EE8C369C5DEC8A7640BF4325D69541D891B3A7"
+  },
+  {
+    "Path": "crates\\dc-desktop\\icons\\icon.ico",
+    "Bytes": 7786,
+    "SHA256": "73C71820A4163DDCDD3F9564BB2C36F7CC8A01E434BCE1C5ED0D0225E22CEC20"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\accept_graph.toml",
+    "Bytes": 372,
+    "SHA256": "7D75E3BE5B1A8A9752AC2FC86671AEA8F47E0508C26A43097FDCB27B741D9056"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\application_info.toml",
+    "Bytes": 396,
+    "SHA256": "D154B6F4D301ECF7BC4E17178AFE4D51F6918DF530110DCCBEC073BEF65C4557"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\execute_graph.toml",
+    "Bytes": 378,
+    "SHA256": "6A8CC8CB016C3493E92533895BEA0DC3B0D103CD43C7A6F3B68BCA673EE04CD2"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\health_check.toml",
+    "Bytes": 372,
+    "SHA256": "C9E903FEE265A1AE8A7B91C0BB4032A8CB95E180CAF52035139FEEF2F59D22EA"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\plan_objective_graph.toml",
+    "Bytes": 420,
+    "SHA256": "466A1DD82680659C836EC1BC596BA27BD528C872E180E8087393701A216C4FEC"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\start_attempt.toml",
+    "Bytes": 378,
+    "SHA256": "6891E402A928CD9876C2242005FA53B2452B258B291C9BC8D908C11183F7D5D2"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\submit_objective.toml",
+    "Bytes": 396,
+    "SHA256": "16DBB579BBED1EC91D167887E3E1FBCB00D6CAE08A91BCC6BD88F9F83823AC53"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\work_unit_ids.toml",
+    "Bytes": 378,
+    "SHA256": "A0F099497F597FDEF28BD88E37DDB29160433C0721CEF856F1B89A68A3FC3C68"
+  },
+  {
+    "Path": "crates\\dc-desktop\\permissions\\autogenerated\\work_units.toml",
+    "Bytes": 360,
+    "SHA256": "269EC168381D406579B5EDB25735561B13B2F826D0273303CF04E59080B6D272"
+  },
+  {
+    "Path": "crates\\dc-desktop\\src\\executor.rs",
+    "Bytes": 13355,
+    "SHA256": "588DDE73876437B393275C4671738750AE2E6BB8F3259B20DCFE0C37B3C48D0E"
+  },
+  {
+    "Path": "crates\\dc-desktop\\src\\main.rs",
+    "Bytes": 21115,
+    "SHA256": "A9F163FD26C5E8C5AC0F4B5212639E2D70569B5222CBD1EEED28DC1884CA754D"
+  },
+  {
+    "Path": "crates\\dc-desktop\\src\\store_source.rs",
+    "Bytes": 2383,
+    "SHA256": "DF0F01E5D6E49D12C9E2019E6ABE421703F172E7CA27F0DBDD49B8B54E6E0600"
+  },
+  {
+    "Path": "crates\\dc-desktop\\tauri.conf.json",
+    "Bytes": 2039,
+    "SHA256": "41E96F89406C1C575E6136B2091F25F5F6D8611DCDF1E52DA024FB1D33AB1C4B"
+  },
+  {
+    "Path": "crates\\dc-domain\\Cargo.toml",
+    "Bytes": 274,
+    "SHA256": "33A32A3392EB4327B311F3900E97A5FFA4F1936599279616329B71E8CBDA6596"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\compaction\\mod.rs",
+    "Bytes": 13899,
+    "SHA256": "A9366376E74B51DD9E418FF2EC8066EF3DF8F8417CAC4EC41946B4A25722CA02"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\compaction\\tests.rs",
+    "Bytes": 8765,
+    "SHA256": "07DE491AA5F751D0DE0E656043752273D21AA8C4DB7E4368AE91F46746F21185"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\context.rs",
+    "Bytes": 26901,
+    "SHA256": "8C57C0BCBE70F2D0BE91A45EC850F348FF9B4864F8A8767EC3EF100AE57B9D83"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\ids.rs",
+    "Bytes": 2789,
+    "SHA256": "E319A55D141522F12B46C87FFDEECB3EA09DAD62A153FCA15848400DB51BCEC9"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\lib.rs",
+    "Bytes": 292,
+    "SHA256": "C73591B206F7AE7E8897200D432811751E6FDEA75E3397CF1F0C3F3490B07E19"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\permission.rs",
+    "Bytes": 17697,
+    "SHA256": "971FFF746E4C8BEF0B009D250626796F6DB26E37DF2895A41D54C48D4DBD0726"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\resource.rs",
+    "Bytes": 17775,
+    "SHA256": "175F6B916803D574F58301F8999FE23F315E8ADBBB48E4985362070CE8E6E9F4"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\scheduling.rs",
+    "Bytes": 22864,
+    "SHA256": "9518AB822CAFCE433189CFEE7FFDEB9CAA7DF2E9C81B802FE48334A7FF333079"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\self_development.rs",
+    "Bytes": 27173,
+    "SHA256": "68E44373820D63E177CDDF3D2ACF081FEF081960F9A1AFFA74E953AE41DC2766"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\structure.rs",
+    "Bytes": 2097,
+    "SHA256": "FB47E8B08FC0E03DC7B3B161F4609E16421C7720CE680013463D95B60C91D632"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\topology.rs",
+    "Bytes": 2263,
+    "SHA256": "62FABD87F34279694E69AA64BBE674ABFC40A031A265FB6EF1D5B23404405F89"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\usage_binding.rs",
+    "Bytes": 5195,
+    "SHA256": "FA279A71ECCF50BA246E623473DA105B45C341CDD08FF6C16F8A2A43C6776678"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\commit.rs",
+    "Bytes": 8405,
+    "SHA256": "CD9ADE5329264453886F1538557EA41243B80D7CB0A99597614F8FBF7A9EA1FE"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\continuation.rs",
+    "Bytes": 7028,
+    "SHA256": "094D4B26F971DCE1027B2BF2981D29670998969D8AE8186DFC533895171BB304"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\explanation.rs",
+    "Bytes": 11616,
+    "SHA256": "E31074258F3D08FEDEAAAC72AD0EDDCAA0BF51FA8AE01D04FF95A3BA2C05F063"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\goal_change.rs",
+    "Bytes": 12261,
+    "SHA256": "32232FE64FF902907AA4B133AFC7C74A6530F2BF223FAC896ED5F3A889022AE2"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\lifecycle.rs",
+    "Bytes": 31022,
+    "SHA256": "F829B8C9A0E0CDB2B6518BE472AD39BC4634AB8468A1AD0C1AD4882D70AFE385"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\links.rs",
+    "Bytes": 33273,
+    "SHA256": "7EB1DDA31BFAAEDFDC3C61DB5E469CC83EC02F393B4FE380B7E19C7BB2521FF5"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\owner_rejection.rs",
+    "Bytes": 6718,
+    "SHA256": "49BA44FCAA2C53A5D2A6453A886B5B327747F2FD5903F97D0E1ACA5656D02F51"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\owner_return.rs",
+    "Bytes": 10568,
+    "SHA256": "152F17744208585CEDEFFFDB8994B4F0D527D26030A57D787B51B9C6B5DE1FC4"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work\\result.rs",
+    "Bytes": 32668,
+    "SHA256": "EB8055C4584CE2382C0B5B472C1DEE08835F1F9537E238FA8FFB80FD5C29101E"
+  },
+  {
+    "Path": "crates\\dc-domain\\src\\work.rs",
+    "Bytes": 23227,
+    "SHA256": "7D628065521F86144BFAAF1626118B5F44B4E303E3CB71496D6E51CA4F52328A"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\adversarial_acceptance.rs",
+    "Bytes": 33669,
+    "SHA256": "1AC23A57F2391341AD59D2E50F405B0C7716F20EABC70E59E963F0A3DD975F5C"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\authority_resources.rs",
+    "Bytes": 39775,
+    "SHA256": "D3BABFF690232BC7D0FCC06F764B10816A45290D773B92A65C3CBBA11D4BF1BB"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\cases\\continuation.rs",
+    "Bytes": 11725,
+    "SHA256": "5E0F8FE6CA6F25E8A26596161CFCAFE90B6EF6251115EA42653F0F8A43338ABC"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\cases\\owner_rejection.rs",
+    "Bytes": 14389,
+    "SHA256": "748C707014A3C2A070B9A3A466F225C5778B73227F217731B71A09293EA86B3C"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\cases\\owner_return.rs",
+    "Bytes": 21442,
+    "SHA256": "EA0DD75C9F9A20EA29ACCA222933FA026EAD8B33EB175BCB6BBD0904ABD49F3F"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\identity_contracts.rs",
+    "Bytes": 1168,
+    "SHA256": "12824004331838652068E24719412EFD0FAB8E37CA0CF6253D774FFE0679A37B"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\lifecycle_contracts.rs",
+    "Bytes": 44936,
+    "SHA256": "CFA06757788BA6E4383C088DF78210E31FC7E72B15B93E3C1F4466F1F529720F"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\scheduling_contracts.rs",
+    "Bytes": 22139,
+    "SHA256": "3554E886E66A1EAD23AA6EF2C3E3120340EC95F7952B7A75E8F8DFCB48595028"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\usage_bindings.rs",
+    "Bytes": 8961,
+    "SHA256": "83C8591D1C556F1ACC75E8978A85159CE774A7704DC3A0B624B8F5FF05541F54"
+  },
+  {
+    "Path": "crates\\dc-domain\\tests\\work_contracts.rs",
+    "Bytes": 74143,
+    "SHA256": "9F58A25DC69515F320740E0D43DC31112903DDF7613BC845C18CAB53207AE271"
+  },
+  {
+    "Path": "crates\\dc-protocol\\Cargo.toml",
+    "Bytes": 588,
+    "SHA256": "1180B4A9AC05CB5D9E956DF576551FE8A84A577E5BB59ABBA8FA5683659C5DF1"
+  },
+  {
+    "Path": "crates\\dc-protocol\\src\\auth.rs",
+    "Bytes": 18494,
+    "SHA256": "4CEF520D012709EF7B9F8E65770E5F462DC3F2F2029AFA1B985A71426D3A2DBF"
+  },
+  {
+    "Path": "crates\\dc-protocol\\src\\authority.rs",
+    "Bytes": 17485,
+    "SHA256": "D3FCECDF8455ED342D142DC8C43C54C796536D1A4A219D733F38D7FCA0960C95"
+  },
+  {
+    "Path": "crates\\dc-protocol\\src\\lib.rs",
+    "Bytes": 11176,
+    "SHA256": "B247072D9932A0569AC997D1E6991D521DD652BB2CEF435B817F5665EF058AAC"
+  },
+  {
+    "Path": "crates\\dc-protocol\\src\\outcome.rs",
+    "Bytes": 6928,
+    "SHA256": "E947531892779ACC9151C843CED70C4F1A218D847CD5257FD9577E376890D274"
+  },
+  {
+    "Path": "crates\\dc-protocol\\tests\\authority.rs",
+    "Bytes": 17866,
+    "SHA256": "D93533A087537EB9014F2323AB746A22F23176D4ED65E8AC88439DD6F649F311"
+  },
+  {
+    "Path": "crates\\dc-protocol\\tests\\envelopes.rs",
+    "Bytes": 11235,
+    "SHA256": "D8CE79548674D49BEE471C7A2E4A11DB6AFAB1776980C84EDCAB2CF5B76EE2E8"
+  },
+  {
+    "Path": "crates\\dc-protocol\\tests\\outcomes.rs",
+    "Bytes": 9824,
+    "SHA256": "3178314F368895C3C33F46674A5521E18A6FA6B51C77590C1B98882883779B3A"
+  },
+  {
+    "Path": "crates\\dc-store\\Cargo.toml",
+    "Bytes": 383,
+    "SHA256": "9F157670F8DC8D96F5F716A81AF4C225A4041D463FB228E8B90E886E0F88F8DD"
+  },
+  {
+    "Path": "crates\\dc-store\\src\\lib.rs",
+    "Bytes": 23052,
+    "SHA256": "BFEF4235AAC795D7FC6AFD41D69FE2341F8B01098C9AFED569E5FF13554C30C8"
+  },
+  {
+    "Path": "crates\\dc-store\\src\\sqlite.rs",
+    "Bytes": 44177,
+    "SHA256": "1CBE624DD860E08D87C99F4D0052E0DC75A1D2FA35734239CF88FE6CB3C43CFF"
+  },
+  {
+    "Path": "crates\\dc-store\\tests\\integration_domain.rs",
+    "Bytes": 5593,
+    "SHA256": "A307E4B18569C6F48314E060D23DF0E3E9B10178F637149846D9D9FFA479F554"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\Cargo.lock",
+    "Bytes": 2524,
+    "SHA256": "F108A2BCD8DF580E78711DB7669585FF10C1F012ED8E9EF068B81A993E0BC1E2"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\Cargo.toml",
+    "Bytes": 357,
+    "SHA256": "EAC1860B4BAD6430BFFDA81098F5BA493E1D45FB1234066B32FCDBF8563BDE2A"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\src\\admission.rs",
+    "Bytes": 8725,
+    "SHA256": "5983684B6D9A26A8AFAC12F8F8B63731D9E5109D18AEC7F297C313334E9B33D9"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\src\\anchor_store.rs",
+    "Bytes": 10026,
+    "SHA256": "74DD337069BAE4FCE27F354691224D9A73F5784C8D043F21976D93795FD8B629"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\src\\authority_anchor.rs",
+    "Bytes": 2245,
+    "SHA256": "676CABE59C34FCE4B2A2CF7BC8459DDAA24D48BCDC7681016CD19662D57A002C"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\src\\lib.rs",
+    "Bytes": 803,
+    "SHA256": "19436809B8D2377A6CB380096B3715BCB20E903A03D1F79AFE0927DE19A7F6E7"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\src\\recovery.rs",
+    "Bytes": 17947,
+    "SHA256": "5ECBFB1046F9CC10CF7BB1C10889C8EBC1F39147E237D5962503857422C3F945"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\tests\\admission_generation.rs",
+    "Bytes": 9646,
+    "SHA256": "ECB6A87927171EC87BD6D7F477C0B8010F8F2B0E9EBB37A7157946BA88D856D4"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\tests\\crash_restart.rs",
+    "Bytes": 6036,
+    "SHA256": "812A61A540F094E0395AA52D3D77FAB59A1B3EC029BA6D68A4174F568F3EE866"
+  },
+  {
+    "Path": "crates\\dc-watchdog\\tests\\recovery_evidence.rs",
+    "Bytes": 16729,
+    "SHA256": "5EF94DB8B087CF44EDAB282E0FAE9A893DADB8F307CC082D25E501AEAA1C73F5"
+  },
+  {
+    "Path": "crates\\dc-windows\\Cargo.lock",
+    "Bytes": 2410,
+    "SHA256": "9E9E68E4732FCD20390EF9EABAA34F709B10B4411376F5ED25AD22FB76B54D37"
+  },
+  {
+    "Path": "crates\\dc-windows\\Cargo.toml",
+    "Bytes": 412,
+    "SHA256": "08B4B985A4799C6AFEDE509DEB4B59383BC4C3C9D4B45A542377D0D59C86BF40"
+  },
+  {
+    "Path": "crates\\dc-windows\\src\\admission.rs",
+    "Bytes": 5610,
+    "SHA256": "3A40BF48FAF83042EA95EB6E947DAB45A30561CD60C514BE3389005F2CDDA32C"
+  },
+  {
+    "Path": "crates\\dc-windows\\src\\appcontainer.rs",
+    "Bytes": 7523,
+    "SHA256": "259C5D706ECFCDBA9446451D891F14A2464DFB7D8A9B6A71266D2884402492E7"
+  },
+  {
+    "Path": "crates\\dc-windows\\src\\dpapi.rs",
+    "Bytes": 5839,
+    "SHA256": "A32C1BDA0ACD8D1E25EC745D35A928143F010172A86FB20E569B12FBF6E8BB34"
+  },
+  {
+    "Path": "crates\\dc-windows\\src\\identity.rs",
+    "Bytes": 4380,
+    "SHA256": "E030E7A5BFDFBB151D790A1E0D49525E3E89B1AD95492057D6A536B6F508957E"
+  },
+  {
+    "Path": "crates\\dc-windows\\src\\job.rs",
+    "Bytes": 5380,
+    "SHA256": "5C11EF53045B6174FF79FFCF2B227B92C51B32DDDEAF3EC70BBBC760B163C2DE"
+  },
+  {
+    "Path": "crates\\dc-windows\\src\\job_os.rs",
+    "Bytes": 16540,
+    "SHA256": "555F5F084C6300FCA8E242C00A2A1F6EAFDF17CBCFD42A27A18CC2D72E0635E0"
+  },
+  {
+    "Path": "crates\\dc-windows\\src\\lib.rs",
+    "Bytes": 712,
+    "SHA256": "FEE3F6F63B2A18693E8244E5CD5123E1FA6ADD17DA21EC57758980AA556639BB"
+  },
+  {
+    "Path": "crates\\dc-windows\\tests\\identity_admission.rs",
+    "Bytes": 3012,
+    "SHA256": "8B6C6BAA9FED9803D057EA87C26C97032DB71D818CD3BD5DD89D24D2EE54C414"
+  },
+  {
+    "Path": "crates\\dc-worker\\Cargo.toml",
+    "Bytes": 518,
+    "SHA256": "5E64F2B47F610D1780B0B8A0AB39AE7378DACA85728A37B894811A22D6E1DB65"
+  },
+  {
+    "Path": "crates\\dc-worker\\src\\error.rs",
+    "Bytes": 610,
+    "SHA256": "B1A888BD68EBB9ED4CD650FEE8C2E00637E1D0FCC63FAD16BBB4CECCDE58CF31"
+  },
+  {
+    "Path": "crates\\dc-worker\\src\\execute.rs",
+    "Bytes": 6024,
+    "SHA256": "937BE4C1EAF37F59C897128374D6391F6CC9E2DE1D8A9D55F54312E93EA2D878"
+  },
+  {
+    "Path": "crates\\dc-worker\\src\\lib.rs",
+    "Bytes": 580,
+    "SHA256": "A8911B962FA6E8EC4426E7456908A02604BB95ED38B1F789DC93D04CAEAB4270"
+  },
+  {
+    "Path": "crates\\dc-worker\\tests\\execute.rs",
+    "Bytes": 3611,
+    "SHA256": "F27C1D1C7698D8524672E7A89B42565FA1E758712A8BFCBE07C74CAA19636834"
+  },
+  {
+    "Path": "crates\\dc-worker\\tests\\live_e2e.rs",
+    "Bytes": 4842,
+    "SHA256": "2B3976C48B5B7524CFD1E3686376C98E7024794304B30731C95CBE8BBA631657"
+  },
+  {
+    "Path": "docs\\implementation\\AUTHORITY_RESOURCES.md",
+    "Bytes": 22836,
+    "SHA256": "CA8110883AA775BF89FA085FFCB8BD3CAD60320CF62FF1F7506958AF01291539"
+  },
+  {
+    "Path": "docs\\implementation\\BUILD.md",
+    "Bytes": 13553,
+    "SHA256": "11C20E2373B9E803728FF428FC13F31E109E40A1B43B4C70E017E4FB2CA94A2C"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260910T061720023Z.json",
+    "Bytes": 2270,
+    "SHA256": "F571AD3B3EE9421F5BAD4EABC2280273B90C760183A68D63F26F448DC26BBB67"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260910T061854703Z.json",
+    "Bytes": 2270,
+    "SHA256": "F76B87A930FE76CE781A7F1EDB11FE55C0DD1BDA68AD7A24CBF50A4804246E10"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260910T061957420Z.json",
+    "Bytes": 10670,
+    "SHA256": "A90CE07D037DE8FBD9BDE4CC43E86EB48746ACA33D4D8844079D66AE6A542DAE"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260910T062319099Z.json",
+    "Bytes": 11986,
+    "SHA256": "B3A6083E03AE92C8B2E1ACDAB4F6149F8048BB1D6D69ABDF394320DC7FBC3A0B"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260910T062510115Z.json",
+    "Bytes": 18498,
+    "SHA256": "385B5B4F7F50C5FA68186741CAEEB58CC621A11F2E9DF8B398ADCBD5D1D7C7BA"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260910T220911832Z.json",
+    "Bytes": 23447,
+    "SHA256": "789C18DFF2C05E362E8092214D67258864A1ADFF41415754A4B48A481FF902FA"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260911T081433552Z.json",
+    "Bytes": 24484,
+    "SHA256": "0974CC984E07C4292C5194DD54B80BF822689205F37E3AA8B0916D8719751D9C"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260911T083737895Z.json",
+    "Bytes": 25373,
+    "SHA256": "F29E8F448CC7E4BF9F05CB3BB317BD9A682C628776D66969F56C51A18F3E7D15"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260911T143729566Z.json",
+    "Bytes": 4388,
+    "SHA256": "0D33048A0448EEEAE9D696DB43635BF09044438E7C59ACE80D6950E7EEB0058C"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260911T143910905Z.json",
+    "Bytes": 26247,
+    "SHA256": "7E540C5B9A2C66248B56F1B15EA179DAAB122BB61CF381331AEB6F850BFF3E80"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260911T210410407Z.json",
+    "Bytes": 26974,
+    "SHA256": "0E6E5290C299BC08449730CD27B3EE570E95A596CD2E52329823103466D3D95E"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260911T212640996Z.json",
+    "Bytes": 27714,
+    "SHA256": "E589F16B82FDF69D864F736A66C6ED99F0DDD36309172D26863CFF2C988522DF"
+  },
+  {
+    "Path": "docs\\implementation\\checks\\verification-20260912T100136493Z.json",
+    "Bytes": 28088,
+    "SHA256": "D5BA97F8F26BCA9C9F493CDE6BDC7A75E3C5A2A937A2E7EFFBA9B70DA45F912A"
+  },
+  {
+    "Path": "docs\\implementation\\CONTINUATION_NEW_ATTEMPT.md",
+    "Bytes": 5630,
+    "SHA256": "1554A71F9CF1DC604A3DBD1D0651EF2137FAD04023CA3BB81275DC3553C3CCE6"
+  },
+  {
+    "Path": "docs\\implementation\\contracts\\contract-map.json",
+    "Bytes": 15584,
+    "SHA256": "EE714282C5947332F30945C0198036DCAFCAB65490817D3542F81F350F68EF2C"
+  },
+  {
+    "Path": "docs\\implementation\\contracts\\topology-head.sql",
+    "Bytes": 500,
+    "SHA256": "062CFA54F336AF9F68F8A6AAFF457ACFACEE307739BD399E87D59C11AA5969F6"
+  },
+  {
+    "Path": "docs\\implementation\\DELEGATED_LATENCY_INPUT.md",
+    "Bytes": 4536,
+    "SHA256": "2BF1BB91E6D00786C8EF9CF44767770A36A6F22B3485C450368B92721E911B42"
+  },
+  {
+    "Path": "docs\\implementation\\DELEGATION.md",
+    "Bytes": 13684,
+    "SHA256": "AD4D0EF812C1C107CBD6505C5C846808B2556CD973FA8C91A10E95A49EF24915"
+  },
+  {
+    "Path": "docs\\implementation\\DESKTOP_STAGE1.md",
+    "Bytes": 15920,
+    "SHA256": "4A7F4FAD0E719319237DF076C86EC5882BA7D5D6724B61DA334FA969B08CDF41"
+  },
+  {
+    "Path": "docs\\implementation\\LIFECYCLE_GATES.md",
+    "Bytes": 14106,
+    "SHA256": "8F5AA16EF36B968774E96E9CA1BDD26AF55E50B6FB79CD15B2758CA12A07D347"
+  },
+  {
+    "Path": "docs\\implementation\\MODEL_ASSIGNMENTS_20260912.md",
+    "Bytes": 5824,
+    "SHA256": "E89C622F5FF7765E56AD2FCDEAFC6D5A05D17B38EB037E672774602B173B0418"
+  },
+  {
+    "Path": "docs\\implementation\\NATIVE_SMOKE.md",
+    "Bytes": 3877,
+    "SHA256": "3CFE24719DBEC51AFC0EBF1DFDB25B7D86203384F9F7DC63FADBF5B0275358A5"
+  },
+  {
+    "Path": "docs\\implementation\\OWNER_REJECTION.md",
+    "Bytes": 14632,
+    "SHA256": "69D8FF6649EED547BCCECF17FA5640FCB30E4F91009531BAD2C288940413FE9C"
+  },
+  {
+    "Path": "docs\\implementation\\OWNER_RETURN.md",
+    "Bytes": 17778,
+    "SHA256": "7E9D6DF3983353F813277738C1F0099DDABF2CED6199F1862C62D7E156222DC2"
+  },
+  {
+    "Path": "docs\\implementation\\PROTOCOL_CODEC.md",
+    "Bytes": 12857,
+    "SHA256": "4C7ECC8FB355C3DAE093F2467C4575D2AFE281C300CDE55BAAFBB870024BD85F"
+  },
+  {
+    "Path": "docs\\implementation\\Q7_MERGE_ANCHOR.md",
+    "Bytes": 3414,
+    "SHA256": "8C5FFB3CC56F87272872839A751697E9396E80306C4E9A4234848CC5A547059F"
+  },
+  {
+    "Path": "docs\\implementation\\RESULT_TRANSITIONS.md",
+    "Bytes": 10855,
+    "SHA256": "FEBA0DA50B864CC4A23B05EED73939FED1C2D19929A22F0428A226B3DE93F65B"
+  },
+  {
+    "Path": "docs\\implementation\\REVIEW_20260910.md",
+    "Bytes": 20732,
+    "SHA256": "47079B91F2A4FA2D6A76EC10099199CE4A56FEDEC40DF302B6829857B2EEA1F0"
+  },
+  {
+    "Path": "docs\\implementation\\SCHEDULING.md",
+    "Bytes": 5905,
+    "SHA256": "1B59277B684752461806E1DB12128E5888C5B2A0CED9FCA96F82DD209F14C405"
+  },
+  {
+    "Path": "docs\\implementation\\STATUS.md",
+    "Bytes": 14170,
+    "SHA256": "A1017E57CB5095B1E551667816863F278DFD769EF8587B8B4D7EFD715EA8D886"
+  },
+  {
+    "Path": "docs\\implementation\\TOPOLOGY_REVISION.md",
+    "Bytes": 9531,
+    "SHA256": "0015303C6A8219A6AF3ECC5BA24E62F1AE698EA2CE9A343B344C769992F7808C"
+  },
+  {
+    "Path": "docs\\implementation\\USAGE_BINDINGS.md",
+    "Bytes": 12392,
+    "SHA256": "FA57EC728FF702198569A52F5436A6F62E2E4ED1AA3CBA90AA740B8FC6AA67F9"
+  },
+  {
+    "Path": "docs\\implementation\\WORK_DOMAIN.md",
+    "Bytes": 22168,
+    "SHA256": "9A59CC14BB2366EE3CF6A97CB697D3340DE416710FD41A09E6F98AAB790FA81E"
+  },
+  {
+    "Path": "docs\\technical\\00_BRANCH_NAVIGATOR.md",
+    "Bytes": 8333,
+    "SHA256": "3825A789A1C48332267918E00EC191C7C32501FB25BDAB1F09402BC429F9669C"
+  },
+  {
+    "Path": "docs\\technical\\07_OWNER_DECISIONS.md",
+    "Bytes": 59360,
+    "SHA256": "C2A37C6535F9A67835281DD0A86CB2F3055D946F0B29D182DE888363EB0B5558"
+  },
+  {
+    "Path": "docs\\technical\\08_STANDALONE_ARCHITECTURE.md",
+    "Bytes": 79487,
+    "SHA256": "6CC1E09502AAD7A4A84E396DC04BFE384C0A89B39245AE0F710D032C0C1E61AB"
+  },
+  {
+    "Path": "docs\\technical\\09_INTERFACE_RESEARCH.md",
+    "Bytes": 64318,
+    "SHA256": "19BE71009AE42E140C0D7734661AE45BB0A5D0F18E1466E7708D64AAB64FB84B"
+  },
+  {
+    "Path": "docs\\technical\\10_RISKS_AND_HIDDEN_BOUNDARIES.md",
+    "Bytes": 36525,
+    "SHA256": "5AB084C33BEA6DE0C2BF88A97807839837374287C13AC63B289217D8E7A93751"
+  },
+  {
+    "Path": "docs\\technical\\11_DESIGN_DIRECTION_AND_PLAN.md",
+    "Bytes": 151602,
+    "SHA256": "6A14394CF6A9F500AB18226F2075E813C700AE3ECD84CB5FAF847950FA735C56"
+  },
+  {
+    "Path": "docs\\technical\\12_COMPLETENESS_REVIEW_20260904.md",
+    "Bytes": 12104,
+    "SHA256": "7C7EBDB96A756B4E48DC8FDD6152F483B1EEF0070D8464B67E1232C8C0FB6CEF"
+  },
+  {
+    "Path": "docs\\technical\\13_TECHNICAL_CONSTITUTION.md",
+    "Bytes": 42235,
+    "SHA256": "075FF4D855D5A87E0F96DA988F4D50651A004B1B0105C3443A067E3DACF2877C"
+  },
+  {
+    "Path": "docs\\technical\\14_DATA_STATE_AND_RECOVERY.md",
+    "Bytes": 74664,
+    "SHA256": "F1EEFF78043E76BB4A3A66BE276589A541A469F9FE72A7428FD3C273B868853E"
+  },
+  {
+    "Path": "docs\\technical\\15_CONTEXT_MEMORY_AND_INSTRUCTIONS.md",
+    "Bytes": 53170,
+    "SHA256": "2D8436ECAF41AAD8758C472780A7ED60067DDA1B27320358056DCBC1C45053B0"
+  },
+  {
+    "Path": "docs\\technical\\16_EXECUTION_MODELS_AND_VERIFICATION.md",
+    "Bytes": 61502,
+    "SHA256": "D7FF0E77F4920B162B7D013BC160C8CA72EFFA6D889197461932119D96EED1DA"
+  },
+  {
+    "Path": "docs\\technical\\17_PERMISSIONS_SECURITY_AND_ACTIONS.md",
+    "Bytes": 51827,
+    "SHA256": "F0CC6941AA5978192CD332ECA883A0900B46FE2AF161445EF2F50B2D0218C9C7"
+  },
+  {
+    "Path": "docs\\technical\\18_BEACONS_JOURNAL_STOP_AND_RECOVERY.md",
+    "Bytes": 56791,
+    "SHA256": "29448170F58EE95519265438BC73475F7779016FDBDF06CA7B02F348D3540C31"
+  },
+  {
+    "Path": "docs\\technical\\19_CODE_FUNCTION_AND_DEPENDENCY_MAP.md",
+    "Bytes": 71964,
+    "SHA256": "D20EF45C543231F86F247EC6234BC4F7CAA037E618024C2F192C6DBE9FDD7713"
+  },
+  {
+    "Path": "docs\\technical\\20_IMPLEMENTATION_ORDER_AND_READINESS_EVIDENCE.md",
+    "Bytes": 39744,
+    "SHA256": "CFAFA0048F8699EC190477C4A779F265D4F7615C521C48A7BFDE5DA96206117E"
+  },
+  {
+    "Path": "docs\\technical\\21_DECISION_CODE_VERIFICATION_MATRIX.md",
+    "Bytes": 39875,
+    "SHA256": "584F7E786CACF7E7548B9B2C8D9BFB6DD4ED97EE71DBDBD0169B9825972D9779"
+  },
+  {
+    "Path": "docs\\technical\\22_AGGG4KS_INTEGRATION_PATTERNS.md",
+    "Bytes": 4711,
+    "SHA256": "4C6954D504FA8896896B6780B561D29DA527E34375E6CFE64F62952637DCE264"
+  },
+  {
+    "Path": "docs\\technical\\22_DESIGN_REVIEW_20260907.md",
+    "Bytes": 30628,
+    "SHA256": "DF608C9ECE91F6FC28D365141CF1EB4A873559250E8556FC89FE1A463654FDDA"
+  },
+  {
+    "Path": "docs\\technical\\23_EXTERNAL_CRITIQUE_AND_REFINEMENTS_20260908.md",
+    "Bytes": 41139,
+    "SHA256": "601FFF798B867BC382CCCEB01F9758126A507904E103E2C3E59924C177E6F549"
+  },
+  {
+    "Path": "docs\\technical\\24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+    "Bytes": 80871,
+    "SHA256": "958290AAA4741C429D49039BC48D023AC5747C6E920ED4BCB82B60CC8EC0F362"
+  },
+  {
+    "Path": "docs\\technical\\25_RESOURCE_ALLOCATION_AND_COMMIT_QUEUE.md",
+    "Bytes": 81750,
+    "SHA256": "8EBF89F05F66525E22B99143D80887ACD7BC772C59086E6C7DA34F0C3BC54288"
+  },
+  {
+    "Path": "docs\\technical\\26_COMPOSITE_STATES_AND_EVOLUTION_TESTING.md",
+    "Bytes": 83401,
+    "SHA256": "87CB789DCC7A2B80B3C99A02A64D8A0F34766CABBF5017359B8F9F52AD5C5F85"
+  },
+  {
+    "Path": "docs\\technical\\checks\\design_check_20260907.json",
+    "Bytes": 3931,
+    "SHA256": "CF0904F3873BC7504F2127648C8C8D97E7B90E6FE0343C44E63439A7975B5D83"
+  },
+  {
+    "Path": "docs\\technical\\checks\\design_check_20260908.json",
+    "Bytes": 4732,
+    "SHA256": "4090B1991507E24A5C9BBFA59A3680CD95D76E5DC277333369F421F0A7F748E7"
+  },
+  {
+    "Path": "docs\\technical\\checks\\design_checker_self_test_20260907.json",
+    "Bytes": 73,
+    "SHA256": "DB1CC0640F0783797493CB689288009728F862C66D3294425D86CBA99DB53908"
+  },
+  {
+    "Path": "docs\\technical\\checks\\design_checker_self_test_20260908.json",
+    "Bytes": 73,
+    "SHA256": "17B098FC272D6DB5FED04DA86E4849D3E2FD0EF0AB32EA4A3C056F9E7122530B"
+  },
+  {
+    "Path": "docs\\technical\\checks\\verify_design.ps1",
+    "Bytes": 14083,
+    "SHA256": "6E5441CBC12E654E135C91F31EC1750BF800D38B2619159E77C7BED266DD1CC1"
+  },
+  {
+    "Path": "package.json",
+    "Bytes": 992,
+    "SHA256": "FCD3E621A966146EB2FFC120748008D7D8A4E9243ED371F2D0612535C0ABE02B"
+  },
+  {
+    "Path": "pnpm-lock.yaml",
+    "Bytes": 39955,
+    "SHA256": "EC22F0FDE1DF4C227BBA64C6AD8FA519F4E78293B7C542C0D84D829486281462"
+  },
+  {
+    "Path": "pnpm-workspace.yaml",
+    "Bytes": 135,
+    "SHA256": "500AFEE74F0E5DFEF109FA40EB51B58D46B842C7FB16666AA6782D4056A2DC4E"
+  },
+  {
+    "Path": "rust-toolchain.toml",
+    "Bytes": 86,
+    "SHA256": "5AE1B674936687995AD335AC0CAA1C1F702645D9B7A1071CA0CFECAF31DFAC8B"
+  },
+  {
+    "Path": "tools\\build-env.bat",
+    "Bytes": 724,
+    "SHA256": "2B76656A4E9CE93643FD484CC69349665FC43EEE34E3638504A138DFE4EACAEB"
+  },
+  {
+    "Path": "tools\\build-release.sh",
+    "Bytes": 3493,
+    "SHA256": "80FA698588460893F2282C3CB0757FDD552FCD93AC320D426C90934E7A246CAF"
+  },
+  {
+    "Path": "tools\\check-architecture.mjs",
+    "Bytes": 21053,
+    "SHA256": "461BA2C5135C6F246C609CF2AEC252601CC164701737964F0B487DE2E09A7684"
+  },
+  {
+    "Path": "tools\\check-contract-map.mjs",
+    "Bytes": 3294,
+    "SHA256": "E56656846423F8750873BABB4A67B17A707A78A387CDD3305C4BDE5EB7AF9E62"
+  },
+  {
+    "Path": "tools\\delegate-latency-review.json",
+    "Bytes": 574,
+    "SHA256": "18150E676A47994B9273639A6AE2F08DEBE3AB805F7EFBC93E7FA37DF9F4779D"
+  },
+  {
+    "Path": "tools\\delegate-obligation-impact.json",
+    "Bytes": 1304,
+    "SHA256": "4C21175A51CE772C29AC6B504ED659710483397393FDF628A828087E2FE3FEDB"
+  },
+  {
+    "Path": "tools\\delegate-owner-rejection-review.json",
+    "Bytes": 1840,
+    "SHA256": "EF344DA47291055A9222157798A4D7AB5FE079A9D37ED3AC507C1B162CE8A904"
+  },
+  {
+    "Path": "tools\\delegate-owner-rejection.json",
+    "Bytes": 3735,
+    "SHA256": "2DBF9DCD734496FAABA8932C2137879817F191FDC7B9906F1A74FFAF2A1B2D6A"
+  },
+  {
+    "Path": "tools\\delegate-owner-return-review.json",
+    "Bytes": 2021,
+    "SHA256": "94121FF7B63F54D3BAA5A2D4615455E0256DC6A9912CF601B201B1BBAF95D2EF"
+  },
+  {
+    "Path": "tools\\delegate-owner-return.json",
+    "Bytes": 4318,
+    "SHA256": "6CA6F51C7955D58DF7641443EF3CDF45BE32C4C4E6789B62E0C158A1692A1846"
+  },
+  {
+    "Path": "tools\\delegate-protocol-codec.json",
+    "Bytes": 2736,
+    "SHA256": "773B813F9DE01D3649F7DBF2C8CEF9866AF21509BB90DAD64B4F94DFF2193BBF"
+  },
+  {
+    "Path": "tools\\delegate-protocol-review.json",
+    "Bytes": 1114,
+    "SHA256": "C501D188018ADBE394F26069E806E0EDF4E91734DDB3F8A1E6EF43AD22BFCADD"
+  },
+  {
+    "Path": "tools\\delegate-result-plan.json",
+    "Bytes": 2369,
+    "SHA256": "8C6BF7BB07071ADBF7D931528B02B2DD7C1BD5927ECEA0FE833A628B51856C1D"
+  },
+  {
+    "Path": "tools\\delegate-result-review.json",
+    "Bytes": 1008,
+    "SHA256": "F0E8F7D18E1AE00DAFBDD7880F620CFAF85BE18D1C4ECE41FFD9E7E5537D76C3"
+  },
+  {
+    "Path": "tools\\delegate-usage-binding.json",
+    "Bytes": 2194,
+    "SHA256": "B7675782645315D5A27B6EDEC5F0ADA460E9A6EDE748C1910BEB498575584BAA"
+  },
+  {
+    "Path": "tools\\delegate-usage-review.json",
+    "Bytes": 1102,
+    "SHA256": "E89C35EF1D9DE437939D7AF3C33693967B4BF289A505A1EF78AE04C86FAD4F13"
+  },
+  {
+    "Path": "tools\\Enter-BuildEnvironment.ps1",
+    "Bytes": 2002,
+    "SHA256": "0709176E702639CB5FC0040BF65E8BE2D1B564FAA9E099753F43398CCCABB6DF"
+  },
+  {
+    "Path": "tools\\env-worktree.sh",
+    "Bytes": 2050,
+    "SHA256": "E9DB6562ADAA42FCB597A4852AA911C27CD599A4C4977BC71C66F7154586AFB1"
+  },
+  {
+    "Path": "tools\\external-canary-deepseek.json",
+    "Bytes": 217,
+    "SHA256": "6BCC944B02E1ED176598B8228C6E175C562D8CC77815D273C76FB094D6D47E77"
+  },
+  {
+    "Path": "tools\\external-canary-kimi-pinned.json",
+    "Bytes": 263,
+    "SHA256": "B009096D0E398D9D9599F2D84D3EF8F1FB40A7DDC82F1031D25294C36A3D2D1E"
+  },
+  {
+    "Path": "tools\\external-canary-kimi.json",
+    "Bytes": 204,
+    "SHA256": "33435338DC7C71E93102EE8ACEDA75C4477B7A5F3B0822A8243DD3D173FDE2FD"
+  },
+  {
+    "Path": "tools\\external-model.mjs",
+    "Bytes": 8060,
+    "SHA256": "074BF8665C38714A1947B35BC5353278E99BDC7D4DFE6CC721EB1694EC2D3804"
+  },
+  {
+    "Path": "tools\\external-qwen-tool-probe.json",
+    "Bytes": 282,
+    "SHA256": "BC0F7A700D671009DE2FD5520B9860E3DC512BC7F822C0D9CC7C104F8681C371"
+  },
+  {
+    "Path": "tools\\external-request.mjs",
+    "Bytes": 1618,
+    "SHA256": "4427B85484BA8E918057BA719798D2670D55FEC5951D73462BFE36236C32B69E"
+  },
+  {
+    "Path": "tools\\external-topology-tests-low.json",
+    "Bytes": 1199,
+    "SHA256": "E16BED7A2702B51634FE4164E76C96C67C544C15DFF4AA2AF1119DCDC4D7B603"
+  },
+  {
+    "Path": "tools\\external-topology-tests.json",
+    "Bytes": 1177,
+    "SHA256": "D48ABE99B78DC01A60954FB03BA144B847473A94D90EBC56A06D645A33FE1485"
+  },
+  {
+    "Path": "tools\\external-verification-direct.json",
+    "Bytes": 989,
+    "SHA256": "0F5C55F68DB35E338E7D9058D866809DCF3A4DE310DCD450E0CC441549EC8EF0"
+  },
+  {
+    "Path": "tools\\external-verification-review.json",
+    "Bytes": 1172,
+    "SHA256": "441E9D48A7C9CA9DEC3C60B8A42659B8380172CD7D2EB44EC5738FB92744B4CA"
+  },
+  {
+    "Path": "tools\\latency-kimi-pinned.json",
+    "Bytes": 274,
+    "SHA256": "CCA39B47FF075C507AB2013638943C6F5C5CF8185173482D48281452F006F39F"
+  },
+  {
+    "Path": "tools\\latency-kimi-pool.json",
+    "Bytes": 215,
+    "SHA256": "60307326D5873F4ACC285E526FB5C128EDF049763E8B1F42C0F5E8600F49789E"
+  },
+  {
+    "Path": "tools\\Prepare-CachedWindowsToolchain.ps1",
+    "Bytes": 17722,
+    "SHA256": "804E5FCE362A24A4421336E3377E8FC8D12B5C33300F85067B32AA52D3A0D196"
+  },
+  {
+    "Path": "tools\\tests\\check-architecture.test.mjs",
+    "Bytes": 7129,
+    "SHA256": "5000BF546627D4039FA918CB9FF4F235EEC78340CAB8C81C3EB51CACAD5FB6B4"
+  },
+  {
+    "Path": "tools\\tests\\check-contract-map.test.mjs",
+    "Bytes": 1593,
+    "SHA256": "F0494E5302A0E8EF1D2884D8CEF33BD56DB968D19E73C3D26B4A0603A6D7BA57"
+  },
+  {
+    "Path": "tools\\tests\\external-request.test.mjs",
+    "Bytes": 2038,
+    "SHA256": "3DCF95E3F11E295342DDA6232BB8344BA81FBBE31AD371B715C78F3FDAAD253B"
+  },
+  {
+    "Path": "tools\\tests\\topology-storage-contract.test.mjs",
+    "Bytes": 5000,
+    "SHA256": "66E8F074DC801186B8F59C8F3C43461238FC304DE37013436E28CC44A43C8080"
+  },
+  {
+    "Path": "tools\\Verify.ps1",
+    "Bytes": 5357,
+    "SHA256": "E80C745D64728137E49DB77D1B422E194D3F846DEE0609E0D0E14B385149F34F"
+  },
+  {
+    "Path": "tsconfig.json",
+    "Bytes": 777,
+    "SHA256": "D290C8661390AB32E30068C31DD59680997C5C2CF19EFDF7CD63EF1608684D84"
+  },
+  {
+    "Path": "ui\\assets\\app-icon.svg",
+    "Bytes": 337,
+    "SHA256": "52779881BA75BF6A8351D9239EDAD5393D34626B91015685DBD2696508D95C68"
+  },
+  {
+    "Path": "ui\\index.html",
+    "Bytes": 389,
+    "SHA256": "CA29B40BCD51CEEB02721FFCC4998636B28561253BC5DDA3CFFE9F530025E51F"
+  },
+  {
+    "Path": "ui\\src\\App.tsx",
+    "Bytes": 15402,
+    "SHA256": "1C2354E9F372C591B205C1476E7D260D5C034FFF065E35BD2C5AAB19494AFD26"
+  },
+  {
+    "Path": "ui\\src\\application-info.ts",
+    "Bytes": 9573,
+    "SHA256": "DF9ED8A6675A936361F4C2516F4921C3A20286FE7F46C5378D88DB40EB10533C"
+  },
+  {
+    "Path": "ui\\src\\main.tsx",
+    "Bytes": 250,
+    "SHA256": "BB58BD45AA441DBADF29EF23A8A72639CF41CCDA9CE9D8EDCC98DCE6FD4286A7"
+  },
+  {
+    "Path": "ui\\src\\styles.css",
+    "Bytes": 5978,
+    "SHA256": "A48E2ADF64719922F84DF5BCEEC2186B22EEB3A8AA83973357F86AB74C52F169"
+  },
+  {
+    "Path": "ui\\tests\\application-info.test.ts",
+    "Bytes": 5006,
+    "SHA256": "8D1928D1DCB694302AF336DD1A7D6FFFBA07123A37902248A377F2BFFBE629B8"
+  },
+  {
+    "Path": "ui\\tests\\desktop-policy.test.ts",
+    "Bytes": 4562,
+    "SHA256": "AB3EB2996154F347A2C325CD462C766073EFE866A7B231F598720ACE3E535AFC"
+  },
+  {
+    "Path": "ui\\tests\\page.test.tsx",
+    "Bytes": 1435,
+    "SHA256": "EC69189B70C9938AF20744CF3D3CE42ACD6543BA5F81D988676628E2B0959559"
+  },
+  {
+    "Path": "vite.config.ts",
+    "Bytes": 629,
+    "SHA256": "9ED9BCD8BD0F24AF4DA31D7CF6EE2CD4B94CEFFCABACA0FB085DEA2B67597D78"
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Code Factory Work Package",
+  "type": "object",
+  "required": [
+    "id",
+    "objective",
+    "base_sha",
+    "authority_keys",
+    "allowed_paths",
+    "prerequisites",
+    "acceptance",
+    "evidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^WP-[0-9]{3,}$"
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 10
+    },
+    "base_sha": {
+      "type": "string",
+      "minLength": 7
+    },
+    "priority": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "authority_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "allowed_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contracts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "command"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "command": {
+            "type": "string"
+          },
+          "must_pass": {
+            "type": "boolean",
+            "default": true
+          }
+        }
+      },
+      "minItems": 1
+    },
+    "negative_tests": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "preferred_models": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": [
+        "raw_logs",
+        "hashes",
+        "test_counts"
+      ],
+      "properties": {
+        "raw_logs": {
+          "type": "boolean"
+        },
+        "hashes": {
+          "type": "boolean"
+        },
+        "test_counts": {
+          "type": "boolean"
+        }
+      }
+    },
+    "non_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

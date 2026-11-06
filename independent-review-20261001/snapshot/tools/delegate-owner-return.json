@@ -1,0 +1,39 @@
+{
+  "model": "dash/kimi-k3",
+  "reasoning": "low",
+  "max_tokens": 5200,
+  "timeout_ms": 180000,
+  "task": "Propose Rust implementation for new work/owner_return.rs only, <=260 lines. Pure C01 function plan_owner_return(state:&RootLifecycleState, expected_row_version:RowVersion, current_scope:WorkScope, graph:&ValidatedGraph, decision:&OwnerRejectionDecision, review:&OwnerReturnReview)->Result<OwnerReturnPlan,WorkError>. Parent will expose lifecycle::check_root_basis(state,expected,scope)->Result<(),WorkError> containing existing row/scope/state coherence checks; call it. Exact return only from AwaitingOwnerAcceptance; no generic command bypass, no effects or new authority. Root-level and installation gates are NOT cleared; returning semantic stage is recording an accepted owner decision, not executing work. Do not validate current completion freshness: rejection remains possible after evidence becomes stale. Caller supplies trusted owner event and accepted assessment; no Deserialize anywhere, explicitly not authentication or proof of semantic truth. Decision fields owner_event_id,candidate_id,scope,final_verification_id,reason_evidence_id. Review fields assessment_id,owner_event_id,reason_evidence_id,candidate_id,scope,final_verification_id,assessment_evidence_id,repair_obligation_ids:Vec<EntityId>,publication_assessments:Vec<PublicationImpactAssessment>. Require exact decision/review/current candidate/final review bindings (add public read-only getters to ReviewedCompletion externally if needed). Repair obligations nonempty <=MAX_ITEMS unique and all belong to current exact objective; not allowed to create/change objectives or obligations. All source graph roots/current objective must exactly agree with state root/current_scope, graph revision expected==current; ValidatedGraph guarantees remaining structure. PublicationImpactAssessment {publication_id, expected_row_version, effect:PublicationImpact}; enum PublicationImpact {Affected,Unknown,ProvenUnaffected{evidence_id:EntityId}}. Assessments unique bounded and refer only to publications of this current work AND objective. Missing assessment means Unknown, not unaffected. For each publication of that work/objective in supplied graph: capture expected full PublicationState read condition even when unchanged; Affected/Unknown changes Valid -> Unresolved with reason_evidence_id=owner decision reason and row+1 (overflow error); already Unresolved/Withdrawn never reopened or rewritten. ProvenUnaffected leaves exact state unchanged; nonempty typed evidence ID is only reference to future trusted machine evidence, not a model flag. Do NOT rewrite ResultPublication, historical packet, obligations, resource ledger, other work or objective. OwnerReturnPlan private fields getters for root replacement, expected root row, expected graph row, publication state read set and changed replacements, returned ReviewedCompletion, decision,review. On success root.stage Executing; candidate/final_review None; root.row+1; all gates unchanged; input untouched on errors. Root plan must bind saved final_review to exact candidate; getter verification_id exists after parent adds it. Event-like reason/provenance preserved via plan decision/review/returned completion (no IO or transaction claims). C03 must atomically recheck root, graph, every publication row including unaffected; complete authoritative view/provenance/global never-reused IDs remain outside C01 and must be stated. Use WorkError existing variants, InvalidField static safe labels, OwnerAcceptanceMismatch for mismatch acceptable but suggest new OwnerRejectionMismatch parent can add. Return only code, no tests or claims to have run them. All fixtures synthetic. Don't propose unrelated features or router changes.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 510,
+      "end": 564
+    },
+    {
+      "path": "crates/dc-domain/src/work.rs",
+      "start": 26,
+      "end": 150
+    },
+    {
+      "path": "crates/dc-domain/src/work.rs",
+      "start": 270,
+      "end": 370
+    },
+    {
+      "path": "crates/dc-domain/src/work/links.rs",
+      "start": 112,
+      "end": 156
+    },
+    {
+      "path": "docs/technical/14_DATA_STATE_AND_RECOVERY.md",
+      "start": 540,
+      "end": 554
+    },
+    {
+      "path": "docs/technical/24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+      "start": 174,
+      "end": 186
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Deep Create",
+  "version": "../../package.json",
+  "identifier": "com.deepcreate.desktop",
+  "build": {
+    "beforeDevCommand": {
+      "script": "pnpm ui:build",
+      "cwd": "../.."
+    },
+    "beforeBuildCommand": {
+      "script": "pnpm ui:build",
+      "cwd": "../.."
+    },
+    "frontendDist": "../../ui/dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Deep Create — build information",
+        "create": false,
+        "url": "index.html",
+        "width": 1024,
+        "height": 760,
+        "minWidth": 360,
+        "minHeight": 480,
+        "resizable": true,
+        "dragDropEnabled": false,
+        "devtools": false
+      }
+    ],
+    "security": {
+      "capabilities": [
+        "version-page"
+      ],
+      "csp": {
+        "default-src": "'none'",
+        "script-src": "'self'",
+        "style-src": "'self'",
+        "img-src": "'self'",
+        "font-src": "'self'",
+        "connect-src": "ipc: http://ipc.localhost",
+        "object-src": "'none'",
+        "frame-src": "'none'",
+        "worker-src": "'none'",
+        "base-uri": "'none'",
+        "form-action": "'none'"
+      },
+      "freezePrototype": true,
+      "dangerousDisableAssetCspModification": false,
+      "assetProtocol": {
+        "enable": false,
+        "scope": []
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis",
+      "msi"
+    ],
+    "icon": [
+      "icons/icon.ico"
+    ],
+    "publisher": "Deep Create",
+    "copyright": "© 2026 Deep Create",
+    "category": "DeveloperTool",
+    "shortDescription": "Autonomous Goal Execution",
+    "longDescription": "Deep Create — autonomous AI-powered goal execution system with verification and persistence."
+  },
+  "plugins": {
+    "updater": {
+      "active": true,
+      "endpoints": [
+        "https://updates.deepcreate.local/{{target}}/{{current_version}}"
+      ],
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDlBQ0I4MjBDNDUzMjM4Q0YKUlRTeE5jLzJZN1Q3eGdYVGx0b2NNSlB1dG01LzZPeWpmY01hRkZtcjBNeDhkMjN1cURCa0F2cTQK"
+    }
+  }
+}

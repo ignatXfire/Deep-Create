@@ -1,0 +1,24 @@
+{
+  "model": "dash/deepseek-v4-pro-0813",
+  "reasoning": "direct",
+  "max_tokens": 1800,
+  "timeout_ms": 90000,
+  "task": "Review only the new pure ResultTransitionPlan coordinator for concrete bugs. It deliberately reuses transition_result, is NOT a database transaction and does NOT claim to implement obligation/ledger/provenance updates. Caller rows/gates are trusted inputs, not model authority. Check coupled packet/unit stages, attempt generation and read preconditions, preservation of facts under gates, event evidence. No redesign, no speculative security requirements. Output <=500 words in Russian: concrete defect with source/trigger or no confirmed defect; distinguish missing later-stage implementation from a bug. Do not execute or edit anything.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work/commit.rs",
+      "start": 1,
+      "end": 175
+    },
+    {
+      "path": "crates/dc-domain/src/work/result.rs",
+      "start": 575,
+      "end": 679
+    },
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 124,
+      "end": 167
+    }
+  ]
+}

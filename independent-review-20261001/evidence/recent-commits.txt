@@ -1,0 +1,25 @@
+f7444d1 2026-10-01T11:46:27+02:00 wave5: adversarial audit fixes, stub fixes, extended soak evidence
+37efcab 2026-10-01T10:31:48+02:00 fix: treat empty DC_STORE_PATH as unset in desktop_builder
+c1d1058 2026-10-01T09:15:17+02:00 feat(wave4): parallel live E2E, production hardening, strengthened deployment, workspace integration
+82b099a 2026-10-01T05:37:22+02:00 chore: remove accidentally committed Windows cache files, add to gitignore
+e19936d 2026-10-01T05:35:04+02:00 feat: production hardening — parallel executor, stability, memory leak, deployment
+bdba109 2026-10-01T03:14:19+02:00 feat: deep verification layer — WebView2 E2E, multi-unit, error injection, auto-approve
+cac0373 2026-10-01T02:02:06+02:00 feat: runtime evidence layer — E2E, crash recovery, installer, Stage 3 schema
+fe8a8d7 2026-09-30T21:11:43+02:00 test: add semantic verification unit tests for run_semantic_verification (F03 partial)
+e7e62ef 2026-09-30T20:01:59+02:00 test: F11 native Windows Job Object runtime proof — real Win32 API exercised
+7584b3a 2026-09-30T19:53:21+02:00 test: update UI test to match Core-backed data label (F10 completion)
+ad7dc4f 2026-09-30T19:33:45+02:00 test: crash recovery E2E — kill→restart→store survives (4096 bytes stable)
+b6d05d6 2026-09-30T19:27:26+02:00 chore: remove accidentally committed temp file
+e1a5742 2026-09-30T19:26:59+02:00 test: F04/F05/F06 wire-level proof — mock HTTP server with real payload/count/timing assertions
+8f770a3 2026-09-30T19:06:47+02:00 test: F03/F04/F06/F09 — deterministic targeted tests + acceptance-criteria structural check
+9156a8d 2026-09-30T17:43:41+02:00 fix: F01/F03/F04/F05/F06/F09/F10 — UUIDv7, retry policy, Retry-After secs, strict INSERT, content check, UI fixture label
+2492827 2026-09-30T15:38:12+02:00 fix: UUIDv7 bit layout in persistence init + real E2E persistence test
+d247dc5 2026-09-30T14:04:38+02:00 docs: forensic defect re-verification against live HEAD — all P0/P1 closed with file/line evidence
+1dc45a8 2026-09-30T13:14:05+02:00 docs: mark crash recovery verified, update status to reflect actual test results
+04f1315 2026-09-30T11:21:00+02:00 docs: mark all P0 items complete
+25446de 2026-09-30T11:09:43+02:00 fix: eliminate compiler warnings
+5a8a055 2026-09-30T10:55:59+02:00 docs: update status reports and fix warnings
+bbbc9c4 2026-09-30T09:05:48+02:00 fix: resolve all 14 P1 defects
+b194df4 2026-09-29T17:29:05+02:00 test: add crash recovery persistence round-trip tests
+6f02aa8 2026-09-29T16:23:25+02:00 feat: add retry with exponential backoff to executor dispatch
+c52b8a3 2026-09-29T16:17:19+02:00 feat: add graph_json to PersistedCoreState for crash recovery

@@ -1,0 +1,5 @@
+{
+  "publication_redaction": true,
+  "reason": "Owner workstation inventory, runtime file names, file sizes and timestamps omitted. This historical metadata file is not a source-coverage or product-readiness verdict.",
+  "historical_audit": "independent-review-20260929"
+}

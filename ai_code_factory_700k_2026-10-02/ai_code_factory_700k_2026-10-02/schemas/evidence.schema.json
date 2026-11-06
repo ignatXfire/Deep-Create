@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence Receipt",
+  "type": "object",
+  "required": [
+    "task_id",
+    "attempt_id",
+    "base_sha",
+    "head_sha",
+    "model",
+    "commands",
+    "artifacts",
+    "status"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "attempt_id": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "base_sha": {
+      "type": "string"
+    },
+    "head_sha": {
+      "type": "string"
+    },
+    "worktree": {
+      "type": "string"
+    },
+    "commands": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "command",
+          "exit_code"
+        ],
+        "properties": {
+          "command": {
+            "type": "string"
+          },
+          "exit_code": {
+            "type": "integer"
+          },
+          "tests_discovered": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "passed": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "failed": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "skipped": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "raw_log_sha256": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{64}$"
+          }
+        }
+      }
+    },
+    "authority_keys": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "LOCAL_GREEN",
+        "REVIEW_GREEN",
+        "FAIL",
+        "BLOCKED",
+        "INSUFFICIENT_EVIDENCE"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

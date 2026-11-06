@@ -1,0 +1,82 @@
+{
+  "check": "Document 19 direct dependency and C-01 explicit source guard",
+  "ok": false,
+  "boundary": "Not a full Rust parser, macro expansion, transitive supply-chain audit or OS isolation proof.",
+  "errors": [
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-store",
+      "message": "Unregistered normal dependency: sha2."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-store",
+      "message": "Unregistered dev dependency: rusqlite."
+    },
+    {
+      "code": "DEPENDENCY_CONTRACT",
+      "package": "dc-windows",
+      "message": "windows-sys: version requirement or features changed; review its contract."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-desktop",
+      "message": "Unregistered normal dependency: rusqlite."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-desktop",
+      "message": "Unregistered normal dependency: tracing."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-desktop",
+      "message": "Unregistered normal dependency: tracing-subscriber."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-desktop",
+      "message": "Unregistered normal dependency: windows-sys."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-broker",
+      "message": "Unregistered normal dependency: tracing."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-broker",
+      "message": "Unregistered dev dependency: serde_json."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-broker",
+      "message": "Unregistered dev dependency: tokio."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-core",
+      "message": "Unregistered normal dependency: tracing."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-core",
+      "message": "Unregistered dev dependency: tracing-subscriber."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-core",
+      "message": "Unregistered dev dependency: windows-sys."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-worker",
+      "message": "Unregistered dev dependency: dc-domain."
+    },
+    {
+      "code": "FORBIDDEN_DEPENDENCY",
+      "package": "dc-worker",
+      "message": "Unregistered dev dependency: dc-store."
+    }
+  ]
+}

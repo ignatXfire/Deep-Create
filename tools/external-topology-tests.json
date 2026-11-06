@@ -1,0 +1,23 @@
+{
+  "model": "dash/kimi-k3",
+  "task": "Return only Rust code for 4 to 6 additive #[test] functions to append to the supplied work_contracts.rs integration test file; reuse its graph(), limits(), id(), row() helpers. The public validator is validate_work_graph(&candidate, &limits()). Cover prepare_topology_change exact expected/successor and immutable candidate binding; stale candidate/head revision; same revision foreign installation check; u64 overflow; two concurrently prepared changes with only the first passing the updated head precondition. No database, network or execution; no claims about persistence. Import dc_domain::topology types inside tests or a single use statement. Do not duplicate fixtures, do not modify production code, do not add dependencies. Tests must assert exact WorkError variants where meaningful and not only is_err(). Output code only, <=240 lines.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/topology.rs",
+      "start": 1,
+      "end": 72
+    },
+    {
+      "path": "crates/dc-domain/tests/work_contracts.rs",
+      "start": 1,
+      "end": 130
+    },
+    {
+      "path": "crates/dc-domain/tests/work_contracts.rs",
+      "start": 311,
+      "end": 392
+    }
+  ],
+  "max_tokens": 4096,
+  "timeout_ms": 420000
+}

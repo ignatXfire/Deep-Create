@@ -1,0 +1,27 @@
+{
+  "added_using_git_nul_names": [
+    "docs/technical/00_BRANCH_NAVIGATOR.md",
+    "docs/technical/07_OWNER_DECISIONS.md",
+    "docs/technical/08_STANDALONE_ARCHITECTURE.md",
+    "docs/technical/09_INTERFACE_RESEARCH.md",
+    "docs/technical/10_RISKS_AND_HIDDEN_BOUNDARIES.md",
+    "docs/technical/11_DESIGN_DIRECTION_AND_PLAN.md",
+    "docs/technical/12_COMPLETENESS_REVIEW_20260904.md",
+    "docs/technical/13_TECHNICAL_CONSTITUTION.md",
+    "docs/technical/14_DATA_STATE_AND_RECOVERY.md",
+    "docs/technical/15_CONTEXT_MEMORY_AND_INSTRUCTIONS.md",
+    "docs/technical/16_EXECUTION_MODELS_AND_VERIFICATION.md",
+    "docs/technical/17_PERMISSIONS_SECURITY_AND_ACTIONS.md",
+    "docs/technical/18_BEACONS_JOURNAL_STOP_AND_RECOVERY.md",
+    "docs/technical/19_CODE_FUNCTION_AND_DEPENDENCY_MAP.md",
+    "docs/technical/20_IMPLEMENTATION_ORDER_AND_READINESS_EVIDENCE.md",
+    "docs/technical/21_DECISION_CODE_VERIFICATION_MATRIX.md",
+    "docs/technical/22_DESIGN_REVIEW_20260907.md",
+    "docs/technical/23_EXTERNAL_CRITIQUE_AND_REFINEMENTS_20260908.md",
+    "docs/technical/24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+    "docs/technical/25_RESOURCE_ALLOCATION_AND_COMMIT_QUEUE.md",
+    "docs/technical/26_COMPOSITE_STATES_AND_EVOLUTION_TESTING.md",
+    "pnpm-workspace.yaml"
+  ],
+  "note": "Initial PowerShell copy omitted quoted Cyrillic filenames; corrected before packaging. Existing tested source files were not changed."
+}

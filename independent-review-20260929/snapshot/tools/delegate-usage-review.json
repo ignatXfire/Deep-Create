@@ -1,0 +1,24 @@
+{
+  "model": "dash/deepseek-v4-pro-0813",
+  "reasoning": "direct",
+  "max_tokens": 1100,
+  "timeout_ms": 90000,
+  "task": "Review the implemented usage binding and AccountedResultPlan integration for concrete defects only, <=300 words in Russian. It is intentionally a PURE READ BINDING: not current authority/limit validation or actual database commit. Full trusted manifest completeness and atomic row recheck are future C03 responsibilities, explicitly documented. Check exact keys/version/attempt, duplicates, preserving observation provenance, no double accounting/release, terminal stage restrictions, no bypass of existing result validator. Unknown accounting must remain unknown (not conflated with unknown external action outcome, which existing gates handle). Do not invent unavailable requirements. If no concrete defect, say so. Do not edit or run anything.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/usage_binding.rs",
+      "start": 1,
+      "end": 154
+    },
+    {
+      "path": "crates/dc-domain/src/work/commit.rs",
+      "start": 1,
+      "end": 51
+    },
+    {
+      "path": "crates/dc-domain/src/resource.rs",
+      "start": 115,
+      "end": 161
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "preparedAt": "2026-11-06T16:27:11.874Z",
+  "snapshotRevision": "f7444d158fb9900217e8a62d0d0c53cbff2f5dd3",
+  "scope": "Sanitized English research publication; no full native release certification",
+  "preservation": {
+    "sourceFilesRehashed": 1017,
+    "changedSource": [],
+    "headUnchanged": true
+  },
+  "integrity": {
+    "fencedMarkdownChecked": 293,
+    "fenceDifferences": [],
+    "rustFilesChecked": 301,
+    "rustNoncommentDifferences": [],
+    "contractMapsChecked": 3,
+    "contractStructureDifferences": [],
+    "uiSyntaxDifferences": []
+  },
+  "privacy": {
+    "rulesChecked": [
+      "privacyFindings",
+      "unsafeFiles"
+    ],
+    "findings": [],
+    "excludedFileFindings": [],
+    "secretScan": {
+      "gitleaksVersion": "8.30.1",
+      "exitCode": 0,
+      "findings": 0,
+      "negativeExitCode": 2,
+      "negativeFindings": 1
+    }
+  },
+  "english": {
+    "markdownProseFindings": [],
+    "nonEnglishPaths": []
+  },
+  "markdownLinks": {
+    "checked": 455,
+    "broken": [],
+    "headingAnchorsChecked": false,
+    "externalUrlsChecked": false
+  },
+  "parsing": {
+    "jsonErrors": [],
+    "nodeSyntaxErrors": []
+  },
+  "ui": {
+    "checks": [
+      {
+        "name": "ui-tests-baseline",
+        "exitCode": 1,
+        "signal": null
+      },
+      {
+        "name": "ui-tests-english",
+        "exitCode": 1,
+        "signal": null
+      },
+      {
+        "name": "ui-typecheck",
+        "exitCode": 0,
+        "signal": null
+      },
+      {
+        "name": "ui-build",
+        "exitCode": 0,
+        "signal": null
+      }
+    ],
+    "scope": "Isolated copies; installed dependency tree reused read-only; caches and build outputs kept private.",
+    "before": {
+      "passed": 50,
+      "failed": 3,
+      "failingTests": [
+        "tests/desktop-policy.test.ts > minimal desktop exposure > has no native plugin dependencies or frontend data access libraries",
+        "tests/desktop-policy.test.ts > minimal desktop exposure > requires app ACL instead of Tauri's permissive custom-command default",
+        "tests/page.test.tsx > stage-one version page > labels the work graph as reading from core, not a static fixture"
+      ]
+    },
+    "after": {
+      "passed": 50,
+      "failed": 3,
+      "failingTests": [
+        "tests/desktop-policy.test.ts > minimal desktop exposure > has no native plugin dependencies or frontend data access libraries",
+        "tests/desktop-policy.test.ts > minimal desktop exposure > requires app ACL instead of Tauri's permissive custom-command default",
+        "tests/page.test.tsx > stage-one version page > labels the work graph as reading from core, not a static fixture"
+      ]
+    },
+    "sameFailingTests": true
+  },
+  "architecture": {
+    "exitCode": 1,
+    "errorCount": 15,
+    "ok": false
+  },
+  "notPerformed": [
+    "Full Rust workspace/native release build",
+    "Clean Windows VM test",
+    "Live model-provider test",
+    "Full professional bilingual engineering review"
+  ]
+}

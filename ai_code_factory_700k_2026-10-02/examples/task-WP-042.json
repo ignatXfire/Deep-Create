@@ -1,0 +1,48 @@
+{
+  "id": "WP-042",
+  "objective": "Implement idempotent password reset request boundary without changing auth token semantics",
+  "base_sha": "0123456789abcdef",
+  "priority": 90,
+  "authority_keys": [
+    "auth:password-reset:v2"
+  ],
+  "allowed_paths": [
+    "src/auth/password_reset/**",
+    "tests/auth/password_reset/**"
+  ],
+  "prerequisites": [
+    "WP-011"
+  ],
+  "contracts": [
+    "docs/contracts/auth-password-reset-v2.md"
+  ],
+  "acceptance": [
+    {
+      "name": "targeted tests",
+      "command": "pytest -q tests/auth/password_reset",
+      "must_pass": true
+    },
+    {
+      "name": "architecture",
+      "command": "python tools/check_architecture.py",
+      "must_pass": true
+    }
+  ],
+  "negative_tests": [
+    "same request id cannot create a second reset token",
+    "expired request is rejected"
+  ],
+  "preferred_models": [
+    "dash/deepseek-v4-pro-0813",
+    "dash/kimi-k3"
+  ],
+  "evidence": {
+    "raw_logs": true,
+    "hashes": true,
+    "test_counts": true
+  },
+  "non_goals": [
+    "redesign login flow",
+    "change token format"
+  ]
+}

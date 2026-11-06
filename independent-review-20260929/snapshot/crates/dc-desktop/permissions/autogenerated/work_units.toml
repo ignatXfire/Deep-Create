@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-work-units"
+description = "Enables the work_units command without any pre-configured scope."
+commands.allow = ["work_units"]
+
+[[permission]]
+identifier = "deny-work-units"
+description = "Denies the work_units command without any pre-configured scope."
+commands.deny = ["work_units"]

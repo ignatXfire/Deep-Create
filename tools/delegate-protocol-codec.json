@@ -1,0 +1,34 @@
+{
+  "model": "dash/kimi-k3",
+  "reasoning": "low",
+  "max_tokens": 5000,
+  "timeout_ms": 180000,
+  "task": "Return only Rust for new crates/dc-protocol/src/lib.rs (<=240 lines). Scope is strict bounded C02 codec for existing C01 UnitAttemptCommand, NOT authentication, authorization, dispatch, replay storage or full protocol. Use dependencies dc-domain, serde, serde_json, thiserror only. Public Envelope {command_id:EntityId,installation_id:EntityId,expected:ExpectedLifecycleBasis,command:UnitAttemptCommand} derives Debug Clone PartialEq Eq, NOT Deserialize. ProtocolContext {installation_id:EntityId,run_generation:RunGeneration}; const PROTOCOL_VERSION:u32=1 and MAX_ENVELOPE_BYTES=65536, an explicit versioned structural frame ceiling not a permission/spend limit. decode_envelope(bytes:&[u8],context:&ProtocolContext)->Result<Envelope,ProtocolError>; encode_envelope(envelope:&Envelope,context:&ProtocolContext)->Result<Vec<u8>,ProtocolError>. Wire JSON {schema_version,command_id,installation_id,expected:{scope,unit,unit_row_version,attempt_id,attempt_row_version,run_generation},command}. Wire structs all deny_unknown_fields; reuse typed WorkScope, UnitRef, UnitAttemptCommand (no serde_json::Value so duplicate nested keys cannot be lost). All u64 generation/row counters wire as canonical nonzero decimal STRINGS (including optional attempt row); reject numbers, 0, leading 0, +, whitespace, exponents, >u64max. u32 revisions inside scope/unit remain native integers. Validate paired optional attempt_id/row version, exact installation/current generation, supported version; reject oversize before deserializing; reject malformed/truncated/trailing JSON and unknown fields/commands/duplicates with closed sanitized error enum (no raw error/message/body in output). Can map serde error class internally but do not expose sensitive fields in errors. Encode uses same validation and bound. Document decoded is only a candidate and never AuthenticatedPeer/ValidatedCommand; future C12 authenticates role and C03 stores command deduplication. No fake sender identity in JSON, no new trust constructor, no IO. Internal custom TextCounter try_from String acceptable. Use actual supplied domain APIs. Tests independently written by root. Do not claim executed tests.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/ids.rs",
+      "start": 1,
+      "end": 68
+    },
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 190,
+      "end": 225
+    },
+    {
+      "path": "crates/dc-domain/src/work.rs",
+      "start": 26,
+      "end": 48
+    },
+    {
+      "path": "docs/technical/19_CODE_FUNCTION_AND_DEPENDENCY_MAP.md",
+      "start": 95,
+      "end": 108
+    },
+    {
+      "path": "docs/technical/14_DATA_STATE_AND_RECOVERY.md",
+      "start": 70,
+      "end": 99
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "utc": "2026-09-29T15:49:52.710235+00:00",
+  "baseline": "b194df41b7f94f30f99970bdf75a1b843c52d155",
+  "head_at_finish": "b194df41b7f94f30f99970bdf75a1b843c52d155",
+  "snapshot_files": 229,
+  "snapshot_hash_mismatches": [],
+  "source_changes_since_copy": [],
+  "checks": {
+    "typecheck": {
+      "exit": "exit=0",
+      "passed": 0,
+      "failed": 0,
+      "ignored": 0,
+      "log": "evidence/typecheck.log"
+    },
+    "vitest": {
+      "exit": "exit=0",
+      "passed": 53,
+      "failed": 0,
+      "ignored": 0,
+      "log": "evidence/vitest.log"
+    },
+    "safe-rust-tests": {
+      "exit": "exit=0",
+      "passed": 355,
+      "failed": 0,
+      "ignored": 0,
+      "log": "evidence/safe-rust-tests.log"
+    },
+    "probes": {
+      "exit": "exit=0",
+      "passed": 4,
+      "failed": 0,
+      "ignored": 0,
+      "log": "evidence/probes.log"
+    },
+    "workspace": "INTERRUPTED during dependency compilation; not evidence of success or test failure",
+    "probe_initial_attempt": "exit=101: missing parent entity in audit fixture, FK rejection; fixed probe only; original log preserved"
+  }
+}

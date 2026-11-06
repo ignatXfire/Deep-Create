@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-accept-graph"
+description = "Enables the accept_graph command without any pre-configured scope."
+commands.allow = ["accept_graph"]
+
+[[permission]]
+identifier = "deny-accept-graph"
+description = "Denies the accept_graph command without any pre-configured scope."
+commands.deny = ["accept_graph"]

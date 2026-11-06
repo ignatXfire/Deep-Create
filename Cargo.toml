@@ -1,0 +1,32 @@
+[workspace]
+members = ["crates/dc-domain", "crates/dc-protocol", "crates/dc-store", "crates/dc-windows", "crates/dc-watchdog", "crates/dc-desktop", "crates/dc-broker", "crates/dc-worker", "crates/dc-core"]
+resolver = "3"
+
+[workspace.package]
+license = "Apache-2.0"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+publish = false
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+rusqlite = { version = "0.32", features = ["bundled"] }
+sha2 = "0.10"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+windows-sys = { version = "0.59", features = ["Win32_System_JobObjects", "Win32_System_Threading", "Win32_Foundation", "Win32_Security", "Win32_Security_Isolation"] }
+
+[workspace.lints.rust]
+unsafe_code = { level = "deny", priority = -1 }
+unused_must_use = "deny"
+
+[workspace.lints.clippy]
+all = "warn"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "debuginfo"

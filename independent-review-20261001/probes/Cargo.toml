@@ -1,0 +1,14 @@
+[package]
+name = "independent-audit-probes-oct01"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+
+[dependencies]
+dc-domain = { path = "../snapshot/crates/dc-domain" }
+dc-store = { path = "../snapshot/crates/dc-store", features = ["sqlite"] }
+dc-core = { path = "../snapshot/crates/dc-core" }
+dc-windows = { path = "../snapshot/crates/dc-windows" }
+rusqlite = { version = "0.32", features = ["bundled"] }
+

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-application-info"
+description = "Enables the application_info command without any pre-configured scope."
+commands.allow = ["application_info"]
+
+[[permission]]
+identifier = "deny-application-info"
+description = "Denies the application_info command without any pre-configured scope."
+commands.deny = ["application_info"]

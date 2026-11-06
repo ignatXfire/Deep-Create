@@ -1,0 +1,40 @@
+[package]
+name = "dc-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+description = "Deep Create stage-one desktop version page"
+
+[dependencies]
+dc-domain = { path = "../dc-domain" }
+dc-core = { path = "../dc-core" }
+dc-store = { path = "../dc-store", features = ["sqlite"] }
+dc-worker = { path = "../dc-worker" }
+dc-broker = { path = "../dc-broker" }
+serde.workspace = true
+serde_json.workspace = true
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+rusqlite = { workspace = true }
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1", features = ["full"] }
+tauri = { version = "=2.11.5", default-features = false, features = ["wry", "compression", "common-controls-v6"] }
+
+[build-dependencies]
+tauri-build = { version = "=2.6.3", features = [] }
+
+[target.'cfg(windows)'.dependencies]
+windows-sys = { workspace = true, features = ["Win32_System_Console"] }
+
+[dev-dependencies]
+serde_json.workspace = true
+tauri = { version = "=2.11.5", default-features = false, features = ["test"] }
+
+[features]
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[lints]
+workspace = true

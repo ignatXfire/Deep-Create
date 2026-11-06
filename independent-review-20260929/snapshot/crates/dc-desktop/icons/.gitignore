@@ -1,0 +1,5 @@
+# The standard Tauri icon generator also emits assets for other platforms.
+# Stage one packages only the Windows application icon.
+*
+!.gitignore
+!icon.ico

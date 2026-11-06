@@ -1,0 +1,726 @@
+{
+  "run": "20260911T143910905Z",
+  "complete": true,
+  "boundary": "Current implemented slice only; not full application acceptance or power-loss proof",
+  "steps": [
+    {
+      "name": "powershell-syntax",
+      "executable": "C:/home/researcher",
+      "arguments": [
+        "-NoProfile",
+        "-Command",
+        "$failed=$false; Get-ChildItem -LiteralPath tools -Filter *.ps1 -File | ForEach-Object { $t=$null; $e=$null; [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$t,[ref]$e); if($e.Count){ $failed=$true; $e | ForEach-Object Message } }; if($failed){exit 1}"
+      ],
+      "started_utc": "2026-09-11T14:39:10.9858770Z",
+      "ended_utc": "2026-09-11T14:39:12.9887850Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\powershell-syntax.log"
+    },
+    {
+      "name": "toolchain-preflight",
+      "executable": "C:/home/researcher",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/Prepare-CachedWindowsToolchain.ps1",
+        "-ValidateOnly"
+      ],
+      "started_utc": "2026-09-11T14:39:13.0105451Z",
+      "ended_utc": "2026-09-11T14:39:54.0027034Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\toolchain-preflight.log"
+    },
+    {
+      "name": "contract-baseline",
+      "executable": "C:/home/researcher",
+      "arguments": [
+        "-NoProfile",
+        "-Command",
+        "$r=Get-Content -LiteralPath docs/technical/checks/design_check_20260908.json -Raw | ConvertFrom-Json; foreach($f in $r.input_files){ if([IO.Path]::GetFileName($f.name) -ne $f.name){throw \"Invalid baseline path\"}; if((Get-FileHash -LiteralPath (Join-Path docs/technical $f.name) -Algorithm SHA256).Hash -ne $f.sha256){throw \"Baseline differs: $($f.name)\"} }; Write-Output \"Verified $($r.input_files.Count) baseline documents\""
+      ],
+      "started_utc": "2026-09-11T14:39:54.0151807Z",
+      "ended_utc": "2026-09-11T14:39:55.7232332Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\contract-baseline.log"
+    },
+    {
+      "name": "rust-format",
+      "executable": "cargo",
+      "arguments": [
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "started_utc": "2026-09-11T14:39:55.7846528Z",
+      "ended_utc": "2026-09-11T14:39:56.5806422Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\rust-format.log"
+    },
+    {
+      "name": "architecture-selftests",
+      "executable": "node",
+      "arguments": [
+        "--test",
+        "tools/tests/check-architecture.test.mjs"
+      ],
+      "started_utc": "2026-09-11T14:39:56.5812579Z",
+      "ended_utc": "2026-09-11T14:39:58.0867894Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\architecture-selftests.log"
+    },
+    {
+      "name": "architecture",
+      "executable": "node",
+      "arguments": [
+        "tools/check-architecture.mjs"
+      ],
+      "started_utc": "2026-09-11T14:39:58.0883638Z",
+      "ended_utc": "2026-09-11T14:39:59.2331258Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\architecture.log"
+    },
+    {
+      "name": "contract-map-selftests",
+      "executable": "node",
+      "arguments": [
+        "--test",
+        "tools/tests/check-contract-map.test.mjs"
+      ],
+      "started_utc": "2026-09-11T14:39:59.2424999Z",
+      "ended_utc": "2026-09-11T14:40:00.9098224Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\contract-map-selftests.log"
+    },
+    {
+      "name": "contract-map",
+      "executable": "node",
+      "arguments": [
+        "tools/check-contract-map.mjs"
+      ],
+      "started_utc": "2026-09-11T14:40:00.9119521Z",
+      "ended_utc": "2026-09-11T14:40:01.2564491Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\contract-map.log"
+    },
+    {
+      "name": "topology-storage-contract",
+      "executable": "node",
+      "arguments": [
+        "--test",
+        "tools/tests/topology-storage-contract.test.mjs"
+      ],
+      "started_utc": "2026-09-11T14:40:01.2569861Z",
+      "ended_utc": "2026-09-11T14:40:03.9575984Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\topology-storage-contract.log"
+    },
+    {
+      "name": "external-request-profiles",
+      "executable": "node",
+      "arguments": [
+        "--test",
+        "tools/tests/external-request.test.mjs"
+      ],
+      "started_utc": "2026-09-11T14:40:03.9946523Z",
+      "ended_utc": "2026-09-11T14:40:06.0541015Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\external-request-profiles.log"
+    },
+    {
+      "name": "rust-tests",
+      "executable": "cargo",
+      "arguments": [
+        "test",
+        "--workspace",
+        "--locked",
+        "--offline"
+      ],
+      "started_utc": "2026-09-11T14:40:06.0775716Z",
+      "ended_utc": "2026-09-11T14:40:26.8592517Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\rust-tests.log"
+    },
+    {
+      "name": "rust-lints",
+      "executable": "cargo",
+      "arguments": [
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--locked",
+        "--offline",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "started_utc": "2026-09-11T14:40:26.8598670Z",
+      "ended_utc": "2026-09-11T14:40:35.4484479Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\rust-lints.log"
+    },
+    {
+      "name": "ui-check",
+      "executable": "npm.cmd",
+      "arguments": [
+        "exec",
+        "--offline",
+        "--yes",
+        "--package=pnpm@12.3.4",
+        "--",
+        "pnpm",
+        "check"
+      ],
+      "started_utc": "2026-09-11T14:40:35.4492947Z",
+      "ended_utc": "2026-09-11T14:40:49.8807277Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\ui-check.log"
+    },
+    {
+      "name": "desktop-build",
+      "executable": "cargo",
+      "arguments": [
+        "build",
+        "-p",
+        "dc-desktop",
+        "--locked",
+        "--offline"
+      ],
+      "started_utc": "2026-09-11T14:40:49.8811232Z",
+      "ended_utc": "2026-09-11T14:40:54.6154287Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\desktop-build.log"
+    },
+    {
+      "name": "desktop-repeat-build",
+      "executable": "cargo",
+      "arguments": [
+        "build",
+        "-p",
+        "dc-desktop",
+        "--locked",
+        "--offline"
+      ],
+      "started_utc": "2026-09-11T14:40:54.6158084Z",
+      "ended_utc": "2026-09-11T14:40:55.5750899Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143910905Z\\desktop-repeat-build.log"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".cargo/config.toml",
+      "bytes": 62,
+      "sha256": "FC14E912911EE10C03CA9E143DA18D66C7FBD43A00E44B6FADE2DF062CB7CECB"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 109045,
+      "sha256": "222B464BD28761350097DFA691BEB607A405248F8413F940CA08F3A490E9CDCE"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 490,
+      "sha256": "47C3C7986742C959C78F38D0102DAABCBC663C7C525D722F9C20B50DF7E664AB"
+    },
+    {
+      "path": "crates\\dc-desktop\\build.rs",
+      "bytes": 401,
+      "sha256": "235C6261022022C43BAE6243A18700507F1DDDD6ABCAD94F4C7E3114278A7EAD"
+    },
+    {
+      "path": "crates\\dc-desktop\\capabilities\\version-page.json",
+      "bytes": 296,
+      "sha256": "699B7F2E76D8A9DDA29AF631682B368390D9BF77C169993F4A1140E804EA7ED8"
+    },
+    {
+      "path": "crates\\dc-desktop\\Cargo.toml",
+      "bytes": 661,
+      "sha256": "D48F4B7D98A881E97BC62801B8D447AD4A82DB2799F7AD61B6E52B75BD80CC69"
+    },
+    {
+      "path": "crates\\dc-desktop\\icons\\.gitignore",
+      "bytes": 155,
+      "sha256": "21A809E55FC26A25D906DE72E4EE8C369C5DEC8A7640BF4325D69541D891B3A7"
+    },
+    {
+      "path": "crates\\dc-desktop\\icons\\icon.ico",
+      "bytes": 7786,
+      "sha256": "73C71820A4163DDCDD3F9564BB2C36F7CC8A01E434BCE1C5ED0D0225E22CEC20"
+    },
+    {
+      "path": "crates\\dc-desktop\\permissions\\autogenerated\\application_info.toml",
+      "bytes": 396,
+      "sha256": "D154B6F4D301ECF7BC4E17178AFE4D51F6918DF530110DCCBEC073BEF65C4557"
+    },
+    {
+      "path": "crates\\dc-desktop\\src\\main.rs",
+      "bytes": 6150,
+      "sha256": "F209F983061A09BE4BF44C319AEE6CFA34470F2B38A1A35F879D0278D83DE85E"
+    },
+    {
+      "path": "crates\\dc-desktop\\tauri.conf.json",
+      "bytes": 1412,
+      "sha256": "5585CC1879C3CCE293A740E5FE7EC300124C704AB5782DB73E61FBDF7124492F"
+    },
+    {
+      "path": "crates\\dc-domain\\Cargo.toml",
+      "bytes": 274,
+      "sha256": "33A32A3392EB4327B311F3900E97A5FFA4F1936599279616329B71E8CBDA6596"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\ids.rs",
+      "bytes": 2789,
+      "sha256": "E319A55D141522F12B46C87FFDEECB3EA09DAD62A153FCA15848400DB51BCEC9"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\lib.rs",
+      "bytes": 216,
+      "sha256": "649227C3D03F883E110D56FBEAD74AD15FC82A1049A2D92DB344B77CC659341A"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\permission.rs",
+      "bytes": 17697,
+      "sha256": "971FFF746E4C8BEF0B009D250626796F6DB26E37DF2895A41D54C48D4DBD0726"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\resource.rs",
+      "bytes": 17775,
+      "sha256": "175F6B916803D574F58301F8999FE23F315E8ADBBB48E4985362070CE8E6E9F4"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\scheduling.rs",
+      "bytes": 7283,
+      "sha256": "21A69719BD1B1ADCF5828E8C097F2A8BDAD97912B24A9EABB3058D992980D0D3"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\structure.rs",
+      "bytes": 2097,
+      "sha256": "FB47E8B08FC0E03DC7B3B161F4609E16421C7720CE680013463D95B60C91D632"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\topology.rs",
+      "bytes": 2263,
+      "sha256": "62FABD87F34279694E69AA64BBE674ABFC40A031A265FB6EF1D5B23404405F89"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\usage_binding.rs",
+      "bytes": 5195,
+      "sha256": "FA279A71ECCF50BA246E623473DA105B45C341CDD08FF6C16F8A2A43C6776678"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\work.rs",
+      "bytes": 22174,
+      "sha256": "8EBBA1A9C6DCBBA62C5F2DF946BC8AB5DCF1B39068E0421ADCEC41C76F79F190"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\work\\commit.rs",
+      "bytes": 8171,
+      "sha256": "D019338B9D0C340B91483D6B03777676F3870137C1FCDB8969E79001F1F4F961"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\work\\lifecycle.rs",
+      "bytes": 26738,
+      "sha256": "ED6B07EF87DF8CAF7EC335BFC4A5933C4C1CDB359D1BF2D20777F30200755633"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\work\\links.rs",
+      "bytes": 32354,
+      "sha256": "E3BBC9551974162F5814737716629BFC771C919D139071B475DF046D5CBC8A29"
+    },
+    {
+      "path": "crates\\dc-domain\\src\\work\\result.rs",
+      "bytes": 31501,
+      "sha256": "32ED177E6CF61AA10EE465C5BF58CAAB01247EE4E5E85231E91E2800D0A8B57E"
+    },
+    {
+      "path": "crates\\dc-domain\\tests\\authority_resources.rs",
+      "bytes": 39775,
+      "sha256": "D3BABFF690232BC7D0FCC06F764B10816A45290D773B92A65C3CBBA11D4BF1BB"
+    },
+    {
+      "path": "crates\\dc-domain\\tests\\identity_contracts.rs",
+      "bytes": 1168,
+      "sha256": "12824004331838652068E24719412EFD0FAB8E37CA0CF6253D774FFE0679A37B"
+    },
+    {
+      "path": "crates\\dc-domain\\tests\\lifecycle_contracts.rs",
+      "bytes": 40282,
+      "sha256": "FAA1E4BE6BE60B598C1D79C9D7D8F545B3DBECEE0E06C5D331A8FC5A71332B42"
+    },
+    {
+      "path": "crates\\dc-domain\\tests\\scheduling_contracts.rs",
+      "bytes": 6998,
+      "sha256": "1B4E663DD6D6C607491122516B62D00AF94382460E7647DD3821E747F2C008D1"
+    },
+    {
+      "path": "crates\\dc-domain\\tests\\usage_bindings.rs",
+      "bytes": 8961,
+      "sha256": "83C8591D1C556F1ACC75E8978A85159CE774A7704DC3A0B624B8F5FF05541F54"
+    },
+    {
+      "path": "crates\\dc-domain\\tests\\work_contracts.rs",
+      "bytes": 74143,
+      "sha256": "9F58A25DC69515F320740E0D43DC31112903DDF7613BC845C18CAB53207AE271"
+    },
+    {
+      "path": "crates\\dc-protocol\\Cargo.toml",
+      "bytes": 313,
+      "sha256": "848A8C5163E4E2F5B0A312FF15F739507BE0653D0C36C01BFE7EBE29F2049412"
+    },
+    {
+      "path": "crates\\dc-protocol\\src\\lib.rs",
+      "bytes": 8112,
+      "sha256": "29129CE522DF645BD6477FF42C9E9EE9F608FB3B0B2ECC524A3675DED2D0D673"
+    },
+    {
+      "path": "crates\\dc-protocol\\tests\\envelopes.rs",
+      "bytes": 10870,
+      "sha256": "DDE3BD7EAF864312FA14F5A7034F6F5882BEC3F48CDF666A3608A65EBBF79DA3"
+    },
+    {
+      "path": "docs/implementation/contracts\\contract-map.json",
+      "bytes": 11440,
+      "sha256": "A1E6FAB0BAE403968D957E66281968AFEF4C081C08B05085E81F0925BA17D500"
+    },
+    {
+      "path": "docs/implementation/contracts\\topology-head.sql",
+      "bytes": 500,
+      "sha256": "062CFA54F336AF9F68F8A6AAFF457ACFACEE307739BD399E87D59C11AA5969F6"
+    },
+    {
+      "path": "docs/technical/checks/design_check_20260908.json",
+      "bytes": 4732,
+      "sha256": "4090B1991507E24A5C9BBFA59A3680CD95D76E5DC277333369F421F0A7F748E7"
+    },
+    {
+      "path": "docs\\technical\\00_BRANCH_NAVIGATOR.md",
+      "bytes": 8333,
+      "sha256": "3825A789A1C48332267918E00EC191C7C32501FB25BDAB1F09402BC429F9669C"
+    },
+    {
+      "path": "docs\\technical\\07_OWNER_DECISIONS.md",
+      "bytes": 59360,
+      "sha256": "C2A37C6535F9A67835281DD0A86CB2F3055D946F0B29D182DE888363EB0B5558"
+    },
+    {
+      "path": "docs\\technical\\08_STANDALONE_ARCHITECTURE.md",
+      "bytes": 79487,
+      "sha256": "6CC1E09502AAD7A4A84E396DC04BFE384C0A89B39245AE0F710D032C0C1E61AB"
+    },
+    {
+      "path": "docs\\technical\\09_INTERFACE_RESEARCH.md",
+      "bytes": 64318,
+      "sha256": "19BE71009AE42E140C0D7734661AE45BB0A5D0F18E1466E7708D64AAB64FB84B"
+    },
+    {
+      "path": "docs\\technical\\10_RISKS_AND_HIDDEN_BOUNDARIES.md",
+      "bytes": 36525,
+      "sha256": "5AB084C33BEA6DE0C2BF88A97807839837374287C13AC63B289217D8E7A93751"
+    },
+    {
+      "path": "docs\\technical\\11_DESIGN_DIRECTION_AND_PLAN.md",
+      "bytes": 151602,
+      "sha256": "6A14394CF6A9F500AB18226F2075E813C700AE3ECD84CB5FAF847950FA735C56"
+    },
+    {
+      "path": "docs\\technical\\12_COMPLETENESS_REVIEW_20260904.md",
+      "bytes": 12104,
+      "sha256": "7C7EBDB96A756B4E48DC8FDD6152F483B1EEF0070D8464B67E1232C8C0FB6CEF"
+    },
+    {
+      "path": "docs\\technical\\13_TECHNICAL_CONSTITUTION.md",
+      "bytes": 42235,
+      "sha256": "075FF4D855D5A87E0F96DA988F4D50651A004B1B0105C3443A067E3DACF2877C"
+    },
+    {
+      "path": "docs\\technical\\14_DATA_STATE_AND_RECOVERY.md",
+      "bytes": 74664,
+      "sha256": "F1EEFF78043E76BB4A3A66BE276589A541A469F9FE72A7428FD3C273B868853E"
+    },
+    {
+      "path": "docs\\technical\\15_CONTEXT_MEMORY_AND_INSTRUCTIONS.md",
+      "bytes": 53170,
+      "sha256": "2D8436ECAF41AAD8758C472780A7ED60067DDA1B27320358056DCBC1C45053B0"
+    },
+    {
+      "path": "docs\\technical\\16_EXECUTION_MODELS_AND_VERIFICATION.md",
+      "bytes": 61502,
+      "sha256": "D7FF0E77F4920B162B7D013BC160C8CA72EFFA6D889197461932119D96EED1DA"
+    },
+    {
+      "path": "docs\\technical\\17_PERMISSIONS_SECURITY_AND_ACTIONS.md",
+      "bytes": 51827,
+      "sha256": "F0CC6941AA5978192CD332ECA883A0900B46FE2AF161445EF2F50B2D0218C9C7"
+    },
+    {
+      "path": "docs\\technical\\18_BEACONS_JOURNAL_STOP_AND_RECOVERY.md",
+      "bytes": 56791,
+      "sha256": "29448170F58EE95519265438BC73475F7779016FDBDF06CA7B02F348D3540C31"
+    },
+    {
+      "path": "docs\\technical\\19_CODE_FUNCTION_AND_DEPENDENCY_MAP.md",
+      "bytes": 71964,
+      "sha256": "D20EF45C543231F86F247EC6234BC4F7CAA037E618024C2F192C6DBE9FDD7713"
+    },
+    {
+      "path": "docs\\technical\\20_IMPLEMENTATION_ORDER_AND_READINESS_EVIDENCE.md",
+      "bytes": 39744,
+      "sha256": "CFAFA0048F8699EC190477C4A779F265D4F7615C521C48A7BFDE5DA96206117E"
+    },
+    {
+      "path": "docs\\technical\\21_DECISION_CODE_VERIFICATION_MATRIX.md",
+      "bytes": 39875,
+      "sha256": "584F7E786CACF7E7548B9B2C8D9BFB6DD4ED97EE71DBDBD0169B9825972D9779"
+    },
+    {
+      "path": "docs\\technical\\22_DESIGN_REVIEW_20260907.md",
+      "bytes": 30628,
+      "sha256": "DF608C9ECE91F6FC28D365141CF1EB4A873559250E8556FC89FE1A463654FDDA"
+    },
+    {
+      "path": "docs\\technical\\23_EXTERNAL_CRITIQUE_AND_REFINEMENTS_20260908.md",
+      "bytes": 41139,
+      "sha256": "601FFF798B867BC382CCCEB01F9758126A507904E103E2C3E59924C177E6F549"
+    },
+    {
+      "path": "docs\\technical\\24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+      "bytes": 80871,
+      "sha256": "958290AAA4741C429D49039BC48D023AC5747C6E920ED4BCB82B60CC8EC0F362"
+    },
+    {
+      "path": "docs\\technical\\25_RESOURCE_ALLOCATION_AND_COMMIT_QUEUE.md",
+      "bytes": 81750,
+      "sha256": "8EBF89F05F66525E22B99143D80887ACD7BC772C59086E6C7DA34F0C3BC54288"
+    },
+    {
+      "path": "docs\\technical\\26_COMPOSITE_STATES_AND_EVOLUTION_TESTING.md",
+      "bytes": 83401,
+      "sha256": "87CB789DCC7A2B80B3C99A02A64D8A0F34766CABBF5017359B8F9F52AD5C5F85"
+    },
+    {
+      "path": "package.json",
+      "bytes": 992,
+      "sha256": "FCD3E621A966146EB2FFC120748008D7D8A4E9243ED371F2D0612535C0ABE02B"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 39955,
+      "sha256": "EC22F0FDE1DF4C227BBA64C6AD8FA519F4E78293B7C542C0D84D829486281462"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 135,
+      "sha256": "500AFEE74F0E5DFEF109FA40EB51B58D46B842C7FB16666AA6782D4056A2DC4E"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "bytes": 86,
+      "sha256": "5AE1B674936687995AD335AC0CAA1C1F702645D9B7A1071CA0CFECAF31DFAC8B"
+    },
+    {
+      "path": "target/debug/dc-desktop.exe",
+      "bytes": 12448256,
+      "sha256": "F58D633FEA693FECE9180C46F2929860B2F2EB228CD51B1B580BD08A07A9FEB6"
+    },
+    {
+      "path": "tools\\check-architecture.mjs",
+      "bytes": 14167,
+      "sha256": "7BFC86E2641755A7B13B3F147BAD8FC62B98938EBD84E5E1B0DEAC733D4C36A8"
+    },
+    {
+      "path": "tools\\check-contract-map.mjs",
+      "bytes": 3294,
+      "sha256": "E56656846423F8750873BABB4A67B17A707A78A387CDD3305C4BDE5EB7AF9E62"
+    },
+    {
+      "path": "tools\\delegate-latency-review.json",
+      "bytes": 574,
+      "sha256": "18150E676A47994B9273639A6AE2F08DEBE3AB805F7EFBC93E7FA37DF9F4779D"
+    },
+    {
+      "path": "tools\\delegate-obligation-impact.json",
+      "bytes": 1304,
+      "sha256": "4C21175A51CE772C29AC6B504ED659710483397393FDF628A828087E2FE3FEDB"
+    },
+    {
+      "path": "tools\\delegate-protocol-codec.json",
+      "bytes": 2736,
+      "sha256": "773B813F9DE01D3649F7DBF2C8CEF9866AF21509BB90DAD64B4F94DFF2193BBF"
+    },
+    {
+      "path": "tools\\delegate-protocol-review.json",
+      "bytes": 1114,
+      "sha256": "C501D188018ADBE394F26069E806E0EDF4E91734DDB3F8A1E6EF43AD22BFCADD"
+    },
+    {
+      "path": "tools\\delegate-result-plan.json",
+      "bytes": 2369,
+      "sha256": "8C6BF7BB07071ADBF7D931528B02B2DD7C1BD5927ECEA0FE833A628B51856C1D"
+    },
+    {
+      "path": "tools\\delegate-result-review.json",
+      "bytes": 1008,
+      "sha256": "F0E8F7D18E1AE00DAFBDD7880F620CFAF85BE18D1C4ECE41FFD9E7E5537D76C3"
+    },
+    {
+      "path": "tools\\delegate-usage-binding.json",
+      "bytes": 2194,
+      "sha256": "B7675782645315D5A27B6EDEC5F0ADA460E9A6EDE748C1910BEB498575584BAA"
+    },
+    {
+      "path": "tools\\delegate-usage-review.json",
+      "bytes": 1102,
+      "sha256": "E89C35EF1D9DE437939D7AF3C33693967B4BF289A505A1EF78AE04C86FAD4F13"
+    },
+    {
+      "path": "tools\\Enter-BuildEnvironment.ps1",
+      "bytes": 2002,
+      "sha256": "0709176E702639CB5FC0040BF65E8BE2D1B564FAA9E099753F43398CCCABB6DF"
+    },
+    {
+      "path": "tools\\external-canary-deepseek.json",
+      "bytes": 217,
+      "sha256": "6BCC944B02E1ED176598B8228C6E175C562D8CC77815D273C76FB094D6D47E77"
+    },
+    {
+      "path": "tools\\external-canary-kimi-pinned.json",
+      "bytes": 263,
+      "sha256": "B009096D0E398D9D9599F2D84D3EF8F1FB40A7DDC82F1031D25294C36A3D2D1E"
+    },
+    {
+      "path": "tools\\external-canary-kimi.json",
+      "bytes": 204,
+      "sha256": "33435338DC7C71E93102EE8ACEDA75C4477B7A5F3B0822A8243DD3D173FDE2FD"
+    },
+    {
+      "path": "tools\\external-model.mjs",
+      "bytes": 7991,
+      "sha256": "D4A36E3E1E26D7B4DCC9D3979C0057132E37F9A651766A326362BAE894E4B150"
+    },
+    {
+      "path": "tools\\external-qwen-tool-probe.json",
+      "bytes": 282,
+      "sha256": "BC0F7A700D671009DE2FD5520B9860E3DC512BC7F822C0D9CC7C104F8681C371"
+    },
+    {
+      "path": "tools\\external-request.mjs",
+      "bytes": 1470,
+      "sha256": "2F590401EA1CA91654647443B6B68C7716EFC6B823A190B2471A577F6CFDC5B9"
+    },
+    {
+      "path": "tools\\external-topology-tests-low.json",
+      "bytes": 1199,
+      "sha256": "E16BED7A2702B51634FE4164E76C96C67C544C15DFF4AA2AF1119DCDC4D7B603"
+    },
+    {
+      "path": "tools\\external-topology-tests.json",
+      "bytes": 1177,
+      "sha256": "D48ABE99B78DC01A60954FB03BA144B847473A94D90EBC56A06D645A33FE1485"
+    },
+    {
+      "path": "tools\\external-verification-direct.json",
+      "bytes": 989,
+      "sha256": "0F5C55F68DB35E338E7D9058D866809DCF3A4DE310DCD450E0CC441549EC8EF0"
+    },
+    {
+      "path": "tools\\external-verification-review.json",
+      "bytes": 1172,
+      "sha256": "441E9D48A7C9CA9DEC3C60B8A42659B8380172CD7D2EB44EC5738FB92744B4CA"
+    },
+    {
+      "path": "tools\\latency-kimi-pinned.json",
+      "bytes": 274,
+      "sha256": "CCA39B47FF075C507AB2013638943C6F5C5CF8185173482D48281452F006F39F"
+    },
+    {
+      "path": "tools\\latency-kimi-pool.json",
+      "bytes": 215,
+      "sha256": "60307326D5873F4ACC285E526FB5C128EDF049763E8B1F42C0F5E8600F49789E"
+    },
+    {
+      "path": "tools\\Prepare-CachedWindowsToolchain.ps1",
+      "bytes": 17722,
+      "sha256": "804E5FCE362A24A4421336E3377E8FC8D12B5C33300F85067B32AA52D3A0D196"
+    },
+    {
+      "path": "tools\\tests\\check-architecture.test.mjs",
+      "bytes": 7129,
+      "sha256": "5000BF546627D4039FA918CB9FF4F235EEC78340CAB8C81C3EB51CACAD5FB6B4"
+    },
+    {
+      "path": "tools\\tests\\check-contract-map.test.mjs",
+      "bytes": 1593,
+      "sha256": "F0494E5302A0E8EF1D2884D8CEF33BD56DB968D19E73C3D26B4A0603A6D7BA57"
+    },
+    {
+      "path": "tools\\tests\\external-request.test.mjs",
+      "bytes": 1725,
+      "sha256": "692C6E3656F45AE423AE30CD6FA7D9FD62A3C5C7EAF46B1CE08B062E4C238283"
+    },
+    {
+      "path": "tools\\tests\\topology-storage-contract.test.mjs",
+      "bytes": 5000,
+      "sha256": "66E8F074DC801186B8F59C8F3C43461238FC304DE37013436E28CC44A43C8080"
+    },
+    {
+      "path": "tools\\Verify.ps1",
+      "bytes": 5357,
+      "sha256": "E80C745D64728137E49DB77D1B422E194D3F846DEE0609E0D0E14B385149F34F"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 777,
+      "sha256": "D290C8661390AB32E30068C31DD59680997C5C2CF19EFDF7CD63EF1608684D84"
+    },
+    {
+      "path": "ui\\assets\\app-icon.svg",
+      "bytes": 337,
+      "sha256": "52779881BA75BF6A8351D9239EDAD5393D34626B91015685DBD2696508D95C68"
+    },
+    {
+      "path": "ui\\index.html",
+      "bytes": 389,
+      "sha256": "CA29B40BCD51CEEB02721FFCC4998636B28561253BC5DDA3CFFE9F530025E51F"
+    },
+    {
+      "path": "ui\\src\\App.tsx",
+      "bytes": 4608,
+      "sha256": "2736995ECF7CFFEACFDD29AC2311C4CCE851279CB785AE7B41E5A876A23FFE85"
+    },
+    {
+      "path": "ui\\src\\application-info.ts",
+      "bytes": 1591,
+      "sha256": "418DD73215B0AEB440E1B6F444ED9E94FF8F4148EE1BE08F8DFE9A2DB4A9D83E"
+    },
+    {
+      "path": "ui\\src\\main.tsx",
+      "bytes": 250,
+      "sha256": "BB58BD45AA441DBADF29EF23A8A72639CF41CCDA9CE9D8EDCC98DCE6FD4286A7"
+    },
+    {
+      "path": "ui\\src\\styles.css",
+      "bytes": 3609,
+      "sha256": "DE5183BD9B4A8267ECF892EC575D8544A4B5CB32683D9403295A4F9D30822234"
+    },
+    {
+      "path": "ui\\tests\\application-info.test.ts",
+      "bytes": 2392,
+      "sha256": "0258E11740B90D385A1F1EF3D67B6281D8FB6F19D9D83E7548A43F2DB01B410F"
+    },
+    {
+      "path": "ui\\tests\\desktop-policy.test.ts",
+      "bytes": 3916,
+      "sha256": "22B17E49402AC521619280D24816F51AF728C574B4BE2ED719D120700E9A0C83"
+    },
+    {
+      "path": "ui\\tests\\page.test.tsx",
+      "bytes": 659,
+      "sha256": "E69A5F44B9B4F78CB7056405712E08730FE5C2AB2353C4E4AF102FDE70A7285B"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 629,
+      "sha256": "9ED9BCD8BD0F24AF4DA31D7CF6EE2CD4B94CEFFCABACA0FB085DEA2B67597D78"
+    }
+  ]
+}

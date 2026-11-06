@@ -1,0 +1,9 @@
+{
+  "model": "dash/qwen3.8-max",
+  "reasoning": "direct",
+  "task": "This is a protocol test, not an action. Return one probe_echo tool call with value exactly 7. No explanation and no additional calls.",
+  "sources": [],
+  "max_tokens": 512,
+  "timeout_ms": 90000,
+  "tool_probe": true
+}

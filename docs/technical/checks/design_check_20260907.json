@@ -1,0 +1,93 @@
+{
+  "mode": "documentation_structure_only",
+  "checked_at_utc": "2026-09-07T17:02:00.3444022Z",
+  "root": "C:/home/researcher",
+  "verdict": "PASS",
+  "checks_total": 45,
+  "checks_passed": 45,
+  "summary": {
+    "documents": 17,
+    "code_contracts": 16,
+    "matrix_decisions": 51,
+    "source_decisions": 51,
+    "local_links": 35,
+    "supplement_groups": 10
+  },
+  "failed_checks": [],
+  "input_files": [
+    {
+      "name": "00_BRANCH_NAVIGATOR.md",
+      "sha256": "50fc5f170c1d0f1becc5c4a6206a7dfeb4638c94fc272ad4dc60073e2f4cf57c"
+    },
+    {
+      "name": "07_OWNER_DECISIONS.md",
+      "sha256": "c2a37c6535f9a67835281dd0a86cb2f3055d946f0b29d182de888363eb0b5558"
+    },
+    {
+      "name": "08_STANDALONE_ARCHITECTURE.md",
+      "sha256": "6cc1e09502aad7a4a84e396dc04bfe384c0a89b39245ae0f710d032c0c1e61ab"
+    },
+    {
+      "name": "09_INTERFACE_RESEARCH.md",
+      "sha256": "443e92cbf7f3c658ce856617b29af2e7ad7e158ba3a1aee45eb2896aabc2ba7d"
+    },
+    {
+      "name": "10_RISKS_AND_HIDDEN_BOUNDARIES.md",
+      "sha256": "5ab084c33bea6de0c2bf88a97807839837374287c13ac63b289217d8e7a93751"
+    },
+    {
+      "name": "11_DESIGN_DIRECTION_AND_PLAN.md",
+      "sha256": "6a14394cf6a9f500ab18226f2075e813c700ae3ecd84cb5faf847950fa735c56"
+    },
+    {
+      "name": "12_COMPLETENESS_REVIEW_20260904.md",
+      "sha256": "7c7ebdb96a756b4e48dc8fdd6152f483b1eef0070d8464b67e1232c8c0fb6cef"
+    },
+    {
+      "name": "13_TECHNICAL_CONSTITUTION.md",
+      "sha256": "14f7cb5fafa3aa25bcf5db8df031af44bfa0524b60b9be44a8a49d4c0b82de38"
+    },
+    {
+      "name": "14_DATA_STATE_AND_RECOVERY.md",
+      "sha256": "77170554b480efc2db07ee9b7f073ecb5be5602b09a6095063740a84d6041aeb"
+    },
+    {
+      "name": "15_CONTEXT_MEMORY_AND_INSTRUCTIONS.md",
+      "sha256": "f307fc557a0662a807d0962a61e4298ca13b1311702b98f7194edc69e70d4340"
+    },
+    {
+      "name": "16_EXECUTION_MODELS_AND_VERIFICATION.md",
+      "sha256": "45c985701909fadb536c840da691f5e29c397c02b1bb9161cd60dd5e8a370f81"
+    },
+    {
+      "name": "17_PERMISSIONS_SECURITY_AND_ACTIONS.md",
+      "sha256": "30dce3b53b23b9e960a897fad1269ea7a7efef8be4201beb0998048a48ff9e57"
+    },
+    {
+      "name": "18_BEACONS_JOURNAL_STOP_AND_RECOVERY.md",
+      "sha256": "40c0651b054297e190a2ad4ae886f8848314bb7eece181d4caa2276d979ad1b5"
+    },
+    {
+      "name": "19_CODE_FUNCTION_AND_DEPENDENCY_MAP.md",
+      "sha256": "089c3b29f4432bed34e7c3d5c41adb26b67f4fbcb192713b2bb90c824223f181"
+    },
+    {
+      "name": "20_IMPLEMENTATION_ORDER_AND_READINESS_EVIDENCE.md",
+      "sha256": "489ff6cb00db2d4c227565d18e6d8d71008e15938e339335f217d721d924c440"
+    },
+    {
+      "name": "21_DECISION_CODE_VERIFICATION_MATRIX.md",
+      "sha256": "a54793c59a37dc8cc065d092e94bf870d288dce49e0611641857a0cf82293963"
+    },
+    {
+      "name": "22_DESIGN_REVIEW_20260907.md",
+      "sha256": "ac3b64abc64909fe489d4ff58bbf54a7b30ea6830b8160805103914f1c7a0e4a"
+    }
+  ],
+  "checker_sha256": "208ad9391b343cd33b51878644c28479375da8000a21ee29036a8b6d5a4e6ad8",
+  "limitations": [
+    "No product implementation tested.",
+    "No proof of semantic completeness or absence of vulnerabilities.",
+    "Link targets checked as files; URL contents and Markdown anchor destinations not checked."
+  ]
+}

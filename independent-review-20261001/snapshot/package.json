@@ -1,0 +1,36 @@
+{
+  "name": "deep-create",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.3.4",
+  "engines": {
+    "node": ">=22.12.0 <23",
+    "pnpm": "12.3.4"
+  },
+  "scripts": {
+    "ui:dev": "vite --host 127.0.0.1",
+    "ui:typecheck": "tsc --noEmit -p tsconfig.json",
+    "ui:test": "vitest run",
+    "ui:build": "pnpm ui:typecheck && vite build",
+    "ui:preview": "vite preview --host 127.0.0.1",
+    "desktop:dev": "cd crates/dc-desktop && tauri dev",
+    "desktop:build": "cd crates/dc-desktop && tauri build --no-bundle",
+    "check": "pnpm ui:typecheck && pnpm ui:test && pnpm ui:build"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "@types/node": "22.20.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "@vitejs/plugin-react": "6.1.1",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "4.1.11"
+  }
+}

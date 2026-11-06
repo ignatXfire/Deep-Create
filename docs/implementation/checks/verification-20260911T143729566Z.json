@@ -1,0 +1,108 @@
+{
+  "run": "20260911T143729566Z",
+  "complete": false,
+  "boundary": "Current implemented slice only; not full application acceptance or power-loss proof",
+  "steps": [
+    {
+      "name": "powershell-syntax",
+      "executable": "C:/home/researcher",
+      "arguments": [
+        "-NoProfile",
+        "-Command",
+        "$failed=$false; Get-ChildItem -LiteralPath tools -Filter *.ps1 -File | ForEach-Object { $t=$null; $e=$null; [void][System.Management.Automation.Language.Parser]::ParseFile($_.FullName,[ref]$t,[ref]$e); if($e.Count){ $failed=$true; $e | ForEach-Object Message } }; if($failed){exit 1}"
+      ],
+      "started_utc": "2026-09-11T14:37:29.6127321Z",
+      "ended_utc": "2026-09-11T14:37:31.1449348Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143729566Z\\powershell-syntax.log"
+    },
+    {
+      "name": "toolchain-preflight",
+      "executable": "C:/home/researcher",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "tools/Prepare-CachedWindowsToolchain.ps1",
+        "-ValidateOnly"
+      ],
+      "started_utc": "2026-09-11T14:37:31.1636484Z",
+      "ended_utc": "2026-09-11T14:38:13.5870416Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143729566Z\\toolchain-preflight.log"
+    },
+    {
+      "name": "contract-baseline",
+      "executable": "C:/home/researcher",
+      "arguments": [
+        "-NoProfile",
+        "-Command",
+        "$r=Get-Content -LiteralPath docs/technical/checks/design_check_20260908.json -Raw | ConvertFrom-Json; foreach($f in $r.input_files){ if([IO.Path]::GetFileName($f.name) -ne $f.name){throw \"Invalid baseline path\"}; if((Get-FileHash -LiteralPath (Join-Path docs/technical $f.name) -Algorithm SHA256).Hash -ne $f.sha256){throw \"Baseline differs: $($f.name)\"} }; Write-Output \"Verified $($r.input_files.Count) baseline documents\""
+      ],
+      "started_utc": "2026-09-11T14:38:13.6817072Z",
+      "ended_utc": "2026-09-11T14:38:17.4892670Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143729566Z\\contract-baseline.log"
+    },
+    {
+      "name": "rust-format",
+      "executable": "cargo",
+      "arguments": [
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "started_utc": "2026-09-11T14:38:17.5987240Z",
+      "ended_utc": "2026-09-11T14:38:20.4880771Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143729566Z\\rust-format.log"
+    },
+    {
+      "name": "architecture-selftests",
+      "executable": "node",
+      "arguments": [
+        "--test",
+        "tools/tests/check-architecture.test.mjs"
+      ],
+      "started_utc": "2026-09-11T14:38:20.4901518Z",
+      "ended_utc": "2026-09-11T14:38:22.3544639Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143729566Z\\architecture-selftests.log"
+    },
+    {
+      "name": "architecture",
+      "executable": "node",
+      "arguments": [
+        "tools/check-architecture.mjs"
+      ],
+      "started_utc": "2026-09-11T14:38:22.3560241Z",
+      "ended_utc": "2026-09-11T14:38:26.3739144Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143729566Z\\architecture.log"
+    },
+    {
+      "name": "contract-map-selftests",
+      "executable": "node",
+      "arguments": [
+        "--test",
+        "tools/tests/check-contract-map.test.mjs"
+      ],
+      "started_utc": "2026-09-11T14:38:26.4796655Z",
+      "ended_utc": "2026-09-11T14:38:32.8808370Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260911T143729566Z\\contract-map-selftests.log"
+    },
+    {
+      "name": "contract-map",
+      "executable": "node",
+      "arguments": [
+        "tools/check-contract-map.mjs"
+      ],
+      "started_utc": "2026-09-11T14:38:32.8843008Z",
+      "ended_utc": "2026-09-11T14:38:34.0641635Z",
+      "exit_code": 1,
+      "log": ".local\\verification\\20260911T143729566Z\\contract-map.log"
+    }
+  ],
+  "artifacts": [],
+  "failure": "Check contract-map exited with code 1"
+}

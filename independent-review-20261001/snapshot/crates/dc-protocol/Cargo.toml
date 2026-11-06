@@ -1,0 +1,21 @@
+[package]
+name = "dc-protocol"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[dependencies]
+dc-domain = { path = "../dc-domain" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+[features]
+# Test-only escape hatch: lets integration tests in `tests/` construct an
+# `AuthenticatedPeer` fixture without C-12. Production builds never enable
+# this. The crate-level lint `unsafe_code = forbid` still applies.
+test-peer-constructor = []
+
+[lints]
+workspace = true

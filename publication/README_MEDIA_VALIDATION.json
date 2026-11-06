@@ -1,0 +1,143 @@
+{
+  "format": "deep-create-readme-media-validation/v1",
+  "checkedAt": "2026-11-06T21:35:35.317Z",
+  "scope": "README, video, podcast, local links, inventory, and secret scan; not a fresh product build or audit of the online notebook",
+  "baseline": "research-snapshot-2026-11-06-r3",
+  "checks": {
+    "noRemovedFiles": true,
+    "noUnexpectedChanges": true,
+    "noBrokenLocalLinks": true,
+    "missingAssetNegativeControl": true,
+    "approvedMediaMatch": true,
+    "gitleaksExitZero": true,
+    "videoProbeExitZero": true,
+    "videoDuration88Seconds": true,
+    "noPrivateContainers": true,
+    "oldVideoPlaceholderRemoved": true,
+    "notebookR2Label": true,
+    "videoNotRuntimeClaim": true,
+    "podcastChecksPass": true,
+    "podcastLinked": true,
+    "aiCodeDisclosure": true,
+    "independentReviewWarning": true,
+    "concreteExampleBeforeRepositoryMap": true,
+    "noMeasuredSpeedupClaim": true
+  },
+  "changedFiles": [
+    "AUTHORS.md",
+    "CITATION.cff",
+    "LICENSE-STATUS.md",
+    "publication/ANNOUNCEMENT.md",
+    "publication/PUBLICATION_SCOPE.md",
+    "publication/PUBLIC_MANIFEST.json",
+    "publication/PUBLISHING.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "addedFiles": [
+    "assets/deep-create-logo.png",
+    "assets/deep-create-overview.jpg",
+    "assets/deep-create-overview.mp4",
+    "assets/deep-create-podcast.m4a",
+    "assets/MEDIA_CREDITS.md",
+    "publication/README_MEDIA_VALIDATION.json"
+  ],
+  "removedFiles": [],
+  "unexpectedChanges": [],
+  "localLinksChecked": 469,
+  "brokenLinks": [],
+  "media": [
+    {
+      "file": "assets/deep-create-logo.png",
+      "bytes": 868092,
+      "sha256": "cef6a74ac7de7d9f47236be4e03a23b0014b9d196c622d9fc84890af8bb69aa4",
+      "matchesApprovedAsset": true
+    },
+    {
+      "file": "assets/deep-create-overview.jpg",
+      "bytes": 74347,
+      "sha256": "89267983a2cff73ab578fd80372c6ab31cfcc6021f9a15cf2b9fdab4c74a9ef4",
+      "matchesApprovedAsset": true
+    },
+    {
+      "file": "assets/deep-create-overview.mp4",
+      "bytes": 7055041,
+      "sha256": "9a150e2b7ab6883bf2d60ebbbad669665b3550fc0816f41ef64c526cc1e26e53",
+      "matchesApprovedAsset": true
+    },
+    {
+      "file": "assets/deep-create-podcast.m4a",
+      "bytes": 76302739,
+      "sha256": "cba5235af802febeb99534636fba21487ae93cd129446a2ba30e6535e74c6426",
+      "matchesApprovedAsset": true
+    }
+  ],
+  "commands": [
+    {
+      "tool": "gitleaks 8.30.1 dir, redacted, ignore-gitleaks-allow",
+      "exitCode": 0
+    },
+    {
+      "tool": "ffprobe, short animated video",
+      "exitCode": 0
+    },
+    {
+      "tool": "ffprobe, original audio podcast",
+      "exitCode": 0
+    },
+    {
+      "tool": "gitleaks stdin, machine transcript bound by source hash",
+      "exitCode": 0
+    }
+  ],
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "60/1"
+      },
+      {
+        "codec_type": "audio",
+        "r_frame_rate": "0/0"
+      }
+    ],
+    "format": {
+      "duration": "88.000000"
+    }
+  },
+  "podcast": {
+    "format": {
+      "duration": "2370.292971",
+      "tags": {
+        "major_brand": "dash",
+        "minor_version": "0",
+        "compatible_brands": "iso6mp41",
+        "creation_time": "2026-11-06T15:27:00.000000Z",
+        "encoder": "Google"
+      }
+    }
+  },
+  "podcastChecks": {
+    "probeExitZero": true,
+    "originalAudioUnchanged": true,
+    "transcriptBoundToAudio": true,
+    "transcriptSecretScanExitZero": true,
+    "noPrivateIdentifiersInTranscript": true,
+    "duration39m30s": true
+  },
+  "podcastTranscript": {
+    "language": "en",
+    "sourceSha256": "cba5235af802febeb99534636fba21487ae93cd129446a2ba30e6535e74c6426",
+    "segments": 693,
+    "lastSegmentEnd": 2369.89,
+    "manualAudioReview": false,
+    "limitation": "Machine transcription and pattern scans can miss spoken private data; not a guarantee of absence."
+  },
+  "notebookAccessVerified": false,
+  "githubRenderingVerified": false,
+  "productBuildRerun": false
+}

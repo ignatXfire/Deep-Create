@@ -1,0 +1,24 @@
+{
+  "model": "dash/deepseek-v4-pro-0813",
+  "reasoning": "direct",
+  "max_tokens": 1700,
+  "timeout_ms": 90000,
+  "task": "Read-only review, at most 3 concrete defects with exact triggering input and file line or NO_FINDINGS. Pure trusted C01 proposals; no IO/auth/real C03 yet, explicitly NOT implemented. Do not report those declared boundaries as code defects. Initial owner rejection adds exact OwnerRejectionPending event gate, retains candidate/stage/history, owns only Valid->Unresolved states it actually changes. Resolution requires exact stored pending decision and accepted repair review; can restore only ProvenUnaffected current state exactly equal to a stored owned held row, advancing version, never prior/concurrent other-cause holds. Clears only own root gate and pending field. check_root_basis now additionally requires any Some pending to match final_review, scope, candidate/final verification and presence of its exact gate. Existing GatePolicy makes new pending gate same as UnknownOutcome: read/reason/plan/cancel/observe/owner decision possible but effect/submit/accept forbidden; generic plan_root_transition checks gates before acceptance. Complete canonical graph is guaranteed internally by ValidatedGraph; full database completeness/provenance/dedup is future C03 responsibility. Inspect actual bypasses, stale cross-binding, rollback or publication reactivation errors, not new broad features. Also note whether duplicate rejection would silently overwrite a pending one. Do not claim tests run. <=650 words.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work/owner_rejection.rs",
+      "start": 1,
+      "end": 190
+    },
+    {
+      "path": "crates/dc-domain/src/work/owner_return.rs",
+      "start": 1,
+      "end": 275
+    },
+    {
+      "path": "docs/technical/24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+      "start": 174,
+      "end": 186
+    }
+  ]
+}

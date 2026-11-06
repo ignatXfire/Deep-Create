@@ -1,0 +1,16 @@
+[package]
+name = "dc-watchdog"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+dc-domain = { path = "../dc-domain" }
+dc-store = { path = "../dc-store", features = ["sqlite"] }
+dc-windows = { path = "../dc-windows" }
+thiserror.workspace = true

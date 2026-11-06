@@ -1,0 +1,39 @@
+{
+  "model": "dash/kimi-k3",
+  "reasoning": "low",
+  "task": "Return only Rust code for new module work/commit.rs and one export line for work.rs, marked with FILE headings. Implement a narrow opaque ResultTransitionPlan which combines transition_result's packet replacement and the matching WorkUnitSpec stage/accepted_result replacement. No database, no network, no authority issuance, no new dependencies. Existing transition_result remains the semantic validator. Use ResultCommitView plus UnitAttemptState and ExpectedLifecycleBasis, current RunGeneration and explicit installation/unit gates. Require exact equality of state.unit to the graph's unit; exact scope/unit/attempt/generation and expected versions; attempt must be Submitted and remain unchanged (a READ precondition, not a fictitious write). Submitted->Verifying maps unit ResultSubmitted->Verifying, Verifying->Accepted/Rejected maps corresponding unit stages; Submitted/Verifying->Stale maps Stale. AcceptedResultRef is only set for Accepted using returned packet fingerprint/snapshot/revision, absent otherwise. Reject existing accepted_result, stale expected result or unit/attempt versions, wrong attempt, stale/future run, and any counter overflow. Gate semantic Verifying/Accepted using combined caller gates AND graph root gates; fact-preserving Rejected/Stale should follow existing rules. Return private fields with getters for packet, unit (or state), expected read basis and a typed transition event including result/unit/attempt/stages/optional verification id. Preserve all source data on failure. Document C03 must atomically compare all read rows and save replacements/event; this is a partial packet/unit plan, NOT a full verified-result transaction (obligation/ledger/provenance integration still pending). Keep code <=230 lines. No tests or claims tests ran. Do not refactor existing code.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work.rs",
+      "start": 1,
+      "end": 90
+    },
+    {
+      "path": "crates/dc-domain/src/work.rs",
+      "start": 210,
+      "end": 246
+    },
+    {
+      "path": "crates/dc-domain/src/work/result.rs",
+      "start": 59,
+      "end": 169
+    },
+    {
+      "path": "crates/dc-domain/src/work/result.rs",
+      "start": 575,
+      "end": 678
+    },
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 1,
+      "end": 168
+    },
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 169,
+      "end": 210
+    }
+  ],
+  "max_tokens": 4500,
+  "timeout_ms": 180000
+}

@@ -1,0 +1,11 @@
+# Automatically generated - DO NOT EDIT!
+
+[[permission]]
+identifier = "allow-plan-objective-graph"
+description = "Enables the plan_objective_graph command without any pre-configured scope."
+commands.allow = ["plan_objective_graph"]
+
+[[permission]]
+identifier = "deny-plan-objective-graph"
+description = "Denies the plan_objective_graph command without any pre-configured scope."
+commands.deny = ["plan_objective_graph"]

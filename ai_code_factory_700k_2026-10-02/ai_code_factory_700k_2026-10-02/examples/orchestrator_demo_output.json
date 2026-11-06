@@ -1,0 +1,134 @@
+{
+  "states": {
+    "WP-001": "REVIEW_GREEN",
+    "WP-002": "REVIEW_GREEN",
+    "WP-003": "REVIEW_GREEN",
+    "WP-004": "REVIEW_GREEN"
+  },
+  "events": [
+    {
+      "ts": 1790944170.398058,
+      "kind": "CLAIM",
+      "task_id": "WP-001",
+      "authority": [
+        "api:user:v3"
+      ]
+    },
+    {
+      "ts": 1790944170.4483347,
+      "kind": "ACCEPTED_DEMO",
+      "task_id": "WP-001",
+      "receipt": {
+        "task_id": "WP-001",
+        "attempt_id": "5818328e-a826-4668-9ab5-35c9144ee7fb",
+        "model": "dash/qwen3.8-max-0902",
+        "status": "LOCAL_GREEN",
+        "head_sha": "DEMO_HEAD_SHA",
+        "commands": [
+          {
+            "command": "demo-test",
+            "exit_code": 0,
+            "tests_discovered": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0
+          }
+        ],
+        "artifacts": []
+      }
+    },
+    {
+      "ts": 1790944170.4687414,
+      "kind": "CLAIM",
+      "task_id": "WP-002",
+      "authority": [
+        "domain:user:service"
+      ]
+    },
+    {
+      "ts": 1790944170.4687557,
+      "kind": "CLAIM",
+      "task_id": "WP-003",
+      "authority": [
+        "ui:user"
+      ]
+    },
+    {
+      "ts": 1790944170.519046,
+      "kind": "ACCEPTED_DEMO",
+      "task_id": "WP-002",
+      "receipt": {
+        "task_id": "WP-002",
+        "attempt_id": "9f64df96-f0b0-4ed0-af4a-c040a1ef4f36",
+        "model": "dash/deepseek-v4-pro-0813",
+        "status": "LOCAL_GREEN",
+        "head_sha": "DEMO_HEAD_SHA",
+        "commands": [
+          {
+            "command": "demo-test",
+            "exit_code": 0,
+            "tests_discovered": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0
+          }
+        ],
+        "artifacts": []
+      }
+    },
+    {
+      "ts": 1790944170.5190964,
+      "kind": "ACCEPTED_DEMO",
+      "task_id": "WP-003",
+      "receipt": {
+        "task_id": "WP-003",
+        "attempt_id": "9ae8f06c-7293-4402-9e12-40ac49e545c9",
+        "model": "dash/kimi-k3",
+        "status": "LOCAL_GREEN",
+        "head_sha": "DEMO_HEAD_SHA",
+        "commands": [
+          {
+            "command": "demo-test",
+            "exit_code": 0,
+            "tests_discovered": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0
+          }
+        ],
+        "artifacts": []
+      }
+    },
+    {
+      "ts": 1790944170.5395756,
+      "kind": "CLAIM",
+      "task_id": "WP-004",
+      "authority": [
+        "journey:user"
+      ]
+    },
+    {
+      "ts": 1790944170.58984,
+      "kind": "ACCEPTED_DEMO",
+      "task_id": "WP-004",
+      "receipt": {
+        "task_id": "WP-004",
+        "attempt_id": "903dff44-1d5e-4ad8-9d79-212829f59591",
+        "model": "dash/kimi-k3",
+        "status": "LOCAL_GREEN",
+        "head_sha": "DEMO_HEAD_SHA",
+        "commands": [
+          {
+            "command": "demo-test",
+            "exit_code": 0,
+            "tests_discovered": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0
+          }
+        ],
+        "artifacts": []
+      }
+    }
+  ]
+}

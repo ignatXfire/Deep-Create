@@ -1,0 +1,8 @@
+{
+  "model": "dash/kimi-k3",
+  "task": "Return exactly the JSON object {\"ok\":true,\"sum\":7}. No explanation.",
+  "sources": [],
+  "max_tokens": 512,
+  "timeout_ms": 180000,
+  "response_format": true
+}

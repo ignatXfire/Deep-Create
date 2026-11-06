@@ -1,0 +1,20 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "version-page",
+  "description": "Read build metadata and work units; submit objectives and start attempts. No filesystem, shell, network, database or core plugin permissions.",
+  "local": true,
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "allow-application-info",
+    "allow-work-unit-ids",
+    "allow-work-units",
+    "allow-submit-objective",
+    "allow-start-attempt",
+    "allow-plan-objective-graph",
+    "allow-accept-graph",
+    "allow-execute-graph",
+    "allow-health-check"
+  ]
+}

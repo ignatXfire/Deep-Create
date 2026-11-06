@@ -1,0 +1,24 @@
+{
+  "model": "dash/deepseek-v4-pro-0813",
+  "reasoning": "direct",
+  "max_tokens": 1200,
+  "timeout_ms": 90000,
+  "task": "Review one concrete development decision. We are extending the result/unit plan with exact immutable read bindings to already-observed resource ledger rows; no second charge or release. Should we ALSO overwrite ObjectiveContract.obligations status/row_version on result acceptance now? Packet snapshot currently reads each unit obligation row, completion rechecks accepted packet freshness. Assess if naive obligation status increment would invalidate that packet's own snapshot, and whether current derive_completion_candidate already derives fulfilment from exact verification findings. Return <=350 words in Russian with concrete code reasons, no broad redesign or code. Prefer defer unsupported write coupling over silently rewriting historical snapshot; identify exact prerequisite for a later real transaction. External critique is an opinion, not authorization or canonical contract.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work/result.rs",
+      "start": 424,
+      "end": 470
+    },
+    {
+      "path": "crates/dc-domain/src/work/result.rs",
+      "start": 715,
+      "end": 852
+    },
+    {
+      "path": "docs/technical/16_EXECUTION_MODELS_AND_VERIFICATION.md",
+      "start": 451,
+      "end": 482
+    }
+  ]
+}

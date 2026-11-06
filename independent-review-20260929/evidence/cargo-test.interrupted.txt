@@ -1,0 +1,1 @@
+interrupted during dependency compilation; no completed test run; avoid network-active broker integration tests

@@ -1,0 +1,39 @@
+{
+  "model": "dash/kimi-k3",
+  "reasoning": "low",
+  "max_tokens": 4400,
+  "timeout_ms": 180000,
+  "task": "Return only Rust for a new work/owner_rejection.rs, <=230 lines. Implement initial pending owner rejection BEFORE accepted repair analysis, to connect existing owner_return.rs. Pure C01 trusted caller inputs, no IO/auth/Deserialize and no actual commit claim. Existing fields RootLifecycleState gains pub pending_owner_rejection:Option<PendingOwnerRejection>; BlockingReason gains OwnerRejectionPending{owner_event_id:EntityId}. Imports super::* and super::lifecycle::{check_root_basis,next_row}. You provide opaque PendingOwnerRejection {decision:OwnerRejectionDecision,completion:ReviewedCompletion,publication_holds:Vec<PublicationRejectionHold>} with getters decision(),completion(),publication_holds(). PublicationRejectionHold opaque before:PublicationState,held:PublicationState + getters. Pure OwnerRejectionPlan opaque replacement:RootLifecycleState,expected_root_row,expected_graph_row,expected_objective_row,publication_reads:Vec<PublicationState>,publication_replacements:Vec<PublicationState>, getters. plan_owner_rejection(state,expected_row_version,current_scope,graph:&ValidatedGraph,decision:&OwnerRejectionDecision)->Result<OwnerRejectionPlan,WorkError>. Check shared check_root_basis; only AwaitingOwnerAcceptance with no pending record or pending gate at all (duplicates/conflicting/new rejections cannot overwrite). Exact decision candidate_id/scope/final_verification_id vs current candidate/final review. Graph expected=current, exact root equality, exact current objective scope exists. No completion freshness check so owner may reject stale result. Enumerate ALL publications for this work AND current objective in graph; capture full current publication states in sorted read set even if unchanged. Unknown initial impact: every Valid -> Unresolved, reason_evidence_id=decision.reason_evidence_id, checked row+1; capture before/held pair for ONLY changed Valid states. Existing Unresolved/Withdrawn unchanged incl reason,row, never claim ownership of them. New root row+1, stage stays AwaitingOwnerAcceptance, candidate/final_review unchanged, add exact pending gate preserving all unrelated gates; pending record saves exact decision/completion/holds. This is receiving/recording owner decision, no authority to execute. Plans must be applied atomically by future C03; root/graph/objective and all publication reads rechecked; no global ID reuse or command dedup claim. Reject malformed input with existing WorkError::OwnerRejectionMismatch,ResultBasisMismatch,InvalidTransition,RowVersionConflict,GraphVersionConflict etc. Existing trusted ValidatedGraph guarantees uniqueness/size/internal publication provenance; don't reimplement whole graph validation. Do not include false claims about tests. Root will independently implement resolution: require exact stored pending decision, allow Unresolved->Valid only for ProvenUnaffected with current state EXACTLY equal to an owned held row, never reopen a concurrent other-cause state; remove only own pending gate. Also root will add common state coherence and tests. Minimize code and dependencies; no duplicate wrapper functions.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work/owner_return.rs",
+      "start": 1,
+      "end": 66
+    },
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 510,
+      "end": 566
+    },
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 614,
+      "end": 657
+    },
+    {
+      "path": "crates/dc-domain/src/work.rs",
+      "start": 270,
+      "end": 308
+    },
+    {
+      "path": "crates/dc-domain/src/work/links.rs",
+      "start": 112,
+      "end": 156
+    },
+    {
+      "path": "docs/technical/24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+      "start": 174,
+      "end": 186
+    }
+  ]
+}

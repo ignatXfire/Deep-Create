@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "boundary": "This registry checks traceability and explicit gaps, not semantic correctness, test execution or authority. Complete canonical persistence is not implemented.",
+  "contracts": [
+    {
+      "id": "14.EntityId/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/ids.rs",
+      "symbol": "EntityId",
+      "tests": [
+        "crates/dc-domain/tests/identity_contracts.rs"
+      ],
+      "implemented": [
+        "Strict UUIDv7 bits, accurate text parsing."
+      ],
+      "deferred": [
+        "Trusted generation, uniqueness and prohibition of reuse in storage."
+      ]
+    },
+    {
+      "id": "16.WorkUnitSpec/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work.rs",
+      "symbol": "WorkUnitSpec",
+      "tests": [
+        "crates/dc-domain/tests/work_contracts.rs"
+      ],
+      "implemented": [
+        "Scope, obligations, final limits, verifiable criteria."
+      ],
+      "deferred": [
+        "Full contract of execution, entrusted recording and reading of canonical editions."
+      ]
+    },
+    {
+      "id": "24.ResultPublication/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/links.rs",
+      "symbol": "ResultPublication",
+      "tests": [
+        "crates/dc-domain/tests/work_contracts.rs"
+      ],
+      "implemented": [
+        "Typed output, origin, and current validity."
+      ],
+      "deferred": [
+        "Sealed Evidence, Trusted Receipt from C-03/C-04, Record and Checkpoint."
+      ]
+    },
+    {
+      "id": "16.VerificationRecord/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/result.rs",
+      "symbol": "VerificationRecord",
+      "tests": [
+        "crates/dc-domain/tests/work_contracts.rs"
+      ],
+      "implemented": [
+        "Accurate basis of the result and examination of related evidence."
+      ],
+      "deferred": [
+        "Calibration, valid method qualification, and source independence through this C-08."
+      ]
+    },
+    {
+      "id": "24.PublicationState/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/links.rs",
+      "symbol": "PublicationState",
+      "tests": [
+        "crates/dc-domain/tests/work_contracts.rs"
+      ],
+      "implemented": [
+        "A separate mutable publication eligibility state."
+      ],
+      "deferred": [
+        "Trusted Reader and Writer C-03, Origin Restoration."
+      ]
+    },
+    {
+      "id": "24.OwnerAcceptanceBinding/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/links.rs",
+      "symbol": "OwnerAcceptanceBinding",
+      "tests": [
+        "crates/dc-domain/tests/work_contracts.rs"
+      ],
+      "implemented": [
+        "The exact link of the result accepted by the owner."
+      ],
+      "deferred": [
+        "Certified owner team path and long lasting event."
+      ]
+    },
+    {
+      "id": "25.ResourceObservation/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/resource.rs",
+      "symbol": "ResourceObservation",
+      "tests": [
+        "crates/dc-domain/tests/authority_resources.rs"
+      ],
+      "implemented": [
+        "Exact position, type of resource, reservation; prohibition of mixing and conflicting repetitions."
+      ],
+      "deferred": [
+        "Observer ID, global fact recording, and single expense transaction."
+      ]
+    },
+    {
+      "id": "15.DataClass/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/permission.rs",
+      "symbol": "DataClass",
+      "tests": [
+        "crates/dc-domain/tests/authority_resources.rs"
+      ],
+      "implemented": [
+        "Unified Dictionary of Sensitivity; Secret ban in the model call area."
+      ],
+      "deferred": [
+        "Complete source classification, context assembly, and secret broker."
+      ]
+    },
+    {
+      "id": "17.CapabilityLease/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/permission.rs",
+      "symbol": "CapabilityLease",
+      "tests": [
+        "crates/dc-domain/tests/authority_resources.rs"
+      ],
+      "implemented": [
+        "Narrowing, timing, generation and fencing in pure rules."
+      ],
+      "deferred": [
+        "Issuing across a trusted boundary, validating real objects, and stopping serialization."
+      ]
+    },
+    {
+      "id": "24.GlobalTopologyHead/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/topology.rs",
+      "symbol": "PreparedTopologyChange",
+      "tests": [
+        "tools/tests/topology-storage-contract.test.mjs",
+        "crates/dc-domain/tests/work_contracts.rs"
+      ],
+      "implemented": [
+        "Global head, bound candidate, old base check and SQL fragment."
+      ],
+      "deferred": [
+        "Real C-03, consistent graph read, write all subject lines and checkpoint."
+      ]
+    },
+    {
+      "id": "16.ResultTransitionPlan/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/commit.rs",
+      "symbol": "ResultTransitionPlan",
+      "tests": [
+        "crates/dc-domain/tests/work_contracts.rs"
+      ],
+      "implemented": [
+        "Associated result and unit substitutions, exact attempt as read condition, three levels of blocking, event, and exact binding of received packet."
+      ],
+      "deferred": [
+        "Single Entry C-03, Command Repeat, Expenditure, Obligations, Origin and Input Reason Authentication."
+      ]
+    },
+    {
+      "id": "16.ObservedUsageBinding/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/usage_binding.rs",
+      "symbol": "UsageBinding",
+      "tests": [
+        "crates/dc-domain/tests/usage_bindings.rs"
+      ],
+      "implemented": [
+        "Exact match between the expected strings, the attempt and the observations already applied; maintaining the unknown balance and excess without re-writing off."
+      ],
+      "deferred": [
+        "Certified complete list of attempt consumption, operating restrictions, reading and single fixation C-03; separate proof of no expenditure."
+      ]
+    },
+    {
+      "id": "16.AccountedResultPlan/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/commit.rs",
+      "symbol": "AccountedResultPlan",
+      "tests": [
+        "crates/dc-domain/tests/work_contracts.rs",
+        "crates/dc-domain/tests/usage_bindings.rs"
+      ],
+      "implemented": [
+        "Relationship between acceptance or rejection of the result and the observed cost of the exact attempt; exceeding blocks acceptance, but is not erased upon rejection."
+      ],
+      "deferred": [
+        "Generic C-03 with guard boundary, origin, checkpoint and check of all expected lines."
+      ]
+    },
+    {
+      "id": "19.UnitAttemptEnvelope/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-protocol/src/lib.rs",
+      "symbol": "decode_envelope",
+      "tests": [
+        "crates/dc-protocol/tests/envelopes.rs",
+        "tools/tests/check-architecture.test.mjs"
+      ],
+      "implemented": [
+        "Limited parsing and coding of the six existing try commands; accurate u64 string counters, installation and startup check, closed errors without source body."
+      ],
+      "deferred": [
+        "C-12 Authenticated Sender, Roles and Permissions Table, Other Species Observations, C-03 Durable Replays, and True Inter-Process Channel."
+      ]
+    },
+    {
+      "id": "14.OwnerReturnPlan/v2",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/owner_return.rs",
+      "symbol": "OwnerReturnPlan",
+      "tests": [
+        "crates/dc-domain/tests/lifecycle_contracts.rs",
+        "crates/dc-domain/tests/cases/owner_return.rs",
+        "crates/dc-domain/tests/cases/owner_rejection.rs"
+      ],
+      "implemented": [
+        "Returns require an accurate recorded deviation; removes only its cause and the proven independent constraint of the exact unchanged string; saves history, other locks and reading conditions."
+      ],
+      "deferred": [
+        "Certified owner input, true cause/effect test, and non-repair explanation branch; change of purpose; single entry C-03, completeness of area of ​​influence, non-repeatable numbers and creation of next attempts."
+      ]
+    },
+    {
+      "id": "14.OwnerRejectionPlan/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/owner_rejection.rs",
+      "symbol": "OwnerRejectionPlan",
+      "tests": [
+        "crates/dc-domain/tests/lifecycle_contracts.rs",
+        "crates/dc-domain/tests/cases/owner_rejection.rs"
+      ],
+      "implemented": [
+        "Acceptance of rejection before analysis of the reason: precise pending entry and targeted prohibition of acceptance; unknown influence and origin of the grants' own temporary restrictions, without overwriting old reasons."
+      ],
+      "deferred": [
+        "Real Owner Certified Channel, Long Lasting General Recording and Repetition Recognition C-03; recovery of damaged records and semantic verification of the cause."
+      ]
+    },
+    {
+      "id": "14.BlockingGates/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/lifecycle.rs",
+      "symbol": "GateOperation",
+      "tests": [
+        "crates/dc-domain/tests/lifecycle_contracts.rs"
+      ],
+      "implemented": [
+        "Closed classes of operations, combination of constraints and transitions of the current life cycle."
+      ],
+      "deferred": [
+        "Full profile of attempt actions and all calling C-05/C-06/C-09/C-10."
+      ]
+    },
+    {
+      "id": "16.ContinuationPlan/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/work/continuation.rs",
+      "symbol": "plan_continuation_new_attempt",
+      "tests": [
+        "crates/dc-domain/tests/lifecycle_contracts.rs",
+        "crates/dc-domain/tests/cases/continuation.rs"
+      ],
+      "implemented": [
+        "Pure continuation transfer plan only after confirmed failure: the same unit receives a new attempt identity in the matched Leased + Prepared pair; the old attempt is not revived and is not reused.",
+        "The exact lines of the unit and the previous attempt, the area, the unit, the generation of the launch, the absence of an accepted result, the immutable attempt counter and the hard limit are checked. A complete chain of security gates, including UnknownOutcome, blocks the transfer."
+      ],
+      "deferred": [
+        "Certified offer and permit resume C-13; admission C-05; atomic comparison of unit_attempts history, strings and ID uniqueness during commit C-03; long-lasting history and freshness of addictions.",
+        "A separate agreed path to continue after lost/cancelled and reconciliation of the external unknown outcome."
+      ]
+    },
+    {
+      "id": "26.StructuralLimits/v1",
+      "status": "partial",
+      "may_be_persisted_as_canonical": false,
+      "source": "crates/dc-domain/src/structure.rs",
+      "symbol": "STRUCTURAL_LIMITS_V1",
+      "tests": [
+        "crates/dc-domain/src/structure.rs"
+      ],
+      "implemented": [
+        "Explicit fixed version of structural limits."
+      ],
+      "deferred": [
+        "Limits on the size of a full message before parsing and the work of future limited readers."
+      ]
+    }
+  ]
+}

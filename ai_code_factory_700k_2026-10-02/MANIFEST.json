@@ -1,0 +1,224 @@
+{
+  "name": "AI Code Factory 700k Engineering Pack",
+  "generated_at": "2026-10-02",
+  "purpose": "Research + architecture + runnable scaffolding for high-throughput multi-agent software engineering",
+  "file_count": 43,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5422,
+      "sha256": "34aeea0f91fbff3c89e4bb5393cf04506f6134b1edf168d362f7afca8686cd3d"
+    },
+    {
+      "path": "configs/models.yaml",
+      "bytes": 1810,
+      "sha256": "ff0780134bc23af14b545c807e759a65e147a33984d02faa56e4c89e64651759"
+    },
+    {
+      "path": "configs/roles.yaml",
+      "bytes": 1057,
+      "sha256": "a87e120bc96eff66de28a03067679ec7c78c76085289301c8c2d45daf425492c"
+    },
+    {
+      "path": "docs/00_EXECUTIVE_VERDICT.md",
+      "bytes": 4179,
+      "sha256": "e86b0da626a3a99435f98c145e389189e0202e0a67f53c6b40758755f40c73e0"
+    },
+    {
+      "path": "docs/01_REALITY_CHECK_700K_LOC_ONE_DAY.md",
+      "bytes": 3088,
+      "sha256": "8f955380345fa197b682400c1b71b90d95d9e53d793e956149c71f45907f9476"
+    },
+    {
+      "path": "docs/02_CODE_FACTORY_ARCHITECTURE.md",
+      "bytes": 3143,
+      "sha256": "42868c5fb73ce50ba8266f27a9da2e8c4dd95daf69807882162fd94310b37c29"
+    },
+    {
+      "path": "docs/03_MODEL_ROUTING.md",
+      "bytes": 3679,
+      "sha256": "df8cb303cb2444a239486db4293e2691be3532e63581bc0386639036bcc666ef"
+    },
+    {
+      "path": "docs/04_AGENT_COUNTS_AND_PARALLELISM.md",
+      "bytes": 3118,
+      "sha256": "2c1e5355ec4e4b929baf14bdcc6483e52800fb7d67bfbff56ee2b2db6200e352"
+    },
+    {
+      "path": "docs/05_WORKGRAPH_AND_WORKTREES.md",
+      "bytes": 2572,
+      "sha256": "4ddc25abbf215f3eb64c97c0c0c091588bbf8b96d30db54e4e71d4e4cc779a02"
+    },
+    {
+      "path": "docs/06_CONTRACT_FIRST_DEVELOPMENT.md",
+      "bytes": 3120,
+      "sha256": "a682df9ffaff5b69e8e4c8e22cc603c45cc5038cb25edc87d731b21cc5d85b41"
+    },
+    {
+      "path": "docs/07_TESTING_AND_VERIFICATION.md",
+      "bytes": 3366,
+      "sha256": "547b169583fa77a0092d086e4b39c8a5003b19d79238544a7579f680bfe4ffa1"
+    },
+    {
+      "path": "docs/08_INTEGRATION_AND_RELEASE.md",
+      "bytes": 2556,
+      "sha256": "d2dc8883e7bf48f9ec829d1ed2b6a57e91d0c001b7871f6c642b7368aaf94701"
+    },
+    {
+      "path": "docs/09_THROUGHPUT_MODEL.md",
+      "bytes": 3488,
+      "sha256": "3254eae2047c77730056fd93cabe03e34bd986ddf4896ec434e7de4d5363137b"
+    },
+    {
+      "path": "docs/10_24_HOUR_RUNBOOK.md",
+      "bytes": 3045,
+      "sha256": "11e7357cd61c5e041d42d302e3f7e718f1a2f2389542502536222fdd1cdd8cd3"
+    },
+    {
+      "path": "docs/11_LESSONS_FROM_YOUR_SESSION.md",
+      "bytes": 3337,
+      "sha256": "6feac229f4c199b7c2d22ba116eb338ee5df0efdd4c12aa2c2f416236620f480"
+    },
+    {
+      "path": "docs/12_FAILURE_MODES.md",
+      "bytes": 3108,
+      "sha256": "7edb83a4efece5fd1cb40f71a4bba145314d71508e67c69505d8cc1fe517eb3d"
+    },
+    {
+      "path": "docs/13_RESEARCH_EVIDENCE.md",
+      "bytes": 2479,
+      "sha256": "e9959240a85b3457c05a9236bad9e75fc62ac0d97b64135c9e0568389585ad11"
+    },
+    {
+      "path": "docs/14_IMPLEMENTATION_BLUEPRINT.md",
+      "bytes": 2476,
+      "sha256": "541c04ef5f6b1d5da99b94867a0c41aa033b2ea22ea69330b94d2bd186384547"
+    },
+    {
+      "path": "docs/15_METRICS_AND_CONTROL_PLANE.md",
+      "bytes": 1958,
+      "sha256": "f9b1edc889060b88a8440d4d6ed8324f574db935032cb3e4533bef03c8b28603"
+    },
+    {
+      "path": "docs/16_PROJECT_EXAMPLES.md",
+      "bytes": 1771,
+      "sha256": "0df615daf287b2754602901682863d5d63f48c01cba50e41258d693cfc517409"
+    },
+    {
+      "path": "docs/17_DECISION_RULES.md",
+      "bytes": 1833,
+      "sha256": "6b52e6509d3ce315532809617d5f82d71aabf854adf5588c88052790611fb296"
+    },
+    {
+      "path": "docs/18_SOURCE_BIBLIOGRAPHY.md",
+      "bytes": 2360,
+      "sha256": "a825f8560b1b1f15670bdbfcc0fd91c11f67318668c1c2e9aedeeae9b4f0f9bd"
+    },
+    {
+      "path": "docs/19_PROMPTING_AND_CONTEXT.md",
+      "bytes": 1814,
+      "sha256": "2fdef5e2c31f26fe204235397430db2339a1aed183b67783f367010c345f950e"
+    },
+    {
+      "path": "docs/20_CI_BUILD_FARM.md",
+      "bytes": 1734,
+      "sha256": "73ea660bfc080d3ccbac938fc15b8a4843efb96bdfa68ebbbe8edfa6c1c8b3cc"
+    },
+    {
+      "path": "docs/21_SECURITY_AND_TRUST.md",
+      "bytes": 1681,
+      "sha256": "b93f04dee132f6d10ff741ac9534d506abfb5dd24f95709dd4935a8b22886707"
+    },
+    {
+      "path": "examples/capacity_scenarios.csv",
+      "bytes": 210,
+      "sha256": "d6db1a606fab948106efedcc38e5d73e16e02c0ba9f1f4e32795bd255f1a91bf"
+    },
+    {
+      "path": "examples/evidence-WP-042.example.json",
+      "bytes": 620,
+      "sha256": "df6291c863064f9be8f8019ebd146cd6a57c52144b1e222e381bc3fe613758ee"
+    },
+    {
+      "path": "examples/orchestrator_demo_output.json",
+      "bytes": 3082,
+      "sha256": "a723c3da86e17f992fc2561bb67692c487e25c3b84e2f851d50c3d116b7bd15f"
+    },
+    {
+      "path": "examples/project_workgraph.json",
+      "bytes": 648,
+      "sha256": "90ad940bf4e23bb9c972e5e1b5f4a118688094d87f3aca29e1f17bbef1c3c2c7"
+    },
+    {
+      "path": "examples/task-WP-042.json",
+      "bytes": 1072,
+      "sha256": "6a12c356ef89a109df2373e3d2f4442131ca52343f5171652e1ea14e3e29e88b"
+    },
+    {
+      "path": "prompts/chief_architect.md",
+      "bytes": 806,
+      "sha256": "11d7b5f58c8c59303079e6f41b4b86fbed1178c78ff7bc3d3dd10a2735089e15"
+    },
+    {
+      "path": "prompts/implementer.md",
+      "bytes": 803,
+      "sha256": "8d74dec741444159f1efe19ee4b5397164fadcd6f5f7141fa3099ead93243ec7"
+    },
+    {
+      "path": "prompts/integrator.md",
+      "bytes": 518,
+      "sha256": "c23c446057740d2d74d28cda95d82306615a5310f7096c0af6e6997e70eae03f"
+    },
+    {
+      "path": "prompts/release_judge.md",
+      "bytes": 372,
+      "sha256": "eaeaf5985661716436551a50b1d6053c058a21c5f9898eadd4b50c0e668d1a26"
+    },
+    {
+      "path": "prompts/reviewer.md",
+      "bytes": 553,
+      "sha256": "88d4cbb56825abeeca4732a3e22fc305a6b8cd1716a1d994267decefe2c07edd"
+    },
+    {
+      "path": "prompts/test_author.md",
+      "bytes": 387,
+      "sha256": "cd5de75aeb62a03b6bbee48b55152d0001aa33e99405e9ddbdcefce538a0a8fd"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "bytes": 2106,
+      "sha256": "f6306044e3fbcf3139de6384761dcf785cf2d8fa3c30f462aa80918e697763f6"
+    },
+    {
+      "path": "schemas/task.schema.json",
+      "bytes": 2241,
+      "sha256": "ecf93e458710a1984593ce647bf3c5074969d925f347a88f9e3f64ec3c2eab6c"
+    },
+    {
+      "path": "scripts/__pycache__/orchestrator_skeleton.cpython-313.pyc",
+      "bytes": 10674,
+      "sha256": "78b9b1b2953599c8a3f20ed4e8f350c2cadf2815354dd62acf1b5d87d6543e6f"
+    },
+    {
+      "path": "scripts/__pycache__/verify_receipt.cpython-313.pyc",
+      "bytes": 3264,
+      "sha256": "73729060c610a16eca9c10b43a89b24ffa267fab3ea7f0b4421a11a85b372196"
+    },
+    {
+      "path": "scripts/create_worktree.ps1",
+      "bytes": 634,
+      "sha256": "ef6ea92e6c20e23925de4285dd82d022f9b2aeeb713ef9f94433bca34f0725e3"
+    },
+    {
+      "path": "scripts/orchestrator_skeleton.py",
+      "bytes": 5102,
+      "sha256": "cf9a469366b02904241294d7f5e71c524e713419777cde72f0861f3168ceab22"
+    },
+    {
+      "path": "scripts/verify_receipt.py",
+      "bytes": 1311,
+      "sha256": "8937e19d20881a7770ef089c975aa99bb661955fd1d3bfcb65caaa1ef8479fe3"
+    }
+  ],
+  "disclaimer": "Throughput scenarios are transparent engineering capacity estimates, not guarantees. Vendor limits and benchmark observations were checked on 2026-10-02."
+}

@@ -1,0 +1,77 @@
+{
+  "run": "20260910T061720023Z",
+  "complete": false,
+  "boundary": "Current implemented slice only; not full application acceptance or power-loss proof",
+  "steps": [
+    {
+      "name": "rust-format",
+      "executable": "cargo",
+      "arguments": [
+        "fmt",
+        "--all",
+        "--check"
+      ],
+      "started_utc": "2026-09-10T06:17:20.0739088Z",
+      "ended_utc": "2026-09-10T06:17:20.5155538Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260910T061720023Z\\rust-format.log"
+    },
+    {
+      "name": "architecture-selftests",
+      "executable": "node",
+      "arguments": [
+        "--test",
+        "tools/tests/check-architecture.test.mjs"
+      ],
+      "started_utc": "2026-09-10T06:17:20.5275538Z",
+      "ended_utc": "2026-09-10T06:17:21.2026755Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260910T061720023Z\\architecture-selftests.log"
+    },
+    {
+      "name": "architecture",
+      "executable": "node",
+      "arguments": [
+        "tools/check-architecture.mjs"
+      ],
+      "started_utc": "2026-09-10T06:17:21.2033887Z",
+      "ended_utc": "2026-09-10T06:17:21.7593352Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260910T061720023Z\\architecture.log"
+    },
+    {
+      "name": "rust-tests",
+      "executable": "cargo",
+      "arguments": [
+        "test",
+        "--workspace",
+        "--locked",
+        "--offline"
+      ],
+      "started_utc": "2026-09-10T06:17:21.7600433Z",
+      "ended_utc": "2026-09-10T06:17:35.9617014Z",
+      "exit_code": 0,
+      "log": ".local\\verification\\20260910T061720023Z\\rust-tests.log"
+    },
+    {
+      "name": "rust-lints",
+      "executable": "cargo",
+      "arguments": [
+        "clippy",
+        "--workspace",
+        "--all-targets",
+        "--locked",
+        "--offline",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "started_utc": "2026-09-10T06:17:35.9621957Z",
+      "ended_utc": "2026-09-10T06:17:44.3176339Z",
+      "exit_code": 101,
+      "log": ".local\\verification\\20260910T061720023Z\\rust-lints.log"
+    }
+  ],
+  "artifacts": [],
+  "failure": "Check rust-lints exited with code 101"
+}

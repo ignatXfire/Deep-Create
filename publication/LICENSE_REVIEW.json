@@ -1,0 +1,59 @@
+{
+  "scope": "R3 licensing/public-attribution changes only; not a product or legal certification",
+  "r2ArchiveSha256": "b6ca35c29425f91a9405ef5cde956043b2708302a672339033233635c66bfb3b",
+  "r2ArchiveUnchanged": true,
+  "r2Files": 1030,
+  "removedFiles": [],
+  "newFilesAtReview": [
+    "AUTHORS.md",
+    "CITATION.cff",
+    "LICENSE",
+    "NOTICE",
+    "THIRD_PARTY_NOTICES.md",
+    "publication/DEPENDENCY_LICENSES.json",
+    "publication/LICENSE_REVIEW.json"
+  ],
+  "changedFilesAtReview": [
+    "CONTRIBUTING.md",
+    "Cargo.toml",
+    "LICENSE-STATUS.md",
+    "README.md",
+    "SECURITY.md",
+    "crates/dc-broker/Cargo.toml",
+    "crates/dc-core/Cargo.toml",
+    "crates/dc-desktop/Cargo.toml",
+    "crates/dc-domain/Cargo.toml",
+    "crates/dc-protocol/Cargo.toml",
+    "crates/dc-store/Cargo.toml",
+    "crates/dc-watchdog/Cargo.toml",
+    "crates/dc-windows/Cargo.toml",
+    "crates/dc-worker/Cargo.toml",
+    "package.json",
+    "publication/ANNOUNCEMENT.md",
+    "publication/OVERVIEW.md",
+    "publication/PUBLICATION_SCOPE.md",
+    "publication/PUBLISHING.md",
+    "publication/VALIDATION.json",
+    "publication/VALIDATION.md"
+  ],
+  "unexpectedChanges": [],
+  "nonLicenseManifestChanges": [],
+  "implementationAndTestsByteIdenticalToR2": true,
+  "apacheLicense": {
+    "officialSource": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "officialBytesSha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "normalizedTextMatches": true
+  },
+  "citation": {
+    "schemaUrl": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
+    "schemaSha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
+    "schemaValid": true,
+    "missingTitleNegativeControlRejected": true
+  },
+  "publicIdentityApprovedByOwner": {
+    "name": "Ignat",
+    "x": "@ignatXfire",
+    "url": "https://x.com/ignatXfire"
+  },
+  "thirdPartyScope": "License declarations in metadata; no guarantee of originality or binary license compliance"
+}

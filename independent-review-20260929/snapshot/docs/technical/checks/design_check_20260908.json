@@ -1,0 +1,110 @@
+{
+  "mode": "documentation_structure_only",
+  "checked_at_utc": "2026-09-09T08:14:50.9311375Z",
+  "root": "C:/home/researcher",
+  "verdict": "PASS",
+  "checks_total": 57,
+  "checks_passed": 57,
+  "summary": {
+    "source_decisions": 51,
+    "review_dispositions": 12,
+    "supplement_groups": 10,
+    "code_contracts": 16,
+    "matrix_decisions": 51,
+    "local_links": 86,
+    "documents": 21
+  },
+  "failed_checks": [],
+  "input_files": [
+    {
+      "name": "00_BRANCH_NAVIGATOR.md",
+      "sha256": "3825a789a1c48332267918e00ec191c7c32501fb25bdab1f09402bc429f9669c"
+    },
+    {
+      "name": "07_OWNER_DECISIONS.md",
+      "sha256": "c2a37c6535f9a67835281dd0a86cb2f3055d946f0b29d182de888363eb0b5558"
+    },
+    {
+      "name": "08_STANDALONE_ARCHITECTURE.md",
+      "sha256": "6cc1e09502aad7a4a84e396dc04bfe384c0a89b39245ae0f710d032c0c1e61ab"
+    },
+    {
+      "name": "09_INTERFACE_RESEARCH.md",
+      "sha256": "19be71009ae42e140c0d7734661ae45bb0a5d0f18e1466e7708d64aab64fb84b"
+    },
+    {
+      "name": "10_RISKS_AND_HIDDEN_BOUNDARIES.md",
+      "sha256": "5ab084c33bea6de0c2bf88a97807839837374287c13ac63b289217d8e7a93751"
+    },
+    {
+      "name": "11_DESIGN_DIRECTION_AND_PLAN.md",
+      "sha256": "6a14394cf6a9f500ab18226f2075e813c700ae3ecd84cb5faf847950fa735c56"
+    },
+    {
+      "name": "12_COMPLETENESS_REVIEW_20260904.md",
+      "sha256": "7c7ebdb96a756b4e48dc8fdd6152f483b1eef0070d8464b67e1232c8c0fb6cef"
+    },
+    {
+      "name": "13_TECHNICAL_CONSTITUTION.md",
+      "sha256": "075ff4d855d5a87e0f96da988f4d50651a004b1b0105c3443a067e3dacf2877c"
+    },
+    {
+      "name": "14_DATA_STATE_AND_RECOVERY.md",
+      "sha256": "f1eeff78043e76bb4a3a66be276589a541a469f9fe72a7428fd3c273b868853e"
+    },
+    {
+      "name": "15_CONTEXT_MEMORY_AND_INSTRUCTIONS.md",
+      "sha256": "2d8436ecaf41aad8758c472780a7ed60067dda1b27320358056dcbc1c45053b0"
+    },
+    {
+      "name": "16_EXECUTION_MODELS_AND_VERIFICATION.md",
+      "sha256": "d7ff0e77f4920b162b7d013bc160c8ca72effa6d889197461932119d96eed1da"
+    },
+    {
+      "name": "17_PERMISSIONS_SECURITY_AND_ACTIONS.md",
+      "sha256": "f0cc6941aa5978192cd332eca883a0900b46fe2af161445ef2f50b2d0218c9c7"
+    },
+    {
+      "name": "18_BEACONS_JOURNAL_STOP_AND_RECOVERY.md",
+      "sha256": "29448170f58ee95519265438bc73475f7779016fdbdf06ca7b02f348d3540c31"
+    },
+    {
+      "name": "19_CODE_FUNCTION_AND_DEPENDENCY_MAP.md",
+      "sha256": "d20ef45c543231f86f247ec6234bc4f7caa037e618024c2f192c6dbe9fdd7713"
+    },
+    {
+      "name": "20_IMPLEMENTATION_ORDER_AND_READINESS_EVIDENCE.md",
+      "sha256": "cfafa0048f8699ec190477c4a779f265d4f7615c521c48a7bfde5da96206117e"
+    },
+    {
+      "name": "21_DECISION_CODE_VERIFICATION_MATRIX.md",
+      "sha256": "584f7e786cacf7e7548b9b2c8d9bfb6dd4ed97ee71dbdbd0169b9825972d9779"
+    },
+    {
+      "name": "22_DESIGN_REVIEW_20260907.md",
+      "sha256": "df608c9ece91f6fc28d365141cf1eb4a873559250e8556fc89fe1a463654fdda"
+    },
+    {
+      "name": "23_EXTERNAL_CRITIQUE_AND_REFINEMENTS_20260908.md",
+      "sha256": "601fff798b867bc382ccceb01f9758126a507904e103e2c3e59924c177e6f549"
+    },
+    {
+      "name": "24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+      "sha256": "958290aaa4741c429d49039bc48d023ac5747c6e920ed4bcb82b60cc8ec0f362"
+    },
+    {
+      "name": "25_RESOURCE_ALLOCATION_AND_COMMIT_QUEUE.md",
+      "sha256": "8ebf89f05f66525e22b99143d80887acd7bc772c59086e6c7da34f0c3bc54288"
+    },
+    {
+      "name": "26_COMPOSITE_STATES_AND_EVOLUTION_TESTING.md",
+      "sha256": "87cb789dcc7a2b80b3c99a02a64d8a0f34766cabbf5017359b8f9f52ad5c5f85"
+    }
+  ],
+  "checker_sha256": "6e5441cbc12e654e135c91f31ec1750bf800d38b2619159e77c7bed266dd1cc1",
+  "limitations": [
+    "No product implementation tested.",
+    "No proof of semantic completeness or absence of vulnerabilities.",
+    "Link targets checked as files; URL contents and Markdown anchor destinations not checked."
+  ]
+}

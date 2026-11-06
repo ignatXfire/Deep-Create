@@ -1,0 +1,25 @@
+{
+  "task_id": "WP-042",
+  "attempt_id": "att-demo-001",
+  "base_sha": "0123456789abcdef",
+  "head_sha": "fedcba9876543210",
+  "model": "dash/deepseek-v4-pro-0813",
+  "worktree": "../agent-worktrees/wp-042",
+  "authority_keys": [
+    "auth:password-reset:v2"
+  ],
+  "commands": [
+    {
+      "command": "pytest -q tests/auth/password_reset",
+      "exit_code": 0,
+      "tests_discovered": 18,
+      "passed": 18,
+      "failed": 0,
+      "skipped": 0,
+      "raw_log_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "artifacts": [],
+  "review": null,
+  "status": "LOCAL_GREEN"
+}

@@ -1,0 +1,24 @@
+{
+  "model": "dash/deepseek-v4-pro-0813",
+  "reasoning": "direct",
+  "task": "Review only verify_record_for_unit and its evidence types in this partial pure Rust domain. No database, authenticated IPC or complete verification service exists yet; do not relabel those documented future layers as discovered bugs. Identify at most 2 concrete inconsistencies this function can reject now, with exact fields, a synthetic counterexample and a minimal regression test. Focus on method revision, qualification, achieved/required level, exact criterion set and findings. If no confirmed defect, say so. Then name at most 2 future integration obligations separately. Do not claim execution. Under 900 words.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work/result.rs",
+      "start": 90,
+      "end": 170
+    },
+    {
+      "path": "crates/dc-domain/src/work/result.rs",
+      "start": 247,
+      "end": 422
+    },
+    {
+      "path": "crates/dc-domain/tests/work_contracts.rs",
+      "start": 1254,
+      "end": 1322
+    }
+  ],
+  "max_tokens": 3072,
+  "timeout_ms": 180000
+}

@@ -1,0 +1,29 @@
+{
+  "model": "dash/kimi-k3",
+  "reasoning": "low",
+  "max_tokens": 4200,
+  "timeout_ms": 180000,
+  "task": "Return ONLY Rust code for a small new resource binding module plus integration/export lines, <=200 lines. This is a pure C01 read-only binding of already-accounted resource observations to the exact result-producing attempt, NOT accounting again, not authority or database commit. Design public ExpectedUsagePosition with ledger key/reservation ID/kind/row version; accept explicit expected manifest & supplied &[LedgerPosition] and attempt_id. Require nonempty bounded lists (caller must separately prove no-usage; do not invent empty means free), one-to-one unique keys, exact manifest==position request metadata/version, position request.attempt_id matches supplied attempt, at least one already-applied observation per position. Add minimal LedgerPosition observation-ID iterator accessor to preserve provenance; use actual observed IDs, never model IDs. Reject bound_breached. Check contribution for arithmetic errors; Unknown remaining is ALLOWED, preserving its full state/contribution, not freed or converted to settled, since accounting uncertainty is not necessarily an unknown external action outcome. Reserved without observed facts fails. Output opaque UsageBinding with immutable getters attempt_id & per-position binding (exact request/key/row/state/contribution/observation IDs). No mutations, no Deserialize, no IO, no dependencies, no budget hardcoding. C03 must later ensure manifest completeness/authenticity and recheck exact rows atomically with result; no claim this proves full commit or current authority/limits. Typed small errors, MAX_ITEMS or structure limit for bounded inputs. Use supplied source APIs exactly. Tests will be independently written by main agent. Do not edit other code or claim tests ran.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/resource.rs",
+      "start": 1,
+      "end": 205
+    },
+    {
+      "path": "crates/dc-domain/src/resource.rs",
+      "start": 402,
+      "end": 506
+    },
+    {
+      "path": "crates/dc-domain/src/structure.rs",
+      "start": 1,
+      "end": 72
+    },
+    {
+      "path": "docs/technical/16_EXECUTION_MODELS_AND_VERIFICATION.md",
+      "start": 451,
+      "end": 482
+    }
+  ]
+}

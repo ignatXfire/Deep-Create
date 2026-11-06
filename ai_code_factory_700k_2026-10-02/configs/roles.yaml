@@ -1,0 +1,37 @@
+roles:
+  chief_architect:
+    preferred: [gpt-6.1-sol]
+    mutates_code: false
+    outputs: [architecture_constitution, domain_map, contract_decisions]
+
+  graph_planner:
+    preferred: [dash/qwen3.8-max-0902, dash/kimi-k3]
+    mutates_code: false
+    outputs: [workgraph, authority_keys, acceptance_criteria]
+
+  implementer:
+    preferred: [dash/deepseek-v4-pro-0813, dash/kimi-k3]
+    mutates_code: true
+    max_authority_keys: 3
+    must_emit_receipt: true
+
+  test_author:
+    preferred: [dash/deepseek-v4-pro-0813, dash/qwen3.8-max-0902]
+    mutates_code: true
+    independence_from_implementer: recommended
+
+  reviewer:
+    preferred: [dash/kimi-k3, dash/deepseek-v4-pro-0813, dash/qwen3.8-max-0902]
+    mutates_candidate: false
+    must_verify_exact_sha: true
+    must_check_claimed_paths: true
+
+  integrator:
+    preferred: [dash/kimi-k3, gpt-6.1-sol]
+    mutates_candidate: true
+    serialized_candidate_head: true
+
+  release_judge:
+    preferred: [gpt-6.1-sol]
+    mutates_code: false
+    reads: [release_manifest, gate_matrix, unresolved_blockers]

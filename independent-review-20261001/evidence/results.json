@@ -1,0 +1,49 @@
+{
+  "utc": "2026-10-01T13:27:44.829630+00:00",
+  "baseline": "f7444d158fb9900217e8a62d0d0c53cbff2f5dd3",
+  "head_at_finish": "f7444d158fb9900217e8a62d0d0c53cbff2f5dd3",
+  "snapshot_files": 290,
+  "snapshot_hash_mismatches": [],
+  "source_changes_since_snapshot": [],
+  "checks": {
+    "safe-rust-tests": {
+      "exit": "exit=0",
+      "passed": 376,
+      "failed": 0,
+      "ignored": 0,
+      "log": "evidence/safe-rust-tests.log"
+    },
+    "probes": {
+      "exit": "exit=0",
+      "passed": 6,
+      "failed": 0,
+      "ignored": 0,
+      "log": "evidence/probes.log",
+      "meaning": "5 current defects reproduced; 1 fixed event-write behavior confirmed"
+    },
+    "vitest": {
+      "exit": "exit=1",
+      "passed": 50,
+      "failed": 3,
+      "ignored": 0,
+      "log": "evidence/vitest.log",
+      "note": "Assertion failures plus fork shutdown timeout messages; raw log preserved."
+    },
+    "typecheck": {
+      "exit": "exit=0",
+      "passed": 0,
+      "failed": 0,
+      "ignored": 0,
+      "log": "evidence/typecheck.log"
+    }
+  },
+  "not_run": [
+    "full workspace/default native build",
+    "actual UI clicks/WebView2 runtime",
+    "installer/fresh VM",
+    "new full 30min soak",
+    "real model/account",
+    "power failure",
+    "full vulnerability/license audit"
+  ]
+}

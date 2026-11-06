@@ -1,0 +1,24 @@
+{
+  "model": "dash/deepseek-v4-pro-0813",
+  "reasoning": "direct",
+  "max_tokens": 1400,
+  "timeout_ms": 90000,
+  "task": "Review only this new C02 bounded typed byte codec. It intentionally does NOT authenticate/authorize/dispatch or implement durable replay; output Envelope is an untrusted candidate. Find concrete correctness issues in duplicate/unknown field handling, decimal u64 strings, malformed/oversize input, exact installation/run checks, no sensitive error echo, and encoding symmetry. Existing WorkScope/UnitRef/UnitAttemptCommand derive serde deny_unknown_fields. Do not propose a generic protocol framework, new commands, fake AuthenticatedPeer or storage. Return <=400 words Russian, confirmed defect + reproducible input or no confirmed defect. Tests were independently authored; critique is advisory, not authority.",
+  "sources": [
+    {
+      "path": "crates/dc-protocol/src/lib.rs",
+      "start": 1,
+      "end": 200
+    },
+    {
+      "path": "crates/dc-protocol/tests/envelopes.rs",
+      "start": 65,
+      "end": 215
+    },
+    {
+      "path": "docs/technical/19_CODE_FUNCTION_AND_DEPENDENCY_MAP.md",
+      "start": 95,
+      "end": 108
+    }
+  ]
+}

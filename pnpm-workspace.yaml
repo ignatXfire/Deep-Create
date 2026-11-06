@@ -1,0 +1,7 @@
+packages:
+  - '.'
+storeDir: .local/pnpm-store
+cacheDir: .local/pnpm-cache
+saveExact: true
+strictPeerDependencies: true
+allowBuilds: {}

@@ -1,0 +1,21 @@
+[package]
+name = "dc-worker"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+
+# dc-broker is dev-only, used by live_e2e test to prove real dispatch works.
+# Production code never links dc-broker — the WorkDispatcher trait is the only interface.
+[dev-dependencies]
+dc-broker = { path = "../dc-broker" }
+dc-store = { path = "../dc-store", features = ["sqlite"] }
+dc-domain = { path = "../dc-domain" }

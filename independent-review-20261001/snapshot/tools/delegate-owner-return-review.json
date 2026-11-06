@@ -1,0 +1,24 @@
+{
+  "model": "dash/deepseek-v4-pro-0813",
+  "reasoning": "direct",
+  "max_tokens": 1700,
+  "timeout_ms": 90000,
+  "task": "Read-only bounded review of C01 owner-return implementation. Report at most 3 concrete code defects with triggering input and exact line, or NO_FINDINGS. This is deliberately partial pure code, not authenticated command ingress/C03/C08: trusted native callers supply canonical graph and accepted review evidence, no Deserialize. Do not report documented lack of IO/authentication/semantic verification as discovered bug. This path ONLY applies an already accepted within-objective repair assessment, not initial rejection before assessment, already-satisfied explanation or goal change. Root basis helper validates expected row, scope/root identities, and exact candidate/final-review coherence; ValidatedGraph guarantees full internal graph/identity/publication provenance/size validation. Need ensure root replacement clears old candidate/review; no gates/effects/ledger/obligations/history reset; exact review IDs+versions; repair IDs belong objective; current-objective publications Affected/Unknown/missing -> Valid to Unresolved, existing Unresolved/Withdrawn never promote; unaffected explicit trusted machine evidence; all touched and unchanged publication states must stay read conditions, atomic future C03. Current 11 independent tests pass including 8192 gate combinations, invalid bindings, unknown/duplicate repairs, overflow, stale completion return. In particular inspect whether historical publications or consumers can remain usable incorrectly despite rejected current objective. Do not invent claims of running tests. Explain existing vs future boundary clearly, <=800 words.",
+  "sources": [
+    {
+      "path": "crates/dc-domain/src/work/owner_return.rs",
+      "start": 1,
+      "end": 242
+    },
+    {
+      "path": "docs/technical/24_WORK_DEPENDENCIES_AND_SHARED_WORKSPACES.md",
+      "start": 174,
+      "end": 186
+    },
+    {
+      "path": "crates/dc-domain/src/work/lifecycle.rs",
+      "start": 615,
+      "end": 659
+    }
+  ]
+}

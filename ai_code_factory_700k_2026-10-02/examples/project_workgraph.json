@@ -1,0 +1,43 @@
+{
+  "nodes": [
+    {
+      "id": "WP-001",
+      "deps": [],
+      "authority": [
+        "api:user:v3"
+      ],
+      "role": "graph_planner"
+    },
+    {
+      "id": "WP-002",
+      "deps": [
+        "WP-001"
+      ],
+      "authority": [
+        "domain:user:service"
+      ],
+      "role": "implementer"
+    },
+    {
+      "id": "WP-003",
+      "deps": [
+        "WP-001"
+      ],
+      "authority": [
+        "ui:user"
+      ],
+      "role": "implementer"
+    },
+    {
+      "id": "WP-004",
+      "deps": [
+        "WP-002",
+        "WP-003"
+      ],
+      "authority": [
+        "journey:user"
+      ],
+      "role": "integrator"
+    }
+  ]
+}

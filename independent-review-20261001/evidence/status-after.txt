@@ -1,0 +1,5 @@
+ M crates/dc-core/MEMORY_LEAK_EVIDENCE.md
+ M crates/dc-core/tests/extended_stability_soak.rs
+?? INDEPENDENT_REVIEW_2026-10-01.md
+?? independent-review-20261001/
+?? session-20260930.json

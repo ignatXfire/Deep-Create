@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use Deep Create in research, please cite this snapshot. Citation is appreciated, not an additional license condition."
+type: software
+title: "Deep Create"
+authors:
+  - name: "Ignat"
+    website: "https://x.com/ignatXfire"
+version: "research-snapshot-2026-11-06-r4"
+license: Apache-2.0
+abstract: "An AI-assisted research prototype for evidence-carrying, feedback-driven work: architectural contracts, partial implementation, transition tests, and independent failure audits."
+keywords:
+  - AI agents
+  - feedback loops
+  - evidence provenance
+  - workflow recovery
+  - verification
