@@ -15,11 +15,17 @@ The goal is to preserve what remains valid, identify what needs repair, and make
 This repository makes the research available for inspection: an experimental Rust implementation, technical contracts, tests, and independent audits, including documented failures.
 Created and directed by **[Ignat · @ignatXfire](https://x.com/ignatXfire)**. [Apache-2.0](LICENSE) · [Current status](RESEARCH_STATUS.md) · [Documentation](docs/README.md)
 
-[![Watch the 88-second Deep Create architecture overview](assets/deep-create-overview.jpg)](assets/deep-create-overview.mp4)
+<!-- BEGIN_DEEP_CREATE_TRAILER -->
+<!-- Replace this poster with the exact GitHub video-attachment URL on its own paragraph after upload. Repository-file and raw URLs do not create the same inline player. -->
+[![Watch the 60-second Deep Create research trailer](assets/deep-create-overview.jpg)](assets/deep-create-overview.mp4)
+<!-- END_DEEP_CREATE_TRAILER -->
 
-**[Watch the short video — 1:28](assets/deep-create-overview.mp4)** · **[Listen to the audio podcast — 39:30](assets/deep-create-podcast.m4a)** · **[Explore NotebookLM](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff)**
+**[Open or download the trailer — 1:00](assets/deep-create-overview.mp4)** · **[Listen to the audio podcast — 39:30](assets/deep-create-podcast.m4a)** · **[Explore NotebookLM](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff)**
 
-The video is not a recording of a finished application. The companion notebook is an AI explanation, not independent verification. Its project sources must be refreshed from the privacy-cleaned export before public sharing.
+<!-- TRAILER_X_POST_URL: add the real trailer post only after the owner provides its URL. -->
+<!-- PODCAST_X_POST_URL: add the real podcast post only after the owner provides its URL; keep the bundled M4A unchanged. -->
+
+The trailer illustrates the research; it is not a recording of a finished application. The companion notebook is an AI reading aid, not independent verification.
 
 > [!WARNING]
 > **The first-party implementation code was generated entirely by AI under Ignat's direction. Do not trust it without independent review.** Code, tests, reports, and AI explanations can be wrong. Before execution or reuse, inspect the actual paths and criteria, reproduce checks in isolation, and review security-sensitive behavior. Passing tests do not prove correctness or safety. This is an unfinished research prototype.
@@ -124,11 +130,11 @@ Native Windows builds also need the pinned Rust toolchain, MSVC Build Tools, Win
 
 ## Watch, listen, and explore
 
-The [short animated video — 1:28](assets/deep-create-overview.mp4) introduces the feedback loop, selective repair, and evidence carried into later work. Click the cover above to open or download the MP4. It is an architectural explanation, not application-execution footage.
+The [research trailer — 1:00](assets/deep-create-overview.mp4) opens with a historical wrong-unit verification finding, then illustrates result bindings, reviewed selective repair and evidence carried into the next attempt. It includes real component-source excerpts. This is an architectural explanation, not application-execution footage or a claim that the historical defect is fixed. The downloadable H.264/AAC MP4 is approximately 4.7 MB.
 
 The [English audio podcast — 39:30](assets/deep-create-podcast.m4a), **Replacing AI Chat with Database Architecture**, is an AI-generated discussion of Deep Create's design. The original M4A is included without re-encoding. Open or download it to listen. Claims about readiness or performance should be checked against the repository's code and evidence, not accepted on the basis of the discussion.
 
-The [companion NotebookLM notebook](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff/preview) offers another way to explore the material. Its R2 corpus predates the finalized Apache-2.0 licensing and attribution in this repository. Generated explanations are reading aids, not independent verification; check their citations against the original files. Access depends on the notebook's sharing settings and may require a Google account.
+The [companion NotebookLM notebook](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff) offers another way to explore the project and related comparisons. Its source set is maintained separately from this repository. Generated explanations are reading aids, not independent verification; check their citations against the original files. Access depends on the notebook's sharing settings and may require a Google account.
 
 Both media files are bundled in this repository; their links do not require a separate video or podcast hosting account.
 

@@ -8,7 +8,7 @@ Music: **Sascha Ende, ende.app (CC BY 4.0)** — Happy Beats / Business Moves,
 Vol.12. Source/license notice supplied by the Brag skill's assets/music/README.md:
 https://ende.app/en/standard-license
 License: https://creativecommons.org/licenses/by/4.0/
-Used as an 88-second excerpt with gain and fades. Include this credit in the
+Used as a 60-second excerpt with gain and fades. Include this credit in the
 publication description; do not omit it when distributing the video separately.
 
 Sound effects: Kenney.nl, CC0; impactSoft_medium_001 and card-slide-1, distributed
@@ -19,6 +19,13 @@ Video tooling: Brag by latent-spaces (MIT), HyperFrames 0.9.19. Local GSAP
 3.15.0 runtime. The code-highlight registry block informed the single-line
 spotlight pattern; its default UI, example code and token engine are not shown.
 Motion uses a custom, seek-safe GSAP timeline and ledger-stamped seams.
+
+The current trailer is 60 seconds at 1920×1080/60 fps. It opens with a labelled
+historical reconstruction of audit finding N03, then shows an architecture
+illustration and real Rust component-source excerpts. It does not establish that
+N03 is fixed or that the application works end to end. Media identities are in
+`MEDIA_MANIFEST.json`; the previous publication's verification reports remain
+historical records, not verification of this new video.
 
 Logo: the owner's approved Deep Create D avatar is used directly in the reveal,
 outro and poster. No empty-frame substitute is used as the project logo.
