@@ -1,0 +1,26 @@
+{
+  "scope": "November 7 research-trailer refresh; not product acceptance or an audit of the online notebook",
+  "trailer": {
+    "path": "deep-create-overview.mp4",
+    "bytes": 4690672,
+    "sha256": "5531676422c406103556a9a8d484cb6dd030bc10e5db5f624730fa094bd456d9",
+    "githubAttachmentUrl": "https://github.com/user-attachments/assets/c044996b-6c2c-4a58-af5b-00909287a29c",
+    "durationSeconds": 60,
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "videoCodec": "H.264",
+    "audioCodec": "AAC"
+  },
+  "poster": {
+    "path": "deep-create-overview.jpg",
+    "bytes": 80041,
+    "sha256": "f981ca54514d59e809590f1cc0bc5d46b31b7fd466001900a8306f2959547264"
+  },
+  "podcast": {
+    "path": "deep-create-podcast.m4a",
+    "policy": "preserve existing bytes",
+    "bytes": 76302739,
+    "sha256": "cba5235af802febeb99534636fba21487ae93cd129446a2ba30e6535e74c6426"
+  }
+}
