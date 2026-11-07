@@ -23,7 +23,8 @@ https://github.com/user-attachments/assets/c044996b-6c2c-4a58-af5b-00909287a29c
 
 **[Open or download the trailer — 1:00](assets/deep-create-overview.mp4)** · **[Listen to the audio podcast — 39:30](assets/deep-create-podcast.m4a)** · **[Explore NotebookLM](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff)**
 
-<!-- ORIGINAL_X_POST_URL: after the owner supplies the actual launch-announcement URL, replace this comment with a standalone "Read my original announcement on X" link here. This is the original project announcement, not the later podcast post. Do not publish a placeholder URL. -->
+[Read my original announcement on X](https://x.com/ignatXfire/status/2119154937250644394).
+
 <!-- PODCAST_X_POST_URL: after the owner supplies the separate podcast-video post URL, add it under "Watch, listen, and explore" with a "Watch my podcast on X" link. Do not reuse the announcement URL for the podcast or replace the bundled M4A. -->
 
 The trailer illustrates the research; it is not a recording of a finished application. The companion notebook is an AI reading aid, not independent verification.
