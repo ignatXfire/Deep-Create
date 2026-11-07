@@ -1,19 +1,95 @@
-# Personal tips for Ignat
+# Personal Tips for Ignat
 
-If you would like to send Ignat a personal tip, public receiving addresses can be listed here. This is optional personal support, not payment for Deep Create, its development, maintenance, access, or any promised service or benefit.
+If you would like to support me personally, you can send a voluntary crypto tip using one of the addresses below.
 
-**No receiving addresses are configured yet. Do not send funds until Ignat has added and confirmed an address and its exact network.**
+These are personal tips to Ignat, not funding for Deep Create or any other project. No payment is required, and no goods, services, benefits, financial returns, maintenance, or development commitments are promised.
 
-| Asset | Network | Public receiving address |
-|---|---|---|
-| Bitcoin (BTC) | Bitcoin Mainnet | Not configured |
-| Ether (ETH) | Ethereum Mainnet | Not configured |
-| Solana (SOL) | Solana Mainnet | Not configured |
+## Cryptocurrency addresses
 
-Double-check both the address and network before sending. Transfers are generally irreversible. Do not assume that an address supports a different network or asset.
+### Bitcoin (BTC)
 
-## Updating this page
+Network: **Bitcoin Mainnet**
 
-Ignat can replace `Not configured` with a deliberately public receiving address, remove unused rows, or add other assets with their exact networks. Remove the unconfigured-address notice only after the entries have been checked. A publicly listed address may link transaction activity to its owner's public identity.
+```text
+bc1q0n5xfn94wffjyec8w0kguaq4jjqwycq4afgnvc
+```
 
-Never publish seed phrases, private keys, wallet passwords, exchange credentials, or recovery codes. No wallet connection, signature, or payment is required to read, use, or fork Deep Create under its license.
+### Ethereum (ETH)
+
+Network: **Ethereum Mainnet**
+
+```text
+0x8bd4EFf14f2979884c8DBa55882882c06505ea8B
+```
+
+### BNB
+
+Network: **BNB Smart Chain (BEP-20)**
+
+```text
+0x8bd4EFf14f2979884c8DBa55882882c06505ea8B
+```
+
+### XRP
+
+Network: **XRP Ledger**
+
+```text
+rM81xJ5DkJUDZcFozfYzTgZ4fNSAUA99j2
+```
+
+### Solana (SOL)
+
+Network: **Solana Mainnet**
+
+```text
+BYQypVXRoP2L17Xq3cSSEbZ24gdhw5sebWZT4qhMZUZj
+```
+
+### Toncoin (TON)
+
+Network: **TON Mainnet**
+
+```text
+UQDhOnNMVH4LLL9QUa3LrR39eJREG95kzSX9MUQO_FdRoV_R
+```
+
+### Tether (USDT)
+
+Network: **TRON (TRC-20)**
+
+```text
+TVoddCmwYpmBH4BDsmxWFUzq25HfeWg3VF
+```
+
+### TRON (TRX)
+
+Network: **TRON Mainnet**
+
+```text
+TVoddCmwYpmBH4BDsmxWFUzq25HfeWg3VF
+```
+
+### USD Coin (USDC)
+
+Network: **Ethereum Mainnet (ERC-20)**
+
+```text
+0x8bd4EFf14f2979884c8DBa55882882c06505ea8B
+```
+
+### Arbitrum (ARB)
+
+Network: **Arbitrum One**
+
+```text
+0x8bd4EFf14f2979884c8DBa55882882c06505ea8B
+```
+
+## Before sending
+
+- Double-check the asset, network, and complete address. Use only the network listed for that asset, even when addresses look identical across networks.
+- Crypto transfers are generally irreversible. If your sending service requires additional receiving details, such as an XRP Destination Tag, do not guess them; confirm with Ignat or choose another listed method.
+- No wallet connection, signature, seed phrase, private key, or payment is required to read, use, or fork Deep Create under its license.
+
+Thank you for your support!
