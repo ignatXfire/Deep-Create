@@ -28,6 +28,11 @@ https://github.com/user-attachments/assets/c044996b-6c2c-4a58-af5b-00909287a29c
 
 The trailer illustrates the research; it is not a recording of a finished application. The companion notebook is an AI reading aid, not independent verification.
 
+## Start with the evidence
+
+- [Selective-repair transition test](crates/dc-domain/tests/cases/owner_return.rs): inspect how returned work and a proven-independent branch are treated differently. This is a synthetic component test, not a measured end-to-end speedup.
+- [Independent audit — finding N03](independent-review-20261001/02_FINDINGS.md): a historical counterexample in which machine verification accepted the wrong work unit without criterion evidence. It is failure evidence, not a claim that the defect is fixed.
+
 > [!WARNING]
 > **The first-party implementation code was generated entirely by AI under Ignat's direction. Do not trust it without independent review.** Code, tests, reports, and AI explanations can be wrong. Before execution or reuse, inspect the actual paths and criteria, reproduce checks in isolation, and review security-sensitive behavior. Passing tests do not prove correctness or safety. This is an unfinished research prototype.
 
@@ -146,3 +151,5 @@ Music in the short video: **Sascha Ende, ende.app — Happy Beats / Business Mov
 Open areas include durable command/result commits, verification against real artifacts and criteria, consistent UI/core identifiers, dependencies after failed work, revocation and protective reconciliation, worker isolation, and atomic resource accounting.
 
 Ignat is sharing this work for research and independent continuation, and does not plan to be its ongoing application developer. Active maintenance, issue/PR responses, completion dates, production security, and fully autonomous self-development are not promised. You can continue the project in a maintained fork under its license terms. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [authorship](AUTHORS.md), [citation metadata](CITATION.cff), and [third-party scope](THIRD_PARTY_NOTICES.md).
+
+[Personal tips for Ignat](SUPPORT.md) are optional personal support, not funding for Deep Create or a promise of continued development.
