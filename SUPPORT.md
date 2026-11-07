@@ -1,8 +1,8 @@
-# Personal Tips for Ignat
+# Support me
 
-If you would like to support me personally, you can send a voluntary crypto tip using one of the addresses below.
+I'm sharing Deep Create so others can explore these ideas and take them further. If you find something useful here and want to support me, I'd be really happy to receive a donation. It would mean a lot to me.
 
-These are personal tips to Ignat, not funding for Deep Create or any other project. No payment is required, and no goods, services, benefits, financial returns, maintenance, or development commitments are promised.
+Donations are voluntary support for me personally. They don't fund ongoing Deep Create development, and I don't promise anything in return.
 
 ## Cryptocurrency addresses
 
@@ -89,9 +89,9 @@ Network: **Arbitrum One**
 ## Before sending
 
 - Double-check the asset, network, and complete address. Use only the network listed for that asset, even when addresses look identical across networks.
-- Crypto transfers are generally irreversible. If your sending service requires additional receiving details, such as an XRP Destination Tag, do not guess them; confirm with Ignat or choose another listed method.
+- Crypto transfers are generally irreversible. If your sending service requires additional receiving details, such as an XRP Destination Tag, do not guess them; check with me or choose another listed method.
 - No wallet connection, signature, seed phrase, private key, or payment is required to read, use, or fork Deep Create under its license.
 
 Thank you for your support!
 
-Questions about personal tips: [ignatxfire@gmail.com](mailto:ignatxfire@gmail.com).
+Email: [ignatxfire@gmail.com](mailto:ignatxfire@gmail.com).

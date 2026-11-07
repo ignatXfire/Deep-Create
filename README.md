@@ -150,10 +150,10 @@ Music in the short video: **Sascha Ende, ende.app — Happy Beats / Business Mov
 
 Open areas include durable command/result commits, verification against real artifacts and criteria, consistent UI/core identifiers, dependencies after failed work, revocation and protective reconciliation, worker isolation, and atomic resource accounting.
 
-Ignat is sharing this work for research and independent continuation, and does not plan to be its ongoing application developer. Active maintenance, issue/PR responses, completion dates, production security, and fully autonomous self-development are not promised. You can continue the project in a maintained fork under its license terms. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [authorship](AUTHORS.md), [citation metadata](CITATION.cff), and [third-party scope](THIRD_PARTY_NOTICES.md).
+I'm sharing this work for research and independent continuation, and I don't plan to be its ongoing application developer. I don't promise active maintenance, issue/PR responses, completion dates, production security, or fully autonomous self-development. You can continue the project in a maintained fork under its license terms. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [authorship](AUTHORS.md), [citation metadata](CITATION.cff), and [third-party scope](THIRD_PARTY_NOTICES.md).
 
-[Personal tips for Ignat](SUPPORT.md) are optional personal support, not funding for Deep Create or a promise of continued development.
+If you'd like to support me, [you can make a donation here](SUPPORT.md). I'd really appreciate it.
 
 ## Contact
 
-For general questions or research discussion, contact Ignat at [ignatxfire@gmail.com](mailto:ignatxfire@gmail.com).
+Email: [ignatxfire@gmail.com](mailto:ignatxfire@gmail.com).
