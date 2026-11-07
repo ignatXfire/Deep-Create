@@ -16,8 +16,9 @@ This repository makes the research available for inspection: an experimental Rus
 Created and directed by **[Ignat · @ignatXfire](https://x.com/ignatXfire)**. [Apache-2.0](LICENSE) · [Current status](RESEARCH_STATUS.md) · [Documentation](docs/README.md)
 
 <!-- BEGIN_DEEP_CREATE_TRAILER -->
-<!-- Replace this poster with the exact GitHub video-attachment URL on its own paragraph after upload. Repository-file and raw URLs do not create the same inline player. -->
-[![Watch the 60-second Deep Create research trailer](assets/deep-create-overview.jpg)](assets/deep-create-overview.mp4)
+
+https://github.com/user-attachments/assets/c044996b-6c2c-4a58-af5b-00909287a29c
+
 <!-- END_DEEP_CREATE_TRAILER -->
 
 **[Open or download the trailer — 1:00](assets/deep-create-overview.mp4)** · **[Listen to the audio podcast — 39:30](assets/deep-create-podcast.m4a)** · **[Explore NotebookLM](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff)**
