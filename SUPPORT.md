@@ -93,3 +93,5 @@ Network: **Arbitrum One**
 - No wallet connection, signature, seed phrase, private key, or payment is required to read, use, or fork Deep Create under its license.
 
 Thank you for your support!
+
+Questions about personal tips: [ignatxfire@gmail.com](mailto:ignatxfire@gmail.com).

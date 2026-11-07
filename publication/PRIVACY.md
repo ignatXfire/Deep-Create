@@ -4,7 +4,7 @@ Updated November 7, 2026. This document concerns publication data, not certifica
 
 ## Deliberately public identity
 
-The owner approved publishing the name **Ignat** and X profile **[@ignatXfire](https://x.com/ignatXfire)**. This does not authorize publishing a personal email, workstation profile, credentials or private session data.
+The owner approved publishing the name **Ignat**, X profile **[@ignatXfire](https://x.com/ignatXfire)**, and public contact email **[ignatxfire@gmail.com](mailto:ignatxfire@gmail.com)**. The receiving addresses explicitly supplied by the owner and listed in [SUPPORT.md](../SUPPORT.md) are also intentional public information. This does not authorize publishing any other email, workstation profile, credentials, private wallet material, or private session data. Continue using GitHub noreply addresses for commit metadata; the public contact address is not a reason to expose other account addresses.
 
 ## Privacy redactions
 

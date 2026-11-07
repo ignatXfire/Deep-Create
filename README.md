@@ -153,3 +153,7 @@ Open areas include durable command/result commits, verification against real art
 Ignat is sharing this work for research and independent continuation, and does not plan to be its ongoing application developer. Active maintenance, issue/PR responses, completion dates, production security, and fully autonomous self-development are not promised. You can continue the project in a maintained fork under its license terms. See [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), [authorship](AUTHORS.md), [citation metadata](CITATION.cff), and [third-party scope](THIRD_PARTY_NOTICES.md).
 
 [Personal tips for Ignat](SUPPORT.md) are optional personal support, not funding for Deep Create or a promise of continued development.
+
+## Contact
+
+For general questions or research discussion, contact Ignat at [ignatxfire@gmail.com](mailto:ignatxfire@gmail.com).
