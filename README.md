@@ -21,11 +21,9 @@ https://github.com/user-attachments/assets/c044996b-6c2c-4a58-af5b-00909287a29c
 
 <!-- END_DEEP_CREATE_TRAILER -->
 
-**[Open or download the trailer — 1:00](assets/deep-create-overview.mp4)** · **[Listen to the audio podcast — 39:30](assets/deep-create-podcast.m4a)** · **[Explore NotebookLM](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff)**
+**[Open or download the trailer — 1:00](assets/deep-create-overview.mp4)** · **[Watch my podcast on X — 39:30](https://x.com/ignatXfire/status/2119170488786444589)** · **[Listen to the audio podcast — 39:30](assets/deep-create-podcast.m4a)** · **[Explore NotebookLM](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff)**
 
 [Read my original announcement on X](https://x.com/ignatXfire/status/2119154937250644394).
-
-<!-- PODCAST_X_POST_URL: after the owner supplies the separate podcast-video post URL, add it under "Watch, listen, and explore" with a "Watch my podcast on X" link. Do not reuse the announcement URL for the podcast or replace the bundled M4A. -->
 
 The trailer illustrates the research; it is not a recording of a finished application. The companion notebook is an AI reading aid, not independent verification.
 
@@ -140,6 +138,8 @@ Native Windows builds also need the pinned Rust toolchain, MSVC Build Tools, Win
 The [research trailer — 1:00](assets/deep-create-overview.mp4) opens with a historical wrong-unit verification finding, then illustrates result bindings, reviewed selective repair and evidence carried into the next attempt. It includes real component-source excerpts. This is an architectural explanation, not application-execution footage or a claim that the historical defect is fixed. The downloadable H.264/AAC MP4 is approximately 4.7 MB.
 
 The [English audio podcast — 39:30](assets/deep-create-podcast.m4a), **Replacing AI Chat with Database Architecture**, is an AI-generated discussion of Deep Create's design. The original M4A is included without re-encoding. Open or download it to listen. Claims about readiness or performance should be checked against the repository's code and evidence, not accepted on the basis of the discussion.
+
+[Watch my full visual podcast on X — 39:30](https://x.com/ignatXfire/status/2119170488786444589).
 
 The [companion NotebookLM notebook](https://notebook.google.com/notebook/61cb67ba-7c25-4228-8285-b90d303f5cff) offers another way to explore the project and related comparisons. Its source set is maintained separately from this repository. Generated explanations are reading aids, not independent verification; check their citations against the original files. Access depends on the notebook's sharing settings and may require a Google account.
 
