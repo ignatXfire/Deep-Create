@@ -32,9 +32,6 @@ The trailer illustrates the research; it is not a recording of a finished applic
 - [Selective-repair transition test](crates/dc-domain/tests/cases/owner_return.rs): inspect how returned work and a proven-independent branch are treated differently. This is a synthetic component test, not a measured end-to-end speedup.
 - [Independent audit — finding N03](independent-review-20261001/02_FINDINGS.md): a historical counterexample in which machine verification accepted the wrong work unit without criterion evidence. It is failure evidence, not a claim that the defect is fixed.
 
-> [!WARNING]
-> **The first-party implementation code was generated entirely by AI under Ignat's direction. Do not trust it without independent review.** Code, tests, reports, and AI explanations can be wrong. Before execution or reuse, inspect the actual paths and criteria, reproduce checks in isolation, and review security-sensitive behavior. Passing tests do not prove correctness or safety. This is an unfinished research prototype.
-
 ## The problem: activity can outlive useful progress
 
 AI work can look busy while losing progress:
